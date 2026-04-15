@@ -9,12 +9,25 @@ public class DialogueCharacter
     public Sprite icon;
 }
 
+//Dialogue line class with use of dialoguecharcter, string line and a text area for the dialogue
+[System.Serializable]
+public class DialogueLine
+{
+    public DialogueCharacter character;
+    [TextArea(1, 5)]
+    public string line;
+}
+
+//Dialogue class with list of the created dialogue
+[System.Serializable]
+public class Dialogue
+{
+    public List<DialogueLine> dialogueLines = new List<DialogueLine>();
+}
+
+//Where public dialogue will be made
 public class DialogueTrigger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public Dialogue dialogue;
 
 }
