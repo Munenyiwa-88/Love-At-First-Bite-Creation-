@@ -237,15 +237,15 @@ MonoBehaviour:
     - character:
         name: Dame Framboje
         icon: {fileID: 0}
-      line: 'Cupcakes are sooooo in season. '
+      line: 'Nice to meet you, "name". Now aren''t you a handsome one. '
     - character:
         name: Dame Framboje
         icon: {fileID: 0}
-      line: 'Nice to meet you, "name". Now aren''t you a handsome one.  '
+      line: 'Cupcakes are sooo in season, wouldn''t you agree? '
     - character:
         name: Dame Framboje
         icon: {fileID: 0}
-      line: 'Wouldn''t you agree? Of course you would. That''s why you chose  '
+      line: 'Of course you would. That''s why you chose moi.  '
     - character:
         name: Dame Framboje
         icon: {fileID: 0}
@@ -276,9 +276,70 @@ MonoBehaviour:
         icon: {fileID: 0}
       line: All butter and no brains.
     - character:
+        name: Player
+        icon: {fileID: 0}
+      line: What happened?
+    - character:
         name: Dame Framboje
         icon: {fileID: 0}
-      line: All butter and no brains.
+      line: So, do you see how strawberries and raspberries are cousins?
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: Well, let's just say that I found out the hard way that chocolate filled
+        croissants prefer strawberries.
+    - character:
+        name: Player
+        icon: {fileID: 0}
+      line: 'How horrible. How can you bare to live beside him in that display. '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: I despise it as much as I resent his existence
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: 'But you would never do that to me would you? '
+    - character:
+        name: Player
+        icon: {fileID: 0}
+      line: 'I would not dare. You are too beautiful to let go of. '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: Mmmhhh, is that so?
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: As long as you will always choose me, then you may have all of me.
+    - character:
+        name: Player
+        icon: {fileID: 0}
+      line: I mean. There's always a better option.
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: A better option?
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: A...better. better. better...better option than me?
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: You've got to be kidding me.
+    - character:
+        name: Player
+        icon: {fileID: 0}
+      line: Oh, don't be like, I could still eat you. You know help you break free.
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: Ugh, whatever.
+    - character:
+        name: Player
+        icon: {fileID: 0}
+      line: Yeah, whatever, it's not like you're worth it anyways.
 --- !u!1 &413748104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,7 +1104,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.84384155, y: -206}
+  m_AnchoredPosition: {x: 0.8438721, y: -206}
   m_SizeDelta: {x: -1.6877, y: -414.2417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1759196392
