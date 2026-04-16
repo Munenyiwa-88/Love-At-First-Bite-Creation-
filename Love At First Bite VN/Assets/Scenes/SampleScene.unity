@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 263906186}
   - component: {fileID: 263906185}
+  - component: {fileID: 263906187}
   m_Layer: 0
   m_Name: yello man script final placeholder_3
   m_TagString: Untagged
@@ -211,6 +212,73 @@ Transform:
   - {fileID: 694433351}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &263906187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263906184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94fc2fb0ec69f5b4aa31b608937185e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  dialogue:
+    dialogueLines:
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: Hellooo there, and who might you be.
+    - character:
+        name: Player
+        icon: {fileID: 0}
+      line: 'Player name '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: 'Cupcakes are sooooo in season. '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: 'Nice to meet you, "name". Now aren''t you a handsome one.  '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: 'Wouldn''t you agree? Of course you would. That''s why you chose  '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: Now tell me monsieur "name", what's your favourite flavour?
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: 'VANILLA??? Oh, I didn''t know that you were so...tasteless. '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: 'Oh, close enough...that''s my cousin. '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: 'I knew you''d love Raspberries. Mmhhh, so you think I''m ravishing? '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: 'Although disappointing, you are still better than that utterly stupid
+        croissant. '
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: Oh, monsieur "name", you are soo much better that stupid croissant.
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: All butter and no brains.
+    - character:
+        name: Dame Framboje
+        icon: {fileID: 0}
+      line: All butter and no brains.
 --- !u!1 &413748104
 GameObject:
   m_ObjectHideFlags: 0
