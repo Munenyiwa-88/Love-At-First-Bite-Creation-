@@ -22,8 +22,19 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialoguePanel;
     public GameObject nameInputPanel;
     [Header("Backgrounds")]
-    public Image background2Panel;
-    public Sprite background2Image;
+    public Image backgroundAfternoonPanel;
+    public Sprite backgroundAfternoonImage;
+    public Image backgroundNightPanel;
+    public Sprite backgroundNightImage;
+    [Header("CharacterExpressions")]
+    public Image characterIdlePanel;
+    public Sprite characterIdleImage;
+    public Image characterHappyPanel;
+    public Sprite characterHappyImage;
+    public Image characterAngryPanel;
+    public Sprite characterAngryImage;
+    public Image characterFlirtyPanel;
+    public Sprite characterFlirtyImage;
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
@@ -49,9 +60,52 @@ public class DialogueManager : MonoBehaviour
     public void Update()
     {
         //the line of code that actually changes the image, it checks if the index is right then changes the image
-        if (currentIndex == 5)
+        if (currentIndex == 6)
         {
-            background2Panel.sprite = background2Image;
+            backgroundAfternoonPanel.sprite = backgroundAfternoonImage;
+        }
+
+        if (currentIndex == 17)
+        {
+            backgroundNightPanel.sprite = backgroundNightImage;
+        }
+
+        //the line of code that will change the chaarcters expression. So what is said for the characters visual to change
+        if (currentIndex == 8)
+        {
+            characterHappyPanel.sprite = characterHappyImage;
+            return;
+        }
+
+        if (currentIndex == 20)
+        {
+            characterHappyPanel.sprite = characterHappyImage;
+        }
+
+        if (currentIndex == 6)
+        {
+            characterAngryPanel.sprite = characterAngryImage;
+        }
+
+        if (currentIndex == 20)
+        {
+            characterAngryPanel.sprite = characterAngryImage;
+        }
+
+        if (currentIndex == 2)
+        {
+            characterFlirtyPanel.sprite = characterFlirtyImage;
+            return;
+        }
+
+        if (currentIndex == 18)
+        {
+            characterFlirtyPanel.sprite = characterFlirtyImage;
+        }
+
+        if (currentIndex == 9)
+        {
+            characterIdlePanel.sprite = characterIdleImage;
         }
     }
 
@@ -59,7 +113,7 @@ public class DialogueManager : MonoBehaviour
     public void ShowNextSentence()
     {
        
-        //If player chooses option 1 start at 6 or option 2 at 7 then send both to 9
+        //If player chooses Vanilla start at 6 or Strawberry at 7 then send both to 9
         // the two lines - || mean or
         // == means asking/checking = means setting the value 
         if (currentIndex == 6 || currentIndex == 7)
@@ -69,7 +123,7 @@ public class DialogueManager : MonoBehaviour
             //return means to cut the method here. So will not continue to 10 onwards. 
             return;
         }
-        //If the player chooses option 3 at 8 send them to 10
+        //If the player chooses Raspberry 3 at 8 send them to 10
         if (currentIndex == 8)
         {
             currentIndex = 10;
@@ -164,7 +218,7 @@ public class DialogueManager : MonoBehaviour
 
     public void confirmName()
     {
-        //exclamation marks turns the entire logic negetive, its basically the opposite pf what will be in teh brackets 
+        //exclamation marks turns the entire logic negetive, its basically the opposite pf what will be in the brackets 
         if (!string.IsNullOrEmpty(nameInputField.text))
         {
             playerName = nameInputField.text;
