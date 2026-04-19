@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: b44acf72038ab9e41bfe86c0dd2026fd
+guid: 10842bf1f79540248afea243906f7261
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2728440374620140236
-    second: Raspberry Girl Flirty_0
+      213: -9076072282145930001
+    second: Raspberry Girl Angry_0
   - first:
-      213: 2871025083127400301
-    second: Raspberry Girl Flirty_1
+      213: 8162339620950105944
+    second: Raspberry Girl Angry_1
   - first:
-      213: -8270315622409414566
-    second: Raspberry Girl Flirty_2
+      213: 3972783833678925188
+    second: Raspberry Girl Angry_2
+  - first:
+      213: 3909933710443801803
+    second: Raspberry Girl Angry_3
+  - first:
+      213: -4848815492245279054
+    second: Raspberry Girl Angry_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,67 +112,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Raspberry Girl Flirty_0
+      name: Raspberry Girl Angry_0
       rect:
         serializedVersion: 2
-        x: 697
-        y: 1110
-        width: 30
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc23118901e5dd520800000000000000
-      internalID: 2728440374620140236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Raspberry Girl Flirty_1
-      rect:
-        serializedVersion: 2
-        x: 643
-        y: 1087
-        width: 24
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d678b0d0a1ee7d720800000000000000
-      internalID: 2871025083127400301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Raspberry Girl Flirty_2
-      rect:
-        serializedVersion: 2
-        x: 32
+        x: 152
         y: 0
-        width: 644
+        width: 449
         height: 1073
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a585ce962cfe93d80800000000000000
-      internalID: -8270315622409414566
+      spriteID: fe44ce2b8505b0280800000000000000
+      internalID: -9076072282145930001
       vertices: []
       indices: 
       edges: []
@@ -175,7 +137,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 061aa5124d9327c44ad1ee3ba2cdab53
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +147,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Raspberry Girl Flirty_0: 2728440374620140236
-      Raspberry Girl Flirty_1: 2871025083127400301
-      Raspberry Girl Flirty_2: -8270315622409414566
+      Raspberry Girl Angry_0: -9076072282145930001
+      Raspberry Girl Angry_1: 8162339620950105944
+      Raspberry Girl Angry_2: 3972783833678925188
+      Raspberry Girl Angry_3: 3909933710443801803
+      Raspberry Girl Angry_4: -4848815492245279054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

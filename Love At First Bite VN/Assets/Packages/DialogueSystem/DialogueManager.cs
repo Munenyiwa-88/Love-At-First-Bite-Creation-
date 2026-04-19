@@ -26,15 +26,12 @@ public class DialogueManager : MonoBehaviour
     public Sprite backgroundAfternoonImage;
     public Image backgroundNightPanel;
     public Sprite backgroundNightImage;
-    [Header("CharacterExpressions")]
-    public Image characterIdlePanel;
-    public Sprite characterIdleImage;
-    public Image characterHappyPanel;
-    public Sprite characterHappyImage;
-    public Image characterAngryPanel;
-    public Sprite characterAngryImage;
-    public Image characterFlirtyPanel;
-    public Sprite characterFlirtyImage;
+    [Header("Character")]
+    public Image characterPanel;
+    public GameObject characterIdleImage;
+    public GameObject characterHappyImage;
+    public GameObject characterAngryImage;
+    public GameObject characterFlirtyImage;
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
@@ -49,6 +46,11 @@ public class DialogueManager : MonoBehaviour
 
     public void Start()
     {
+        characterHappyImage.SetActive(false);
+        characterAngryImage.SetActive(false);
+        characterFlirtyImage.SetActive(false);
+        
+
         currentIndex = 0;
         dialogueText.text = sentences[currentIndex];
         //set the text and current index to the first sentence
@@ -71,41 +73,61 @@ public class DialogueManager : MonoBehaviour
         }
 
         //the line of code that will change the chaarcters expression. So what is said for the characters visual to change
-        if (currentIndex == 8)
-        {
-            characterHappyPanel.sprite = characterHappyImage;
-            return;
-        }
-
-        if (currentIndex == 20)
-        {
-            characterHappyPanel.sprite = characterHappyImage;
-        }
-
         if (currentIndex == 6)
         {
-            characterAngryPanel.sprite = characterAngryImage;
+            
+            characterHappyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
         }
 
         if (currentIndex == 20)
         {
-            characterAngryPanel.sprite = characterAngryImage;
-        }
-
-        if (currentIndex == 2)
-        {
-            characterFlirtyPanel.sprite = characterFlirtyImage;
-            return;
-        }
-
-        if (currentIndex == 18)
-        {
-            characterFlirtyPanel.sprite = characterFlirtyImage;
+            characterHappyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
         }
 
         if (currentIndex == 9)
         {
-            characterIdlePanel.sprite = characterIdleImage;
+            characterAngryImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        if (currentIndex == 22)
+        {
+            characterAngryImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        if (currentIndex == 2)
+        {
+            characterFlirtyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
+
+        if (currentIndex == 18)
+        {
+            characterFlirtyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
+
+        if (currentIndex == 9)
+        {
+            characterIdleImage.SetActive(true);
+            characterFlirtyImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
         }
     }
 
@@ -225,7 +247,9 @@ public class DialogueManager : MonoBehaviour
         }     
         ShowNextSentence();
     }
+    //If current index == 27 { next button false then set active the next button that will play video}
 
+    //public void videobutton () SceneManager.loadscene
     private void EndGame()
     {
         Debug.Log("Game has ended");
