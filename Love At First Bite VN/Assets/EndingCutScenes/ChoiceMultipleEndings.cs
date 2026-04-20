@@ -1,6 +1,29 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
+using System.Security.Cryptography;
+
+
+public class ChoiceMultipleEndings : MonoBehaviour
+{
+    //Calling the UI buttons that will be used for the main menu
+    //public Button exitButton;
+    public Button winButton;
+    public VideoPlayer play;
+    public VideoPlayer GoodEnding;
+    public VideoPlayer Playing;
+
+    
+    public void PlayVideo()
+    {
+        SceneManager.LoadScene("Ending");
+        GoodEnding.Play();
+    }
+
+}
+
 
 /*public class ChoiceMultipleEndings : MonoBehaviour
 {

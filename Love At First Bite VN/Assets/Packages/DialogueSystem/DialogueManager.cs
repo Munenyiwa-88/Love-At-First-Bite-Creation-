@@ -1,8 +1,9 @@
-using System.Collections.Generic;
 using System.Collections;
-using UnityEngine.UI;
-using UnityEngine;
+using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 //using UnityEngine.Video;
 //using JetBrains.Annotations;
 
@@ -42,12 +43,22 @@ public class DialogueManager : MonoBehaviour
     public GameObject heartMeter75Image;
     public GameObject heartMeteremptyImage;
     public GameObject heartMeterfullImage;
+    //Adding the script for the games audios
+    [Header("Audio")]
+    [SerializeField] AudioSource ThemeSongCreepy;
+    [SerializeField] AudioSource ThemeSongBGM;
+    [SerializeField] AudioSource GirlGiggle;
+    [SerializeField] AudioSource GirlDisgust;
+    [SerializeField] AudioSource ButtonFeedback;
+    [SerializeField] AudioSource HeartMeterIncrease;
+    [SerializeField] AudioSource HeartMeterDecrease;
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
     //List of strings (List of all of my dialogue lines) - [] - this is what creates the list
     [Header("Sentences List")]
     public string[] sentences;
+
     //[Header("CutScenes")]
     //public VideoClip badEndingCutScene;
     //public VideoClip goodEndingCutText;
@@ -71,8 +82,19 @@ public class DialogueManager : MonoBehaviour
         heartMeterfullImage.SetActive(false);
         heartMeter25Image.SetActive(false);
         heartMeter75Image.SetActive(false);
+        heartMeterhalfImage.SetActive(true);
         heartMeteremptyImage.SetActive(false);
 
+        //declaring the songs 
+        ThemeSongCreepy.Stop();
+        ThemeSongBGM.Play();
+        GirlDisgust.Stop();
+        GirlGiggle.Play();
+        ButtonFeedback.Stop();
+        HeartMeterIncrease.Stop();  
+        HeartMeterDecrease.Stop();
+
+      
         currentIndex = 0;
         dialogueText.text = sentences[currentIndex];
         //set the text and current index to the first sentence
@@ -84,7 +106,7 @@ public class DialogueManager : MonoBehaviour
     public void Update()
     {
         //the line of code that actually changes the image, it checks if the index is right then changes the image
-        if (currentIndex == 6)
+        if (currentIndex == 6 || currentIndex == 7 || currentIndex == 8)
         {
             backgroundAfternoonPanel.sprite = backgroundAfternoonImage;
         }
@@ -162,45 +184,110 @@ public class DialogueManager : MonoBehaviour
             characterAngryImage.SetActive(false);
         }
 
-        if (currentIndex == 9)
+        if (currentIndex == 10)
         {
             characterIdleImage.SetActive(true);
             characterFlirtyImage.SetActive(false);
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
         }
-        
+
         //the line of code that will change the chaarcters heartmeter, based off dialogue choice
+        if (currentIndex == 0)
+        {
+            heartMeterhalfImage.SetActive(true);  
+            //heartMeter75Image.SetActive(false);
+            //heartMeter25Image.SetActive(false);
+            //heartMeterfullImage.SetActive(false);
+            //heartMeteremptyImage.SetActive(false);
+        }
+
         if (currentIndex == 6 || currentIndex == 7)
         {
             heartMeter25Image.SetActive(true);
-            heartMeterfullImage.SetActive(false);
+           /* heartMeterfullImage.SetActive(false);
+            heartMeterhalfImage.SetActive(false);
+            heartMeter75Image.SetActive(false);
+            heartMeteremptyImage.SetActive(false);*/
         }
 
         if (currentIndex == 8)
         {
             heartMeter75Image.SetActive(true);
-            heartMeter25Image.SetActive(false);
-            heartMeterfullImage.SetActive(false);
+            //heartMeter25Image.SetActive(false);
+            //heartMeterhalfImage.SetActive(false);
+            //heartMeterfullImage.SetActive(false);
+            //heartMeteremptyImage.SetActive(false);
         }
 
 
         if (currentIndex == 21)
         {
             heartMeteremptyImage.SetActive(true);
-            heartMeter75Image.SetActive(false);
-            heartMeter25Image.SetActive(false);
-            heartMeterfullImage.SetActive(false);
+           // heartMeter75Image.SetActive(false);
+            //heartMeter25Image.SetActive(false);
+            //heartMeterhalfImage.SetActive(false);
+            //heartMeterfullImage.SetActive(false);
         }
 
         if (currentIndex == 18)
         {
             heartMeterfullImage.SetActive(true);
-            heartMeterhalfImage.SetActive(false);
-            heartMeter75Image.SetActive(false);
-            heartMeter25Image.SetActive(false);
+            //heartMeterhalfImage.SetActive(false);
+            //heartMeter75Image.SetActive(false);
+            //heartMeteremptyImage.SetActive(false);
+            //heartMeter25Image.SetActive(false);
         }
-     
+
+        //Setting actove the games auadio 
+        /*if (currentIndex == 0)
+        {
+            ThemeSongBGM.Play();
+            GirlGiggle.Stop();
+            GirlDisgust.Stop();
+            ThemeSongCreepy.Stop();
+            ButtonFeedback.Stop();
+            HeartMeterIncrease.Stop();
+            HeartMeterDecrease.Stop();
+        }
+        if (currentIndex == 2)
+        {
+            GirlGiggle.Play();
+            GirlDisgust.Stop();
+            ThemeSongCreepy.Stop();
+            ButtonFeedback.Stop();
+            HeartMeterIncrease.Stop();
+            HeartMeterDecrease.Stop();
+        }*/
+        if (currentIndex == 16)
+        {
+            ThemeSongCreepy.Play();
+            GirlDisgust.Stop();
+            GirlGiggle.Stop();
+            ButtonFeedback.Stop();
+            HeartMeterIncrease.Stop();
+            HeartMeterDecrease.Stop();
+        }
+
+        /*if (currentIndex == 22)
+        {
+            GirlDisgust.Play();
+            ThemeSongBGM.Stop();
+            GirlGiggle.Stop();
+            ButtonFeedback.Stop();
+            HeartMeterIncrease.Stop();
+            HeartMeterDecrease.Stop();
+        }
+
+        if (currentIndex == 22)
+        {
+            GirlDisgust.Play();
+            ThemeSongBGM.Stop();
+            GirlGiggle.Stop();
+            ButtonFeedback.Stop();
+            HeartMeterIncrease.Stop();
+            HeartMeterDecrease.Stop();
+        }*/
 
         /*//coding that will change the dialogue box in accordance to when the player talks
         if (currentIndex == 1)
@@ -426,7 +513,9 @@ public class DialogueManager : MonoBehaviour
     private void EndGame()
     {
         Debug.Log("Game has ended");
-
+        nextButton.gameObject.SetActive(false);
+        SceneManager.LoadScene("Choiceofending");
+       
         //we are gonna hide the ui
     }
 
