@@ -67,6 +67,9 @@ public class DialogueManager : MonoBehaviour
         characterFlirtyImage.SetActive(false);
         //dialoguePlayerBoxImage.SetActive(false);
         
+        heartMeterfullImage.SetActive(false);
+        heartMeter25Image.SetActive(false);
+        heartMeter75Image.SetActive(false);
 
         currentIndex = 0;
         dialogueText.text = sentences[currentIndex];
@@ -179,6 +182,7 @@ public class DialogueManager : MonoBehaviour
             heartMeterfullImage.SetActive(false);
         }
 
+
         if (currentIndex == 21)
         {
             heartMeterhalfImage.SetActive(true);
@@ -187,14 +191,14 @@ public class DialogueManager : MonoBehaviour
             heartMeterfullImage.SetActive(false);
         }
 
-        if (currentIndex == 22)
+        if (currentIndex == 18)
         {
             heartMeterfullImage.SetActive(true);
             heartMeterhalfImage.SetActive(false);
             heartMeter75Image.SetActive(false);
             heartMeter25Image.SetActive(false);
         }
-
+     
 
         /*//coding that will change the dialogue box in accordance to when the player talks
         if (currentIndex == 1)
