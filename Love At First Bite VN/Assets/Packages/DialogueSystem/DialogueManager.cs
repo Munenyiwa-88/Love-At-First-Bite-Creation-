@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+//using UnityEngine.Video;
+//using JetBrains.Annotations;
 
 
 //The dialoguemanager class will manage all the dialogue inputed into the dialoguetrigger script
@@ -12,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     //Calling the main objects for the dialogue
     public TextMeshProUGUI dialogueText;
     public Button nextButton;
+    //public Button endButton;
     public TMP_InputField nameInputField;
     //The current text number
     public int currentIndex = 0;
@@ -32,12 +35,25 @@ public class DialogueManager : MonoBehaviour
     public GameObject characterHappyImage;
     public GameObject characterAngryImage;
     public GameObject characterFlirtyImage;
+    [Header("HeartMeter")]
+    public Image heartMeterPanel;
+    public GameObject heartMeterhalfImage;
+    public GameObject heartMeter25Image;
+    public GameObject heartMeter75Image;
+    public GameObject heartMeterfullImage;
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
     //List of strings (List of all of my dialogue lines) - [] - this is what creates the list
     [Header("Sentences List")]
     public string[] sentences;
+    //[Header("CutScenes")]
+    //public VideoClip badEndingCutScene;
+    //public VideoClip goodEndingCutText;
+    /*[Header("DialogueBox")]
+    public Image dialoguePlayerBoxPanel;
+    public GameObject dialogueRaspberryBoxImage;
+    public GameObject dialoguePlayerBoxImage;*/
 
 
 
@@ -49,6 +65,7 @@ public class DialogueManager : MonoBehaviour
         characterHappyImage.SetActive(false);
         characterAngryImage.SetActive(false);
         characterFlirtyImage.SetActive(false);
+        //dialoguePlayerBoxImage.SetActive(false);
         
 
         currentIndex = 0;
@@ -75,10 +92,28 @@ public class DialogueManager : MonoBehaviour
         //the line of code that will change the chaarcters expression. So what is said for the characters visual to change
         if (currentIndex == 6)
         {
-            
-            characterHappyImage.SetActive(true);
+
+            characterAngryImage.SetActive(true);
+            characterHappyImage.SetActive(false);
             characterIdleImage.SetActive(false);
-            characterAngryImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        if (currentIndex == 7)
+        {
+
+            characterAngryImage.SetActive(true);
+            characterHappyImage.SetActive(false);
+            characterIdleImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        if (currentIndex == 16)
+        {
+
+            characterAngryImage.SetActive(true);
+            characterHappyImage.SetActive(false);
+            characterIdleImage.SetActive(false);
             characterFlirtyImage.SetActive(false);
         }
 
@@ -129,6 +164,116 @@ public class DialogueManager : MonoBehaviour
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
         }
+        
+        //the line of code that will change the chaarcters heartmeter, based off dialogue choice
+        if (currentIndex == 6 || currentIndex == 7)
+        {
+            heartMeter25Image.SetActive(true);
+            heartMeterfullImage.SetActive(false);
+        }
+
+        if (currentIndex == 8)
+        {
+            heartMeter75Image.SetActive(true);
+            heartMeter25Image.SetActive(false);
+            heartMeterfullImage.SetActive(false);
+        }
+
+        if (currentIndex == 21)
+        {
+            heartMeterhalfImage.SetActive(true);
+            heartMeter75Image.SetActive(false);
+            heartMeter25Image.SetActive(false);
+            heartMeterfullImage.SetActive(false);
+        }
+
+        if (currentIndex == 22)
+        {
+            heartMeterfullImage.SetActive(true);
+            heartMeterhalfImage.SetActive(false);
+            heartMeter75Image.SetActive(false);
+            heartMeter25Image.SetActive(false);
+        }
+
+
+        /*//coding that will change the dialogue box in accordance to when the player talks
+        if (currentIndex == 1)
+        {
+            dialoguePlayerBoxImage.SetActive(true);
+            dialogueRaspberryBoxImage.SetActive(false); 
+        }
+
+        if (currentIndex == 2)
+        {
+            dialogueRaspberryBoxImage.SetActive(true);
+            dialoguePlayerBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 12)
+        {
+            dialoguePlayerBoxImage.SetActive(true);
+            dialogueRaspberryBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 13)
+        {
+            dialogueRaspberryBoxImage.SetActive(true);
+            dialoguePlayerBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 15)
+        {
+            dialoguePlayerBoxImage.SetActive(true);
+            dialogueRaspberryBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 16)
+        {
+            dialogueRaspberryBoxImage.SetActive(true);
+            dialoguePlayerBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 18)
+        {
+            dialoguePlayerBoxImage.SetActive(true);
+            dialogueRaspberryBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 19)
+        {
+            dialogueRaspberryBoxImage.SetActive(true);
+            dialoguePlayerBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 21)
+        {
+            dialoguePlayerBoxImage.SetActive(true);
+            dialogueRaspberryBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 22)
+        {
+            dialogueRaspberryBoxImage.SetActive(true);
+            dialoguePlayerBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 25)
+        {
+            dialoguePlayerBoxImage.SetActive(true);
+            dialogueRaspberryBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 26)
+        {
+            dialogueRaspberryBoxImage.SetActive(true);
+            dialoguePlayerBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 27)
+        {
+            dialoguePlayerBoxImage.SetActive(true);
+            dialogueRaspberryBoxImage.SetActive(false);
+        }*/
     }
 
 
@@ -198,6 +343,7 @@ public class DialogueManager : MonoBehaviour
         choicesPanel1.SetActive(false);
         choicesPanel2.SetActive(false);
         nextButton.gameObject.SetActive(true);
+        //endButton.gameObject.SetActive(false);
 
 
         //Events- For typing and choices
@@ -221,6 +367,29 @@ public class DialogueManager : MonoBehaviour
             nextButton.gameObject.SetActive(false);
             choicesPanel2.SetActive(true);
         }
+
+        //Condition for the next button to change into an end button and show the cutscenes
+        //If current index == 27 { next button false then set active the next button that will play video}
+
+        /*void DownloadManager VideoClip;{
+
+    }
+
+        
+        if (currentIndex == 27)
+        {
+            endButton.gameObject.SetActive(true);
+            nextButton.gameObject.SetActive(false);
+        }
+
+        if (currentIndex == 20)
+        {
+            endButton.gameObject.SetActive(true);
+            nextButton.gameObject.SetActive(false);
+        }
+
+        //public void videobutton () SceneManager.loadscene
+        */
 
         /*
         //will reuse/bring back - if you deactivate it the dialogue lines will not appear in gameview
@@ -247,9 +416,7 @@ public class DialogueManager : MonoBehaviour
         }     
         ShowNextSentence();
     }
-    //If current index == 27 { next button false then set active the next button that will play video}
 
-    //public void videobutton () SceneManager.loadscene
     private void EndGame()
     {
         Debug.Log("Game has ended");
