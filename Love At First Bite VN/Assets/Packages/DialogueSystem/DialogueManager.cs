@@ -40,6 +40,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject heartMeterhalfImage;
     public GameObject heartMeter25Image;
     public GameObject heartMeter75Image;
+    public GameObject heartMeteremptyImage;
     public GameObject heartMeterfullImage;
     [Header("Player Name")]
     //Input player name typing method
@@ -70,6 +71,7 @@ public class DialogueManager : MonoBehaviour
         heartMeterfullImage.SetActive(false);
         heartMeter25Image.SetActive(false);
         heartMeter75Image.SetActive(false);
+        heartMeteremptyImage.SetActive(false);
 
         currentIndex = 0;
         dialogueText.text = sentences[currentIndex];
@@ -185,7 +187,7 @@ public class DialogueManager : MonoBehaviour
 
         if (currentIndex == 21)
         {
-            heartMeterhalfImage.SetActive(true);
+            heartMeteremptyImage.SetActive(true);
             heartMeter75Image.SetActive(false);
             heartMeter25Image.SetActive(false);
             heartMeterfullImage.SetActive(false);
