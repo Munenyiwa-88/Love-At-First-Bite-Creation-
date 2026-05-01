@@ -12,7 +12,8 @@ public class DialogueManager : MonoBehaviour
 {
     [Header("MainUI")]
     //Calling the main objects for the dialogue
-    public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI raspberryDialogueText;
+    public TextMeshProUGUI playerDialogueText;
     public Button nextButton;
     //public Button endButton;
     public TMP_InputField nameInputField;
@@ -29,6 +30,10 @@ public class DialogueManager : MonoBehaviour
     public Sprite backgroundAfternoonImage;
     public Image backgroundNightPanel;
     public Sprite backgroundNightImage;
+    [Header("DialogueBox")]
+    public Image dialogueBoxPanel;
+    public GameObject raspberryDialogueBoxImage;
+    public GameObject playerDialogueBoxImage;
     [Header("Character")]
     public Image characterPanel;
     public GameObject characterIdleImage;
@@ -42,6 +47,11 @@ public class DialogueManager : MonoBehaviour
     public GameObject heartMeter75Image;
     public GameObject heartMeteremptyImage;
     public GameObject heartMeterfullImage;
+    //Inputting a slider 
+    [Header("Slider")]
+    public int heart;
+    public int maxHeart = 10;
+    public Slider slider;
     //Adding the script for the games audios
     [Header("Audio")]
     [SerializeField] AudioSource ThemeSongCreepy;
@@ -54,11 +64,17 @@ public class DialogueManager : MonoBehaviour
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
+    /*[Header("Player Dialogue Box Name")]
+    public TextMeshProUGUI nameText;*/
     //List of strings (List of all of my dialogue lines) - [] - this is what creates the list
     [Header("Sentences List")]
     public string[] sentences;
 
-
+    /*public void SetName(string name)
+    {
+        playerName = name; 
+        nameText.text = name;
+    }*/
 
 
 
@@ -70,11 +86,19 @@ public class DialogueManager : MonoBehaviour
         characterFlirtyImage.SetActive(false);
         //dialoguePlayerBoxImage.SetActive(false);
         
-        heartMeterfullImage.SetActive(false);
+        /*heartMeterfullImage.SetActive(false);
         heartMeter25Image.SetActive(false);
         heartMeter75Image.SetActive(false);
         heartMeterhalfImage.SetActive(true);
-        heartMeteremptyImage.SetActive(false);
+        heartMeteremptyImage.SetActive(false);*/
+
+        //slider 
+        slider.maxValue = maxHeart;
+        slider.value = heart;
+
+        //dialogue box's SetActive fasle or true
+        raspberryDialogueBoxImage.SetActive(true);
+        playerDialogueBoxImage.SetActive(false);
 
         //declaring the songs 
         ThemeSongCreepy.Stop();
@@ -87,7 +111,15 @@ public class DialogueManager : MonoBehaviour
 
       
         currentIndex = 0;
-        dialogueText.text = sentences[currentIndex];
+        raspberryDialogueText.text = sentences[currentIndex];
+        //set the text and current index to the first sentence
+        if (currentIndex > 0)
+        {
+            UpdateUI();
+        }
+        
+        currentIndex = 0;
+        playerDialogueText.text = sentences[currentIndex];
         //set the text and current index to the first sentence
         if (currentIndex > 0)
         {
@@ -107,6 +139,60 @@ public class DialogueManager : MonoBehaviour
             backgroundNightPanel.sprite = backgroundNightImage;
         }
 
+        //the line code for the dialogue box's
+        if (currentIndex == 12)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
+        
+        if (currentIndex == 13)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 15)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
+
+        if (currentIndex == 16)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 21)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
+
+        if (currentIndex == 22)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 25)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
+
+        if (currentIndex == 26)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 27)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
         //the line of code that will change the chaarcters expression. So what is said for the characters visual to change
         if (currentIndex == 6)
         {
@@ -183,31 +269,53 @@ public class DialogueManager : MonoBehaviour
             characterAngryImage.SetActive(false);
         }
 
-        //the line of code that will change the chaarcters heartmeter, based off dialogue choice
+        /* //the line of code that will change the chaarcters heartmeter, based off dialogue choice
+         if (currentIndex == 0)
+         {
+             heartMeterhalfImage.SetActive(true); 
+         }
+
+         if (currentIndex == 6 || currentIndex == 7)
+         {
+             heartMeter25Image.SetActive(true);
+         }
+
+         if (currentIndex == 8)
+         {
+             heartMeter75Image.SetActive(true);
+         }
+
+
+         if (currentIndex == 21)
+         {
+             heartMeteremptyImage.SetActive(true);
+         }
+
+         if (currentIndex == 18)
+         {
+             heartMeterfullImage.SetActive(true);
+         }*/
+
+
         if (currentIndex == 0)
         {
-            heartMeterhalfImage.SetActive(true); 
+            slider.value = 5;
         }
-
-        if (currentIndex == 6 || currentIndex == 7)
+        else if (currentIndex == 6 || currentIndex == 7)
         {
-            heartMeter25Image.SetActive(true);
+            slider.value = 2.5f;
         }
-
-        if (currentIndex == 8)
+        else if (currentIndex == 8)
         {
-            heartMeter75Image.SetActive(true);
+            slider.value = 7.5f;
         }
-
-
-        if (currentIndex == 21)
+        else if (currentIndex == 21)
         {
-            heartMeteremptyImage.SetActive(true);
+            slider.value = 0;
         }
-
-        if (currentIndex == 18)
+        else if (currentIndex == 18)
         {
-            heartMeterfullImage.SetActive(true);
+            slider.value = 10;
         }
 
         //SetActive the creepy song that appears at the end of the game
@@ -223,10 +331,18 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    //class for the sllider
+    public void HeartMeter(int amount)
+    {
+        heart -= amount;
+        slider.value = heart;
 
+
+    }
+
+    //class for showing the next sentences after button is pressed
     public void ShowNextSentence()
     {
-       
         //If player chooses Vanilla start at 6 or Strawberry at 7 then send both to 9
         // the two lines - || mean or
         // == means asking/checking = means setting the value 
@@ -283,8 +399,12 @@ public class DialogueManager : MonoBehaviour
     {
         //so we have a new variable =currentText, current text takes the original sentence - searches for {Name} and if its there it replaces it with the player name variable
         string currentText = sentences[currentIndex].Replace("{Name}", playerName);
+        //For name of the player dilaogue box
+        //string processed = sentences[currentIndex].Replace("{Name}", playerName);
+        //nameText.text = processed;
         //This is how we convert the sentence itnto the speak text box.
-        dialogueText.text = currentText;
+        raspberryDialogueText.text = currentText;
+        playerDialogueText.text = currentText;
         //reset all the panels so that they do not overlap
         nameInputPanel.SetActive(false);
         choicesPanel1.SetActive(false);

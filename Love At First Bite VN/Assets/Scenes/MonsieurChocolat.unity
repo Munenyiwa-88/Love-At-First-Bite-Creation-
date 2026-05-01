@@ -2422,7 +2422,40 @@ MonoBehaviour:
   HeartMeterIncrease: {fileID: 0}
   HeartMeterDecrease: {fileID: 0}
   sentences:
-  - 
+  - umm, *blush*...bonjour mon cherrie.
+  - your name is?
+  - it is...nice to meet you {Name}
+  - ...
+  - Umm, Monsieur Chocolat...?
+  - Oh yes, I must ask. What is your favourite croissant flavour?
+  - Matcha. The grass flavoured drink? I mean, I guess...
+  - But again, I wound not choose me either.
+  - 'Oh...no. Not that flavour, it brings me horrible memories. '
+  - Horrible memories? about?
+  - Dame, Framboje. The cupcake in the next isle is my current ex. AfterI cheated
+    on her with sensational strawberry...her cousin.
+  - It was rather out of charcater for me to do so.
+  - Why that's good to hear, beacuse I myself am a chocolate filled croissant.
+  - Although, I can't say I'm the best.
+  - Why would you say that?
+  - I am naturally reclusive. My speech, not the best.
+  - What is a pastry if it cannot be desired and consumed by a customer. Simply because
+    I fear humans.
+  - Well, do you fear me?
+  - ...
+  - Monsieur...
+  - If I said that I was afraid would you still desire me?
+  - Yes, because fear has an opposite that we can aim to achieve, as long as you
+    are willing.
+  - '{Name}, would you truly be patient with me and wait for me?'
+  - You are worth every bit of patience that I posses.
+  - In that case you may eat me. You've shown me enough of your sincerity.
+  - No
+  - What would be the point of continuing the date if you fear me?
+  - But....{Name}, I could learn to not fear you.
+  - And how long would that take? Would it even be worth it?
+  - ...
+  - Exactly.
 --- !u!1 &977853384
 GameObject:
   m_ObjectHideFlags: 0

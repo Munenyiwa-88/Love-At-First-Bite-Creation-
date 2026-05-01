@@ -26,6 +26,10 @@ public class MCDialogueManager : MonoBehaviour
     public Sprite backgroundAfternoonImage;
     public Image backgroundNightPanel;
     public Sprite backgroundNightImage;
+    [Header("DialogueBox")]
+    public Image dialogueBoxPanel;
+    public Sprite raspberryDialogueBoxImage;
+    public Sprite playerDialogueBoxImage;
     [Header("Character")]
     public Image characterPanel;
     public GameObject characterIdleImage;
