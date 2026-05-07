@@ -296,7 +296,7 @@ public class DialogueManager : MonoBehaviour
              heartMeterfullImage.SetActive(true);
          }*/
 
-
+        //conditions for when the heart slider should move in the game
         if (currentIndex == 0)
         {
             slider.value = 5;

@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 558865493}
   - component: {fileID: 558865492}
   m_Layer: 5
-  m_Name: MainMenuBackground
+  m_Name: PrologueBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 826878654}
   - component: {fileID: 826878653}
   m_Layer: 5
-  m_Name: MainMenuBackgroundPanel
+  m_Name: PrologueBackgroundPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
