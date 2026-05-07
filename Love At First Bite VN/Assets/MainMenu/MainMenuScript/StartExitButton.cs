@@ -13,12 +13,14 @@ public class StartExitButton : MonoBehaviour
     //To help manage the start and exit button and the clicking of it
     public void OnStartClick()
     {
-        SceneManager.LoadScene("DameFramboje");
+        SceneManager.LoadScene("Prologue");
     }
 
     //Using conditional compilations, as to ensure that the code strictly runs and ends within the compilations 
     public void OnExitClick()
     {
+        //SceneManager.LoadScene("GameMenu");
+
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif

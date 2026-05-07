@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9f09a4f97ed732f4ca64d5333f560590
+guid: 6b3793d8f8d4f7b4e82f279e5263163a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4954656724691719756
-    second: Main Menu BIG_0
+      213: -9349580996089870
+    second: Prologue screen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main Menu BIG_0
+      name: Prologue screen_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c46104b4a0a72c440800000000000000
-      internalID: 4954656724691719756
+      spriteID: 2f7ede90b98cedff0800000000000000
+      internalID: -9349580996089870
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Main Menu BIG_0: 4954656724691719756
+      Prologue screen_0: -9349580996089870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

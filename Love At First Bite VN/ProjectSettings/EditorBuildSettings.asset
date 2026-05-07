@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameMenu.unity
     guid: 216a75e563a20f941a8c181e84802fcc
   - enabled: 1
+    path: Assets/Scenes/Prologue.unity
+    guid: 6d8ec94d611180148b2efeb82185b47e
+  - enabled: 1
     path: Assets/Scenes/DameFramboje.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
@@ -17,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Choiceofending.unity
     guid: a95c95c69f75f4748a7e1a0b804888e7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Ending.unity
     guid: c48e584acd5d246408425ae4604a3f64
   m_configObjects:
