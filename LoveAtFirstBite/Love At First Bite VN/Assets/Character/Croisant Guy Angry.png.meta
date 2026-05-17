@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 15714e7e68fed944aa1dc1c0319936c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1705172942104136688
+    second: Croisant Guy Angry_0
+  - first:
+      213: 3109707576519864529
+    second: Croisant Guy Angry_1
+  - first:
+      213: -1886592346292991811
+    second: Croisant Guy Angry_2
+  - first:
+      213: -1937916769854800103
+    second: Croisant Guy Angry_3
+  - first:
+      213: -4632685219685455848
+    second: Croisant Guy Angry_4
+  - first:
+      213: -2403197442311992941
+    second: Croisant Guy Angry_5
+  - first:
+      213: 5150089559346799863
+    second: Croisant Guy Angry_6
+  - first:
+      213: 4513763838173936787
+    second: Croisant Guy Angry_7
+  - first:
+      213: 3271554148833632749
+    second: Croisant Guy Angry_8
+  - first:
+      213: -5396147128563251748
+    second: Croisant Guy Angry_9
+  - first:
+      213: 5100049363492954024
+    second: Croisant Guy Angry_10
+  - first:
+      213: -649899573682592973
+    second: Croisant Guy Angry_11
+  - first:
+      213: 674532635014412852
+    second: Croisant Guy Angry_12
+  - first:
+      213: 2446245709668855218
+    second: Croisant Guy Angry_13
+  - first:
+      213: -7114599422445424486
+    second: Croisant Guy Angry_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Croisant Guy Angry_0
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 950
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01476495e320658e0800000000000000
+      internalID: -1705172942104136688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_1
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 953
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0becd9096e72b20800000000000000
+      internalID: 3109707576519864529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 934
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db84c33b14a71d5e0800000000000000
+      internalID: -1886592346292991811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_3
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 931
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f388027f22b15e0800000000000000
+      internalID: -1937916769854800103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_4
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 911
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8182274765565bfb0800000000000000
+      internalID: -4632685219685455848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 708
+        height: 928
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399cddda8a026aed0800000000000000
+      internalID: -2403197442311992941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 863
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4605afa2bc87740800000000000000
+      internalID: 5150089559346799863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_7
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 645
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c7c5ebb4c14ae30800000000000000
+      internalID: 4513763838173936787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_8
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 611
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de12fa83a25e66d20800000000000000
+      internalID: 3271554148833632749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_9
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 634
+        width: 74
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd54e3ec6c80d15b0800000000000000
+      internalID: -5396147128563251748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_10
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 596
+        width: 71
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af54f7ffd307c640800000000000000
+      internalID: 5100049363492954024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_11
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 573
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333a8f2f7c71bf6f0800000000000000
+      internalID: -649899573682592973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_12
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 384
+        width: 243
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a31739bdb6c5900800000000000000
+      internalID: 674532635014412852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_13
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 535
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bda22e138fc2f120800000000000000
+      internalID: 2446245709668855218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Croisant Guy Angry_14
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 212
+        width: 11
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90f0f1258dd34d90800000000000000
+      internalID: -7114599422445424486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Croisant Guy Angry_0: -1705172942104136688
+      Croisant Guy Angry_1: 3109707576519864529
+      Croisant Guy Angry_10: 5100049363492954024
+      Croisant Guy Angry_11: -649899573682592973
+      Croisant Guy Angry_12: 674532635014412852
+      Croisant Guy Angry_13: 2446245709668855218
+      Croisant Guy Angry_14: -7114599422445424486
+      Croisant Guy Angry_2: -1886592346292991811
+      Croisant Guy Angry_3: -1937916769854800103
+      Croisant Guy Angry_4: -4632685219685455848
+      Croisant Guy Angry_5: -2403197442311992941
+      Croisant Guy Angry_6: 5150089559346799863
+      Croisant Guy Angry_7: 4513763838173936787
+      Croisant Guy Angry_8: 3271554148833632749
+      Croisant Guy Angry_9: -5396147128563251748
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
