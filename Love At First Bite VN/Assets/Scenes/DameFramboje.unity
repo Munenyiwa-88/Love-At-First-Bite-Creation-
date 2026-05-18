@@ -3627,35 +3627,57 @@ MonoBehaviour:
   HeartMeterIncrease: {fileID: 2073590233}
   HeartMeterDecrease: {fileID: 1193148079}
   sentences:
-  - Hellooo there, and who might you be
+  - '{Name}: What the...? '
+  - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
+  - '{Name}: Why is my cupcake talking to me right now? '
+  - "You thought you could just eat me without getting to know me first? Ch\xE9rie,
+    It's just manners!"
+  - "I didn't get your name, how rude of me! So ch\xE9rie, what is your name?"
   - Name...
-  - Nice to meet you, {Name}. Now aren't you a looker.
-  - Cupcakes are soooo in season, wouldn't you agree?
-  - 'Of course you would. That''s why you chose moi. '
-  - Now tell me monsieur {Name} what's your favourite flavour?
-  - VANILLA??? Oh, I didn't know that you were so...tasteless.
-  - Oh, close enough...that's my cousin.
-  - 'I knew you''d love Raspberries. Mmhhh, so you think I''m ravishing? '
-  - Although disappointing, you are still better than that utterly stupid croissant.
-  - 'Oh mon amour {Name} you are so much better than that stupid croissant. '
-  - All butter and no brains.
-  - '{Name}: What happened?'
-  - So, do you see how strawberries and raspberries are cousins?
-  - Well, let's just say that chocolate filled croissants prefer strawberries.
-  - '{Name}: How horrible. How can you bare to live besides him in that display?'
-  - I despise it as much as I resent his existence.
-  - But you would never do that to me would you?
-  - 'Player: I would not dare to. You are too beauiful to let go of. '
-  - Mmhh, is that so?
-  - As long as you will always choose me then you may have all of me.
-  - '{Name}: I mean, there''s always a better option.'
-  - A better option?
-  - A...better. better. better...better option than me?
-  - You've got to be kidding me.
-  - '{Name}: Oh, come on, don''t be like that. I could still eat you. You know, help
-    you out of here.'
-  - Ughhh, whatever.
-  - '{Name}: Yeah, whatever. It''s not like you''re worth it anyways.'
+  - 'Ooooo, you must be tourist. You don''t see that name a lot around here. '
+  - 'I am Dame Framboje. Do you like? I came up with it myself. '
+  - 'Merci beaucoup! You''re as sweet as meringue!  '
+  - 'I guess names aren''t important when you''re hungry. '
+  - 'Ah, you''re right! Dame Framboje? *She laughs nervously* What was I thinking? '
+  - You picked me, you love cupcakes non? Tell me {Name} what's your favourite flavor?
+    *She looks at you hopeful that you pick the RIGHT one*
+  - "Strawberry? Oh no, ch\xE9rie. That's my relative. Serious bad blood."
+  - Vanilla? A bit common, don't you think?
+  - Je suis ravi! I knew you'd pick raspberry. I'm just so ravishing.
+  - "So ch\xE9rie, what do you want to talk about?  "
+  - 'Well as you can see {Name}, I''m an extravagant raspberry cupcake, with a lot
+    of confidence and a big heart! '
+  - 'It''s so horrid being on display all day, especially when you are next to Un
+    idiot. '
+  - '{Name}: An idiot? Who exactly is this idiot? '
+  - "Oh ch\xE9rie, such bad manners bringing up my ex on a date."
+  - He was all butter no brains, you know how croissants are, non?
+  - You dodged some serious food poisoning by not picking him!
+  - 'THAT PUTAIN STOLE MY CHOCOLAT PRINCE! MY OWN FAMILY BETRAYED ME IN THIS WAY! '
+  - Oh sorry {Name}, forgot to use my inside voice. I just need to get away from
+    all this drama.
+  - '{Name}: Zut! Sounds bad, when did this all happen Dame?'
+  - Yesterday...
+  - '{Name}: Oh... well I see why you''re so passionate amor. '
+  - 'Amor? (She blushes) Mmh, with one word you''ve brought me back to my senses. '
+  - 'I like the sound of that, I''ll call you amor too from now on. (she winks at
+    you) '
+  - 'Nothing? You don''t wish to speak to me? Your date? '
+  - 'If we aren''t speaking, how do you expect me to just let you EAT me!? '
+  - '{Name}: No, no! I just couldn''t think of anything to say.'
+  - 'I''m just hungry, you know? '
+  - Hungry? Oh so now every hungry tourist that walks in here just gets to EAT me
+    without even having a proper conversation?
+  - "You poor thing, learn some manners ch\xE9rie, maybe then we can have some fun.
+    *she shakes her head in disaproval*"
+  - 'Oh {Name}, I can practically hear your stomach growling from here. *She laughs* '
+  - 'You must really want me.  '
+  - 'Tell me {Name}, why should I let you eat me? '
+  - 'You promise to savour every bite? *She locks eyes with you, while moving closer.* '
+  - '{Name}: I promise. '
+  - Alright {Name}, I'm all yours.
+  - 'Excuse me?? '
+  - 'Well, you wouldn''t be the first. Spare your teeth, do not dare to eat me. '
 --- !u!1 &1062825355
 GameObject:
   m_ObjectHideFlags: 0
@@ -3785,7 +3807,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -654.9099, y: -37.291016}
+  m_AnchoredPosition: {x: -654.9099, y: -37.29103}
   m_SizeDelta: {x: -1303.1487, y: -74.5823}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063688658
@@ -5177,7 +5199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -173.95, y: 12.6}
+  m_AnchoredPosition: {x: -173.95001, y: 12.6}
   m_SizeDelta: {x: 262.99, y: 71.265}
   m_Pivot: {x: 0.49999973, y: 0.5}
 --- !u!114 &1514928728

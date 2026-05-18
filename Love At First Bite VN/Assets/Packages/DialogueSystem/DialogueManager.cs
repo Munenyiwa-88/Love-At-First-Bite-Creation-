@@ -129,139 +129,104 @@ public class DialogueManager : MonoBehaviour
     public void Update()
     {
         //the line of code that actually changes the image, it checks if the index is right then changes the image
-        if (currentIndex == 6 || currentIndex == 7 || currentIndex == 8)
+        if (currentIndex == 12 /*|| currentIndex == 7 || currentIndex == 8*/)
         {
             backgroundAfternoonPanel.sprite = backgroundAfternoonImage;
         }
 
-        if (currentIndex == 17)
+        if (currentIndex == 25)
         {
             backgroundNightPanel.sprite = backgroundNightImage;
         }
 
         //the line code for the dialogue box's
-        if (currentIndex == 12)
+        if (currentIndex == 0)
         {
             raspberryDialogueBoxImage.SetActive(false);
             playerDialogueBoxImage.SetActive(true);
         }
         
-        if (currentIndex == 13)
-        {
-            raspberryDialogueBoxImage.SetActive(true);
-            playerDialogueBoxImage.SetActive(false);
-        }
-
-        if (currentIndex == 15)
-        {
-            raspberryDialogueBoxImage.SetActive(false);
-            playerDialogueBoxImage.SetActive(true);
-        }
-
-        if (currentIndex == 16)
-        {
-            raspberryDialogueBoxImage.SetActive(true);
-            playerDialogueBoxImage.SetActive(false);
-        }
-
-        if (currentIndex == 21)
-        {
-            raspberryDialogueBoxImage.SetActive(false);
-            playerDialogueBoxImage.SetActive(true);
-        }
-
-        if (currentIndex == 22)
-        {
-            raspberryDialogueBoxImage.SetActive(true);
-            playerDialogueBoxImage.SetActive(false);
-        }
-
-        if (currentIndex == 25)
-        {
-            raspberryDialogueBoxImage.SetActive(false);
-            playerDialogueBoxImage.SetActive(true);
-        }
-
-        if (currentIndex == 26)
-        {
-            raspberryDialogueBoxImage.SetActive(true);
-            playerDialogueBoxImage.SetActive(false);
-        }
-
-        if (currentIndex == 27)
-        {
-            raspberryDialogueBoxImage.SetActive(false);
-            playerDialogueBoxImage.SetActive(true);
-        }
-        //the line of code that will change the chaarcters expression. So what is said for the characters visual to change
-        if (currentIndex == 6)
-        {
-
-            characterAngryImage.SetActive(true);
-            characterHappyImage.SetActive(false);
-            characterIdleImage.SetActive(false);
-            characterFlirtyImage.SetActive(false);
-        }
-
-        if (currentIndex == 7)
-        {
-
-            characterAngryImage.SetActive(true);
-            characterHappyImage.SetActive(false);
-            characterIdleImage.SetActive(false);
-            characterFlirtyImage.SetActive(false);
-        }
-
-        if (currentIndex == 16)
-        {
-
-            characterAngryImage.SetActive(true);
-            characterHappyImage.SetActive(false);
-            characterIdleImage.SetActive(false);
-            characterFlirtyImage.SetActive(false);
-        }
-
-        if (currentIndex == 20)
-        {
-            characterHappyImage.SetActive(true);
-            characterIdleImage.SetActive(false);
-            characterAngryImage.SetActive(false);
-            characterFlirtyImage.SetActive(false);
-        }
-
-        if (currentIndex == 9)
-        {
-            characterAngryImage.SetActive(true);
-            characterIdleImage.SetActive(false);
-            characterHappyImage.SetActive(false);
-            characterFlirtyImage.SetActive(false);
-        }
-
-        if (currentIndex == 22)
-        {
-            characterAngryImage.SetActive(true);
-            characterIdleImage.SetActive(false);
-            characterHappyImage.SetActive(false);
-            characterFlirtyImage.SetActive(false);
-        }
-
         if (currentIndex == 2)
         {
-            characterFlirtyImage.SetActive(true);
-            characterIdleImage.SetActive(false);
-            characterHappyImage.SetActive(false);
-            characterAngryImage.SetActive(false);
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 3)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
+
+        if (currentIndex == 4)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
         }
 
         if (currentIndex == 18)
         {
-            characterFlirtyImage.SetActive(true);
-            characterIdleImage.SetActive(false);
-            characterHappyImage.SetActive(false);
-            characterAngryImage.SetActive(false);
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
         }
 
-        if (currentIndex == 10)
+        if (currentIndex == 19)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 24)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
+
+        if (currentIndex == 25)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 26)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
+
+        if (currentIndex == 27)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 31)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
+
+        if (currentIndex == 33)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        if (currentIndex == 39)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+        }
+
+        if (currentIndex == 40)
+        {
+            raspberryDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
+        }
+
+        //the line of code that will change the chaarcters expression. So what is said for the characters visual to change
+        //IDLE
+        if (currentIndex == 9)
         {
             characterIdleImage.SetActive(true);
             characterFlirtyImage.SetActive(false);
@@ -269,32 +234,117 @@ public class DialogueManager : MonoBehaviour
             characterAngryImage.SetActive(false);
         }
 
-        /* //the line of code that will change the chaarcters heartmeter, based off dialogue choice
-         if (currentIndex == 0)
-         {
-             heartMeterhalfImage.SetActive(true); 
-         }
+        if (currentIndex == 11)
+        {
+            characterIdleImage.SetActive(true);
+            characterFlirtyImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
 
-         if (currentIndex == 6 || currentIndex == 7)
-         {
-             heartMeter25Image.SetActive(true);
-         }
+        if (currentIndex == 13)
+        {
+            characterIdleImage.SetActive(true);
+            characterFlirtyImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
 
-         if (currentIndex == 8)
-         {
-             heartMeter75Image.SetActive(true);
-         }
+        if (currentIndex == 16)
+        {
+            characterIdleImage.SetActive(true);
+            characterFlirtyImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
 
+        if (currentIndex == 23)
+        {
+            characterIdleImage.SetActive(true);
+            characterFlirtyImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
 
-         if (currentIndex == 21)
-         {
-             heartMeteremptyImage.SetActive(true);
-         }
+        // ANGRY
+        if (currentIndex == 12)
+        {
 
-         if (currentIndex == 18)
-         {
-             heartMeterfullImage.SetActive(true);
-         }*/
+            characterAngryImage.SetActive(true);
+            characterHappyImage.SetActive(false);
+            characterIdleImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        if (currentIndex == 22)
+        {
+
+            characterAngryImage.SetActive(true);
+            characterHappyImage.SetActive(false);
+            characterIdleImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        if (currentIndex == 29)
+        {
+
+            characterAngryImage.SetActive(true);
+            characterHappyImage.SetActive(false);
+            characterIdleImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        if (currentIndex == 41)
+        {
+
+            characterAngryImage.SetActive(true);
+            characterHappyImage.SetActive(false);
+            characterIdleImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        //HAPPY
+        if (currentIndex == 8)
+        {
+            characterHappyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        if (currentIndex == 38)
+        {
+            characterHappyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+            characterFlirtyImage.SetActive(false);
+        }
+
+        //FLIRTY
+        if (currentIndex == 14)
+        {
+            characterFlirtyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
+
+        if (currentIndex == 28)
+        {
+            characterFlirtyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
+
+        if (currentIndex == 35)
+        {
+            characterFlirtyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
+
 
         //conditions for when the heart slider should move in the game
         if (currentIndex == 0)
@@ -368,7 +418,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
        //If we are at 20, end of Yes path || 27 end of No path
-        if (currentIndex == 20 || currentIndex == 27)
+        if (currentIndex == 40 || currentIndex == 42)
         {
             EndGame();
             return;
@@ -415,21 +465,21 @@ public class DialogueManager : MonoBehaviour
 
         //Events- For typing and choices
         //Will Ask for a name at index 1
-        if (currentIndex == 1)  
+        if (currentIndex == 5)  
         {
             nextButton.gameObject.SetActive(false);
             nameInputPanel.SetActive(true);
         }
 
         //First branching at index 5
-       else if (currentIndex == 5)
+       else if (currentIndex == 7)
         {
             nextButton.gameObject.SetActive(false);
             choicesPanel1.SetActive(true);
         }
 
         //Second branching at index 17
-        else if (currentIndex == 17)
+        else if (currentIndex == 11)
         {
             nextButton.gameObject.SetActive(false);
             choicesPanel2.SetActive(true);
@@ -657,6 +707,32 @@ public class DialogueManager : MonoBehaviour
             //Keep next button 
         }
         
+    10.  //the line of code that will change the chaarcters heartmeter, based off dialogue choice
+         if (currentIndex == 0)
+         {
+             heartMeterhalfImage.SetActive(true); 
+         }
+
+         if (currentIndex == 6 || currentIndex == 7)
+         {
+             heartMeter25Image.SetActive(true);
+         }
+
+         if (currentIndex == 8)
+         {
+             heartMeter75Image.SetActive(true);
+         }
+
+
+         if (currentIndex == 21)
+         {
+             heartMeteremptyImage.SetActive(true);
+         }
+
+         if (currentIndex == 18)
+         {
+             heartMeterfullImage.SetActive(true);
+         }
      */
 
 
