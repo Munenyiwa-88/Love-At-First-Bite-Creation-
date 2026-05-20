@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,6 +17,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI raspberryDialogueText;
     public TextMeshProUGUI playerDialogueText;
     public Button nextButton;
+    public Button goodEndButton;
+    public Button badEndButton;
     //public Button endButton;
     public TMP_InputField nameInputField;
     //The current text number
@@ -41,6 +44,7 @@ public class DialogueManager : MonoBehaviour
     public Image characterPanel;
     public GameObject characterIdleImage;
     public GameObject characterHappyImage;
+    public GameObject characterSadImage;
     public GameObject characterAngryImage;
     public GameObject characterFlirtyImage;
     [Header("HeartMeter")]
@@ -52,8 +56,8 @@ public class DialogueManager : MonoBehaviour
     public GameObject heartMeterfullImage;
     //Inputting a slider 
     [Header("Slider")]
-    public int heart;
-    public int maxHeart = 10;
+    public float heart;
+    public float maxHeart = 10;
     public Slider slider;
     //Adding the script for the games audios
     [Header("Audio")]
@@ -87,6 +91,7 @@ public class DialogueManager : MonoBehaviour
         characterHappyImage.SetActive(false);
         characterAngryImage.SetActive(false);
         characterFlirtyImage.SetActive(false);
+        characterSadImage.SetActive(false);
         //dialoguePlayerBoxImage.SetActive(false);
 
         /*heartMeterfullImage.SetActive(false);
@@ -99,6 +104,9 @@ public class DialogueManager : MonoBehaviour
         heart = maxHeart;
         slider.maxValue = maxHeart;
         slider.value = heart;
+
+
+        SetHeart(5);
 
         //dialogue box's SetActive fasle or true
         raspberryDialogueBoxImage.SetActive(true);
@@ -236,6 +244,7 @@ public class DialogueManager : MonoBehaviour
             characterFlirtyImage.SetActive(false);
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         if (currentIndex == 11)
@@ -244,6 +253,8 @@ public class DialogueManager : MonoBehaviour
             characterFlirtyImage.SetActive(false);
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
+            characterSadImage.SetActive(false);
+
         }
 
         if (currentIndex == 13)
@@ -252,6 +263,7 @@ public class DialogueManager : MonoBehaviour
             characterFlirtyImage.SetActive(false);
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         if (currentIndex == 16)
@@ -260,6 +272,7 @@ public class DialogueManager : MonoBehaviour
             characterFlirtyImage.SetActive(false);
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         if (currentIndex == 23)
@@ -268,43 +281,44 @@ public class DialogueManager : MonoBehaviour
             characterFlirtyImage.SetActive(false);
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         // ANGRY
         if (currentIndex == 12)
         {
-
             characterAngryImage.SetActive(true);
             characterHappyImage.SetActive(false);
             characterIdleImage.SetActive(false);
             characterFlirtyImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         if (currentIndex == 22)
         {
-
             characterAngryImage.SetActive(true);
             characterHappyImage.SetActive(false);
             characterIdleImage.SetActive(false);
             characterFlirtyImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         if (currentIndex == 29)
         {
-
             characterAngryImage.SetActive(true);
             characterHappyImage.SetActive(false);
             characterIdleImage.SetActive(false);
             characterFlirtyImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         if (currentIndex == 41)
         {
-
             characterAngryImage.SetActive(true);
             characterHappyImage.SetActive(false);
             characterIdleImage.SetActive(false);
             characterFlirtyImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         //HAPPY
@@ -314,6 +328,7 @@ public class DialogueManager : MonoBehaviour
             characterIdleImage.SetActive(false);
             characterAngryImage.SetActive(false);
             characterFlirtyImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         if (currentIndex == 38)
@@ -322,6 +337,7 @@ public class DialogueManager : MonoBehaviour
             characterIdleImage.SetActive(false);
             characterAngryImage.SetActive(false);
             characterFlirtyImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         //FLIRTY
@@ -331,14 +347,16 @@ public class DialogueManager : MonoBehaviour
             characterIdleImage.SetActive(false);
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
-        if (currentIndex == 28)
+        if (currentIndex == 27)
         {
             characterFlirtyImage.SetActive(true);
             characterIdleImage.SetActive(false);
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
         if (currentIndex == 35)
@@ -347,61 +365,28 @@ public class DialogueManager : MonoBehaviour
             characterIdleImage.SetActive(false);
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
+            characterSadImage.SetActive(false);
         }
 
-        
-        //conditions for when the heart slider should move in the game
-        if (currentIndex == 0)
+        //SAD
+        if (currentIndex == 10)
         {
-            slider.value = 5;
-        }
-        //Branching 1
-        else if (currentIndex == 8) 
-        {
-            slider.value = 7.5f;
-        }
-        else if (currentIndex == 9)
-        {
-            slider.value = 5;
-        }
-        else if (currentIndex == 10)
-        {
-            slider.value = 2.5f;
+            characterSadImage.SetActive(true);
+            characterFlirtyImage.SetActive(false);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
         }
 
-        //Branching 2
-        else if (currentIndex == 12)
+        if (currentIndex == 24)
         {
-            slider.value -= 2.5f;
-        }
-        else if (currentIndex == 13)
-        {
-            slider.value -= 2.5f;
-        }
-        else if (currentIndex == 14)
-        {
-            slider.value += 2.5f;
+            characterSadImage.SetActive(true);
+            characterFlirtyImage.SetActive(false);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
         }
 
-        //Branching 3
-        else if (currentIndex == 16)
-        {
-            slider.value += 2.5f;
-        }
-        else if (currentIndex == 29)
-        {
-            slider.value -= 2.5f;
-        }
-
-        //Branching 4
-        else if (currentIndex == 38)
-        {
-            slider.value += 5;
-        }
-        else if (currentIndex == 41)
-        {
-            slider.value -= 5;
-        }
 
         //SetActive the creepy song that appears at the end of the game
         if (currentIndex == 16)
@@ -417,13 +402,50 @@ public class DialogueManager : MonoBehaviour
     }
 
     //class for the sllider
-    public void HeartMeter(int amount)
+    public void HeartMeter(float amount)
     {
         heart -= amount;
         slider.value = heart;
         slider.minValue = 0;
         slider.maxValue = 10;
-        slider.value = 5;
+        //slider.value = 5;
+    }
+
+
+    public void AddHeart(float amount)
+    {
+        heart += amount;
+
+        Debug.Log("Called");
+
+        if(heart > maxHeart)
+        {
+            heart = maxHeart;
+        }
+
+        slider.value = heart;
+    }
+
+
+    public void DecreaseHeart(float amount)
+    {
+
+        Debug.Log("Called");
+
+        heart -= amount;
+
+        if(heart < 0)
+        {
+            heart = 0;
+        }
+
+        slider.value = heart;
+    }
+
+    public void SetHeart(float amount)
+    {
+        heart = amount;
+        slider.value = heart;
     }
 
     //class for showing the next sentences after button is pressed
@@ -489,7 +511,39 @@ public class DialogueManager : MonoBehaviour
     {
         currentIndex = jumpToIndex;
         UpdateUI();
+        UpdateSliderWithDialogue(jumpToIndex);
     }
+
+    //private class for all of the individual heart meter reactions. Works alongside the button
+    private void UpdateSliderWithDialogue(float idx)
+    {
+
+        List<float> goodChoices = new List<float>() { 8, 14, 16, 38 };
+        List<float>badChoice = new List<float>() { 10, 12, 22, 13, 29, 41};
+
+        //10,12,13
+        //what good index choice was pressed
+        if (idx ==  8 || idx == 14 || idx == 16)
+        {
+            AddHeart(2.5f);
+        }
+
+        if (idx == 10 || idx == 12 || idx == 13 || idx == 22 || idx == 29)
+        {
+            DecreaseHeart(2.5f);
+        }
+
+        if (idx == 38)
+        {
+            AddHeart(5);
+        }
+
+        if (idx == 41)
+        {
+            DecreaseHeart(5);
+        }
+    }
+
 
     private void UpdateUI()
     {
@@ -559,11 +613,46 @@ public class DialogueManager : MonoBehaviour
         ShowNextSentence();
     }
 
+    public void CutScene()
+    {
+        if (currentIndex == 40)
+        {
+            goodEndButton.gameObject.SetActive(true);
+            badEndButton.gameObject.SetActive(false);
+            nextButton.gameObject.SetActive(false);
+
+            SceneManager.LoadScene("GoodEnding");
+        }
+
+        if (currentIndex == 42)
+        {
+            badEndButton.gameObject.SetActive(true);
+            goodEndButton.gameObject.SetActive(false);
+            nextButton.gameObject.SetActive(false);
+
+            SceneManager.LoadScene("BadEnding");
+        }
+
+    }
+
     private void EndGame()
     {
         Debug.Log("Game has ended");
         nextButton.gameObject.SetActive(false);
-        SceneManager.LoadScene("Choiceofending");
+        
+        if (currentIndex == 40)
+        {
+            goodEndButton.gameObject.SetActive(true);
+            //SceneManager.LoadScene("GoodEnding");
+        }
+
+        if (currentIndex == 42)
+        {
+            badEndButton.gameObject.SetActive(true);
+            //SceneManager.LoadScene("BadEnding");
+        }
+       
+        
 
         //we are gonna hide the ui
     }
