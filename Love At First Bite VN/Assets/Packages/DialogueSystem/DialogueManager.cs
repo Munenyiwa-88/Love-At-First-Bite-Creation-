@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -23,6 +24,8 @@ public class DialogueManager : MonoBehaviour
     //Inputting the dialogue choices panel
     public GameObject choicesPanel1;
     public GameObject choicesPanel2;
+    public GameObject choicesPanel3;
+    public GameObject choicesPanel4;
     public GameObject dialoguePanel;
     public GameObject nameInputPanel;
     [Header("Backgrounds")]
@@ -85,7 +88,7 @@ public class DialogueManager : MonoBehaviour
         characterAngryImage.SetActive(false);
         characterFlirtyImage.SetActive(false);
         //dialoguePlayerBoxImage.SetActive(false);
-        
+
         /*heartMeterfullImage.SetActive(false);
         heartMeter25Image.SetActive(false);
         heartMeter75Image.SetActive(false);
@@ -93,6 +96,7 @@ public class DialogueManager : MonoBehaviour
         heartMeteremptyImage.SetActive(false);*/
 
         //slider 
+        heart = maxHeart;
         slider.maxValue = maxHeart;
         slider.value = heart;
 
@@ -345,27 +349,58 @@ public class DialogueManager : MonoBehaviour
             characterAngryImage.SetActive(false);
         }
 
-
+        
         //conditions for when the heart slider should move in the game
         if (currentIndex == 0)
         {
             slider.value = 5;
         }
-        else if (currentIndex == 6 || currentIndex == 7)
-        {
-            slider.value = 2.5f;
-        }
-        else if (currentIndex == 8)
+        //Branching 1
+        else if (currentIndex == 8) 
         {
             slider.value = 7.5f;
         }
-        else if (currentIndex == 21)
+        else if (currentIndex == 9)
         {
-            slider.value = 0;
+            slider.value = 5;
         }
-        else if (currentIndex == 18)
+        else if (currentIndex == 10)
         {
-            slider.value = 10;
+            slider.value = 2.5f;
+        }
+
+        //Branching 2
+        else if (currentIndex == 12)
+        {
+            slider.value -= 2.5f;
+        }
+        else if (currentIndex == 13)
+        {
+            slider.value -= 2.5f;
+        }
+        else if (currentIndex == 14)
+        {
+            slider.value += 2.5f;
+        }
+
+        //Branching 3
+        else if (currentIndex == 16)
+        {
+            slider.value += 2.5f;
+        }
+        else if (currentIndex == 29)
+        {
+            slider.value -= 2.5f;
+        }
+
+        //Branching 4
+        else if (currentIndex == 38)
+        {
+            slider.value += 5;
+        }
+        else if (currentIndex == 41)
+        {
+            slider.value -= 5;
         }
 
         //SetActive the creepy song that appears at the end of the game
@@ -386,8 +421,9 @@ public class DialogueManager : MonoBehaviour
     {
         heart -= amount;
         slider.value = heart;
-
-
+        slider.minValue = 0;
+        slider.maxValue = 10;
+        slider.value = 5;
     }
 
     //class for showing the next sentences after button is pressed
@@ -396,28 +432,38 @@ public class DialogueManager : MonoBehaviour
         //If player chooses Vanilla start at 6 or Strawberry at 7 then send both to 9
         // the two lines - || mean or
         // == means asking/checking = means setting the value 
-        if (currentIndex == 6 || currentIndex == 7)
+
+        //choice 1
+        if (currentIndex == 8 || currentIndex == 9 || currentIndex == 10)
         {
-            currentIndex = 9;
+            currentIndex = 11;
             UpdateUI();
             //return means to cut the method here. So will not continue to 10 onwards. 
             return;
         }
-        //If the player chooses Raspberry 3 at 8 send them to 10
-        if (currentIndex == 8)
+        //If the player chooses any of three options the next button should take them to 15
+        if (currentIndex == 12 || currentIndex == 13 || currentIndex == 14)//(currentIndex == 8)
         {
-            currentIndex = 10;
+            currentIndex = 15;
             UpdateUI();
             return;
         }
-        //If the player is on Index 9 skip 10 and go to 11
-        if (currentIndex == 9)
+        //If the player is on Index 21 skip 10 and go to 35
+        if (currentIndex == 21)
         {
-            currentIndex = 11;
+            currentIndex = 35;
             UpdateUI();
             return;
         }
-       //If we are at 20, end of Yes path || 27 end of No path
+        //If the player is on Index 21 skip 10 and go to 35
+        if (currentIndex == 28)
+        {
+            currentIndex = 35;
+            UpdateUI();
+            return;
+        }
+
+        //If we are at 20, end of Yes path || 27 end of No path
         if (currentIndex == 40 || currentIndex == 42)
         {
             EndGame();
@@ -459,6 +505,8 @@ public class DialogueManager : MonoBehaviour
         nameInputPanel.SetActive(false);
         choicesPanel1.SetActive(false);
         choicesPanel2.SetActive(false);
+        choicesPanel3.SetActive(false);
+        choicesPanel4.SetActive(false);
         nextButton.gameObject.SetActive(true);
         //endButton.gameObject.SetActive(false);
 
@@ -483,6 +531,20 @@ public class DialogueManager : MonoBehaviour
         {
             nextButton.gameObject.SetActive(false);
             choicesPanel2.SetActive(true);
+        }
+
+        //Second branching at index 15
+        else if (currentIndex == 15)
+        {
+            nextButton.gameObject.SetActive(false);
+            choicesPanel3.SetActive(true);
+        }
+
+        //Second branching at index 37
+        else if (currentIndex == 37)
+        {
+            nextButton.gameObject.SetActive(false);
+            choicesPanel4.SetActive(true);
         }
 
     }
