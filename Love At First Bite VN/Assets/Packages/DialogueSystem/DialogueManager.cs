@@ -71,17 +71,43 @@ public class DialogueManager : MonoBehaviour
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
-    /*[Header("Player Dialogue Box Name")]
-    public TextMeshProUGUI nameText;*/
+    [Header("Player Dialogue Box Name")]
+    public TextMeshProUGUI nameText;
     //List of strings (List of all of my dialogue lines) - [] - this is what creates the list
     [Header("Sentences List")]
     public string[] sentences;
 
-    /*public void SetName(string name)
+   /* [Header("Text Settings")]
+    [SerializeField] [TextArea] private string itemInfo;
+    [SerializeField] private float textSpeed = 0.03f;
+
+    [Header("UI Elements")]
+    [SerializeField] private TextMeshProUGUI itemInfoText;
+    private int currenDisplayingText = 0;
+
+    public void ActivateText()
+    {
+        //start coroutine
+        StartCoroutine(AnimateText()); 
+        
+    }
+
+    IEnumerator AnimateText()
+    {
+        for (int i = 0; i < itemInfo[currentIndex].Length + 1; i++)
+        {
+            itemInfoText.text = itemInfo[currenDisplayingText].Substring(0, i);
+            yield return new WaitForSeconds(textSpeed);
+        }
+    }*/
+
+    public void SetName(string name)
     {
         playerName = name; 
         nameText.text = name;
-    }*/
+        nameText.text.Replace("{Name}", playerName);
+        return;
+    }
 
 
 
@@ -399,8 +425,25 @@ public class DialogueManager : MonoBehaviour
             HeartMeterDecrease.Stop();
         }
 
+       /* //for the textlength 
+        textLength = TextCreator.charCount;*/
     }
 
+   /* IEnumerator EventStarter()
+    {
+        mainTextObject.SetActive(true);
+        textToSpeak = "This is a dialogue line...";
+        raspberryDialogueText.GetComponent<TMPro.TMPro_Text>().text = textToSpeak;
+        currentTextLength = textToSpeak.Length;
+        TextCreator.runTextPrint = true;
+        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(1);
+        yield return new WaitUntil(() => textLength == currentTextLength);
+        yield return new WaitForSeconds(0.5f);
+
+
+    }
+*/
     //class for the sllider
     public void HeartMeter(float amount)
     {
@@ -550,8 +593,8 @@ public class DialogueManager : MonoBehaviour
         //so we have a new variable =currentText, current text takes the original sentence - searches for {Name} and if its there it replaces it with the player name variable
         string currentText = sentences[currentIndex].Replace("{Name}", playerName);
         //For name of the player dilaogue box
-        //string processed = sentences[currentIndex].Replace("{Name}", playerName);
-        //nameText.text = processed;
+        string processed = sentences[currentIndex].Replace("{Name}", playerName);
+        nameText.text = processed;
         //This is how we convert the sentence itnto the speak text box.
         raspberryDialogueText.text = currentText;
         playerDialogueText.text = currentText;
