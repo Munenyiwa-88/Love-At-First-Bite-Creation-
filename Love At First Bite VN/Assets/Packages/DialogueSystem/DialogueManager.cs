@@ -71,8 +71,8 @@ public class DialogueManager : MonoBehaviour
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
-    [Header("Player Dialogue Box Name")]
-    public TextMeshProUGUI nameText;
+   /* [Header("Player Dialogue Box Name")]
+    public TextMeshProUGUI nameText;*/
     //List of strings (List of all of my dialogue lines) - [] - this is what creates the list
     [Header("Sentences List")]
     public string[] sentences;
@@ -593,8 +593,8 @@ public class DialogueManager : MonoBehaviour
         //so we have a new variable =currentText, current text takes the original sentence - searches for {Name} and if its there it replaces it with the player name variable
         string currentText = sentences[currentIndex].Replace("{Name}", playerName);
         //For name of the player dilaogue box
-        string processed = sentences[currentIndex].Replace("{Name}", playerName);
-        nameText.text = processed;
+       /* string processed = sentences[currentIndex].Replace("{Name}", playerName);
+        nameText.text = processed;*/
         //This is how we convert the sentence itnto the speak text box.
         raspberryDialogueText.text = currentText;
         playerDialogueText.text = currentText;
