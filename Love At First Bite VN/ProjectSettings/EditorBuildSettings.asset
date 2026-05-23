@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Prologue.unity
     guid: 6d8ec94d611180148b2efeb82185b47e
   - enabled: 1
+    path: Assets/Scenes/CharacterSelection.unity
+    guid: 3aea21b88155dac4a8c430785a7cee95
+  - enabled: 1
+    path: Assets/Scenes/CroissantConfirmation.unity
+    guid: 3508d3995bdf5c84bbef38b8b298805e
+  - enabled: 1
+    path: Assets/Scenes/CupcakeConfirmation.unity
+    guid: d0c2c297b674a294e94828074e359baf
+  - enabled: 1
+    path: Assets/Scenes/MonsieurChocolat.unity
+    guid: 35c8b7fd1ae1eae419ef7533c250cf89
+  - enabled: 1
     path: Assets/Scenes/DameFramboje.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -20,6 +32,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BadEnding.unity
     guid: 01d1b961ef2e02a4f85362f724662776
+  - enabled: 1
+    path: Assets/Scenes/BadEndingMC.unity
+    guid: 87578e9871d8bfa4fa2aaf15df78099c
+  - enabled: 1
+    path: Assets/Scenes/GoodEndingMC.unity
+    guid: 94b47eb56754829439e41025629bd750
   - enabled: 0
     path: Assets/Scenes/EndingCutScene.unity
     guid: cf4fce7ed174b7545bd52059f496c9e2

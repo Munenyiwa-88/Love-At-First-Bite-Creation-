@@ -12,7 +12,7 @@ public class PrologueScript : MonoBehaviour
     //To help manage the start and exit button and the clicking of it
     public void OnStartClick()
     {
-        SceneManager.LoadScene("DameFramboje");
+        SceneManager.LoadScene("CharacterSelection");
     }
 
 }

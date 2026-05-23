@@ -101,13 +101,13 @@ public class DialogueManager : MonoBehaviour
         }
     }*/
 
-    public void SetName(string name)
+   /* public void SetName(string name)
     {
         playerName = name; 
         nameText.text = name;
         nameText.text.Replace("{Name}", playerName);
         return;
-    }
+    }*/
 
 
 

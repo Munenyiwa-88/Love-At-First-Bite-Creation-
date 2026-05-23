@@ -4336,7 +4336,6 @@ MonoBehaviour:
   ButtonFeedback: {fileID: 2001200044}
   HeartMeterIncrease: {fileID: 2073590233}
   HeartMeterDecrease: {fileID: 1193148079}
-  nameText: {fileID: 680641994}
   sentences:
   - 'Player: What the...? '
   - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
