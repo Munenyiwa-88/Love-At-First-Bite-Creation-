@@ -60,14 +60,20 @@ public class DialogueManager : MonoBehaviour
     public float maxHeart = 10;
     public Slider slider;
     //Adding the script for the games audios
+    //[Header("Audio")]
+    //[SerializeField] AudioSource ThemeSongCreepy;
+    //[SerializeField] AudioSource ButtonFeedback;
+    //[SerializeField] AudioSource HeartMeterIncrease;
+    //[SerializeField] AudioSource HeartMeterDecrease; 
+     
     [Header("Audio")]
-    [SerializeField] AudioSource ThemeSongCreepy;
-    [SerializeField] AudioSource ThemeSongBGM;
+    [SerializeField] AudioSource GirlBGM;
     [SerializeField] AudioSource GirlGiggle;
     [SerializeField] AudioSource GirlDisgust;
-    [SerializeField] AudioSource ButtonFeedback;
-    [SerializeField] AudioSource HeartMeterIncrease;
-    [SerializeField] AudioSource HeartMeterDecrease;
+    [SerializeField] AudioSource GirlGasp;
+    [SerializeField] AudioSource GirlSigh;
+    [SerializeField] AudioSource GirlAngry;
+
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
@@ -139,13 +145,13 @@ public class DialogueManager : MonoBehaviour
         playerDialogueBoxImage.SetActive(false);
 
         //declaring the songs 
-        ThemeSongCreepy.Stop();
-        ThemeSongBGM.Play();
-        GirlDisgust.Stop();
-        GirlGiggle.Play();
-        ButtonFeedback.Stop();
-        HeartMeterIncrease.Stop();  
-        HeartMeterDecrease.Stop();
+        //ThemeSongCreepy.Stop();
+        //ThemeSongBGM.Play();
+        //GirlDisgust.Stop();
+        //GirlGiggle.Play();
+        //ButtonFeedback.Stop();
+        //HeartMeterIncrease.Stop();  
+        //HeartMeterDecrease.Stop();
 
       
         currentIndex = 0;
@@ -412,10 +418,117 @@ public class DialogueManager : MonoBehaviour
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
         }
+         //adding audio to character expressions
+         //Sad
 
+        if (currentIndex == 10)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Stop();
+            GirlGasp.Stop();
+            GirlSigh.Play();
+            GirlAngry.Stop();
+        }
 
+        if (currentIndex == 24)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Stop();
+            GirlGasp.Stop();
+            GirlSigh.Play();
+            GirlAngry.Stop();
+        }
+
+        //angry
+
+        if (currentIndex == 12)
+        {
+            GirlDisgust.Play();
+            GirlGiggle.Stop();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Stop();
+        }
+
+        if (currentIndex == 22)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Stop();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Play();
+        }
+
+        if (currentIndex == 29)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Stop();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Play();
+        }
+
+        if (currentIndex == 41)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Stop();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Play();
+        }
+
+        //Happy
+
+        if (currentIndex == 8)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Play();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Stop();
+        }
+
+        if (currentIndex == 38)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Play();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Stop();
+        }
+
+        //flirty
+
+        if (currentIndex == 14)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Play();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Stop();
+        }
+
+        if (currentIndex == 27)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Play();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Stop();
+        }
+
+        if (currentIndex == 35)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Play();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Stop();
+        }
+
+        
         //SetActive the creepy song that appears at the end of the game
-        if (currentIndex == 16)
+        /*if (currentIndex == 16)
         {
             ThemeSongCreepy.Play();
             GirlDisgust.Stop();
@@ -429,21 +542,21 @@ public class DialogueManager : MonoBehaviour
         textLength = TextCreator.charCount;*/
     }
 
-   /* IEnumerator EventStarter()
-    {
-        mainTextObject.SetActive(true);
-        textToSpeak = "This is a dialogue line...";
-        raspberryDialogueText.GetComponent<TMPro.TMPro_Text>().text = textToSpeak;
-        currentTextLength = textToSpeak.Length;
-        TextCreator.runTextPrint = true;
-        yield return new WaitForSeconds(0.05f);
-        yield return new WaitForSeconds(1);
-        yield return new WaitUntil(() => textLength == currentTextLength);
-        yield return new WaitForSeconds(0.5f);
+    /* IEnumerator EventStarter()
+     {
+         mainTextObject.SetActive(true);
+         textToSpeak = "This is a dialogue line...";
+         raspberryDialogueText.GetComponent<TMPro.TMPro_Text>().text = textToSpeak;
+         currentTextLength = textToSpeak.Length;
+         TextCreator.runTextPrint = true;
+         yield return new WaitForSeconds(0.05f);
+         yield return new WaitForSeconds(1);
+         yield return new WaitUntil(() => textLength == currentTextLength);
+         yield return new WaitForSeconds(0.5f);
 
 
-    }
-*/
+     }
+ */
     //class for the sllider
     public void HeartMeter(float amount)
     {

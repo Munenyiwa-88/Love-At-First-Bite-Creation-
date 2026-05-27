@@ -119,6 +119,245 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &25982957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 25982958}
+  - component: {fileID: 25982959}
+  - component: {fileID: 25982960}
+  m_Layer: 5
+  m_Name: GirlAngry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &25982958
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25982957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1615318249}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &25982959
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25982957}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 830fd77012465cb42b203cff87e9ca58, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &25982960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25982957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98cd832ffa5c754ebd797e06bee75f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  raspberryDialogueText: {fileID: 1632056502}
+  playerDialogueText: {fileID: 2027155241}
+  nextButton: {fileID: 1514928728}
+  goodEndButton: {fileID: 1513123937}
+  badEndButton: {fileID: 1410061695}
+  nameInputField: {fileID: 449804354}
+  currentIndex: 0
+  choicesPanel1: {fileID: 1803084399}
+  choicesPanel2: {fileID: 474701101}
+  choicesPanel3: {fileID: 1681577329}
+  choicesPanel4: {fileID: 610976254}
+  dialoguePanel: {fileID: 1017733491}
+  nameInputPanel: {fileID: 1813334056}
+  backgroundAfternoonPanel: {fileID: 234953963}
+  backgroundAfternoonImage: {fileID: 3497671040658348025, guid: 54a60b8720ad759458149acfffbe8846, type: 3}
+  backgroundNightPanel: {fileID: 234953963}
+  backgroundNightImage: {fileID: -8411839417314994153, guid: 326ed7a15a263b74eb306e6401e3c54e, type: 3}
+  dialogueBoxPanel: {fileID: 1017733493}
+  raspberryDialogueBoxImage: {fileID: 1759196390}
+  playerDialogueBoxImage: {fileID: 1065308345}
+  characterPanel: {fileID: 1063688658}
+  characterIdleImage: {fileID: 459354229}
+  characterHappyImage: {fileID: 1467433391}
+  characterSadImage: {fileID: 277989062}
+  characterAngryImage: {fileID: 641554953}
+  characterFlirtyImage: {fileID: 2015549231}
+  heartMeterPanel: {fileID: 1283009980}
+  heartMeterhalfImage: {fileID: 1283009978}
+  heartMeter25Image: {fileID: 133962221}
+  heartMeter75Image: {fileID: 846644469}
+  heartMeteremptyImage: {fileID: 193164150}
+  heartMeterfullImage: {fileID: 1811735021}
+  heart: 5
+  maxHeart: 10
+  slider: {fileID: 330502198}
+  GirlBGM: {fileID: 0}
+  GirlGiggle: {fileID: 970338657}
+  GirlDisgust: {fileID: 1747031267}
+  GirlGasp: {fileID: 292070842}
+  GirlSigh: {fileID: 395958833}
+  GirlAngry: {fileID: 25982959}
+  sentences:
+  - 'Player: What the...? '
+  - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
+  - 'Player: Why is my cupcake talking to me right now? '
+  - "You thought you could just eat me without getting to know me first? Ch\xE9rie,
+    It's just manners!"
+  - "I didn't get your name, how rude of me! So ch\xE9rie, what is your name?"
+  - Name...
+  - 'Ooooo, you must be tourist. You don''t see that name a lot around here. '
+  - 'I am Dame Framboje. Do you like? I came up with it myself. '
+  - 'Merci beaucoup! You''re as sweet as meringue!  '
+  - 'I guess names aren''t important when you''re hungry. '
+  - 'Ah, you''re right! Dame Framboje? *She laughs nervously* What was I thinking? '
+  - You picked me, you love cupcakes non? Tell me {Name} what's your favourite flavor?
+    *She looks at you hopeful that you pick the RIGHT one*
+  - "Strawberry? Oh no, ch\xE9rie. That's my relative. Serious bad blood."
+  - Vanilla? A bit common, don't you think?
+  - Je suis ravi! I knew you'd pick raspberry. I'm just so ravishing.
+  - "So ch\xE9rie, what do you want to talk about?  "
+  - 'Well as you can see {Name}, I''m an extravagant raspberry cupcake, with a lot
+    of confidence and a big heart! '
+  - 'It''s so horrid being on display all day, especially when you are next to Un
+    idiot. '
+  - '{Name}: An idiot? Who exactly is this idiot? '
+  - "Oh ch\xE9rie, such bad manners bringing up my ex on a date."
+  - He was all butter no brains, you know how croissants are, non?
+  - You dodged some serious food poisoning by not picking him!
+  - 'THAT PUTAIN STOLE MY CHOCOLAT PRINCE! MY OWN FAMILY BETRAYED ME IN THIS WAY! '
+  - Oh sorry {Name}, forgot to use my inside voice. I just need to get away from
+    all this drama.
+  - '{Name}: Zut! Sounds bad, when did this all happen Dame?'
+  - Yesterday...
+  - '{Name}: Oh... well I see why you''re so passionate amor. '
+  - 'Amor? (She blushes) Mmh, with one word you''ve brought me back to my senses. '
+  - 'I like the sound of that, I''ll call you amor too from now on. (she winks at
+    you) '
+  - 'Nothing? You don''t wish to speak to me? Your date? '
+  - 'If we aren''t speaking, how do you expect me to just let you EAT me!? '
+  - '{Name}: No, no! I just couldn''t think of anything to say.'
+  - 'I''m just hungry, you know? '
+  - Hungry? Oh so now every hungry tourist that walks in here just gets to EAT me
+    without even having a proper conversation?
+  - "You poor thing, learn some manners ch\xE9rie, maybe then we can have some fun.
+    *she shakes her head in disaproval*"
+  - 'Oh {Name}, I can practically hear your stomach growling from here. *She laughs* '
+  - 'You must really want me.  '
+  - 'Tell me {Name}, why should I let you eat me? '
+  - 'You promise to savour every bite? *She locks eyes with you, while moving closer.* '
+  - '{Name}: I promise. '
+  - Alright {Name}, I'm all yours.
+  - 'Excuse me?? '
+  - 'Well, you wouldn''t be the first. Spare your teeth, do not dare to eat me. '
 --- !u!1 &114650032
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +449,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 435572619}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -552,6 +803,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 22
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 435572619}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -969,6 +1232,378 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277989062}
   m_CullTransparentMesh: 1
+--- !u!1 &282497776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 282497777}
+  - component: {fileID: 282497778}
+  m_Layer: 5
+  m_Name: GirlBGM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &282497777
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282497776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 997657957}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &282497778
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282497776}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 50ab10e73799c6f409f89a59d1837a22, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &292070840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 292070841}
+  - component: {fileID: 292070842}
+  - component: {fileID: 292070843}
+  m_Layer: 5
+  m_Name: GirlGasp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &292070841
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292070840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1615318249}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &292070842
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292070840}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: d910e743fcf8d154b9ff53fe7f59f012, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &292070843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292070840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98cd832ffa5c754ebd797e06bee75f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  raspberryDialogueText: {fileID: 1632056502}
+  playerDialogueText: {fileID: 2027155241}
+  nextButton: {fileID: 1514928728}
+  goodEndButton: {fileID: 1513123937}
+  badEndButton: {fileID: 1410061695}
+  nameInputField: {fileID: 449804354}
+  currentIndex: 0
+  choicesPanel1: {fileID: 1803084399}
+  choicesPanel2: {fileID: 474701101}
+  choicesPanel3: {fileID: 1681577329}
+  choicesPanel4: {fileID: 610976254}
+  dialoguePanel: {fileID: 1017733491}
+  nameInputPanel: {fileID: 1813334056}
+  backgroundAfternoonPanel: {fileID: 234953963}
+  backgroundAfternoonImage: {fileID: 3497671040658348025, guid: 54a60b8720ad759458149acfffbe8846, type: 3}
+  backgroundNightPanel: {fileID: 234953963}
+  backgroundNightImage: {fileID: -8411839417314994153, guid: 326ed7a15a263b74eb306e6401e3c54e, type: 3}
+  dialogueBoxPanel: {fileID: 1017733493}
+  raspberryDialogueBoxImage: {fileID: 1759196390}
+  playerDialogueBoxImage: {fileID: 1065308345}
+  characterPanel: {fileID: 1063688658}
+  characterIdleImage: {fileID: 459354229}
+  characterHappyImage: {fileID: 1467433391}
+  characterSadImage: {fileID: 277989062}
+  characterAngryImage: {fileID: 641554953}
+  characterFlirtyImage: {fileID: 2015549231}
+  heartMeterPanel: {fileID: 1283009980}
+  heartMeterhalfImage: {fileID: 1283009978}
+  heartMeter25Image: {fileID: 133962221}
+  heartMeter75Image: {fileID: 846644469}
+  heartMeteremptyImage: {fileID: 193164150}
+  heartMeterfullImage: {fileID: 1811735021}
+  heart: 5
+  maxHeart: 10
+  slider: {fileID: 330502198}
+  GirlBGM: {fileID: 0}
+  GirlGiggle: {fileID: 970338657}
+  GirlDisgust: {fileID: 1747031267}
+  GirlGasp: {fileID: 292070842}
+  GirlSigh: {fileID: 395958833}
+  GirlAngry: {fileID: 25982959}
+  sentences:
+  - 'Player: What the...? '
+  - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
+  - 'Player: Why is my cupcake talking to me right now? '
+  - "You thought you could just eat me without getting to know me first? Ch\xE9rie,
+    It's just manners!"
+  - "I didn't get your name, how rude of me! So ch\xE9rie, what is your name?"
+  - Name...
+  - 'Ooooo, you must be tourist. You don''t see that name a lot around here. '
+  - 'I am Dame Framboje. Do you like? I came up with it myself. '
+  - 'Merci beaucoup! You''re as sweet as meringue!  '
+  - 'I guess names aren''t important when you''re hungry. '
+  - 'Ah, you''re right! Dame Framboje? *She laughs nervously* What was I thinking? '
+  - You picked me, you love cupcakes non? Tell me {Name} what's your favourite flavor?
+    *She looks at you hopeful that you pick the RIGHT one*
+  - "Strawberry? Oh no, ch\xE9rie. That's my relative. Serious bad blood."
+  - Vanilla? A bit common, don't you think?
+  - Je suis ravi! I knew you'd pick raspberry. I'm just so ravishing.
+  - "So ch\xE9rie, what do you want to talk about?  "
+  - 'Well as you can see {Name}, I''m an extravagant raspberry cupcake, with a lot
+    of confidence and a big heart! '
+  - 'It''s so horrid being on display all day, especially when you are next to Un
+    idiot. '
+  - '{Name}: An idiot? Who exactly is this idiot? '
+  - "Oh ch\xE9rie, such bad manners bringing up my ex on a date."
+  - He was all butter no brains, you know how croissants are, non?
+  - You dodged some serious food poisoning by not picking him!
+  - 'THAT PUTAIN STOLE MY CHOCOLAT PRINCE! MY OWN FAMILY BETRAYED ME IN THIS WAY! '
+  - Oh sorry {Name}, forgot to use my inside voice. I just need to get away from
+    all this drama.
+  - '{Name}: Zut! Sounds bad, when did this all happen Dame?'
+  - Yesterday...
+  - '{Name}: Oh... well I see why you''re so passionate amor. '
+  - 'Amor? (She blushes) Mmh, with one word you''ve brought me back to my senses. '
+  - 'I like the sound of that, I''ll call you amor too from now on. (she winks at
+    you) '
+  - 'Nothing? You don''t wish to speak to me? Your date? '
+  - 'If we aren''t speaking, how do you expect me to just let you EAT me!? '
+  - '{Name}: No, no! I just couldn''t think of anything to say.'
+  - 'I''m just hungry, you know? '
+  - Hungry? Oh so now every hungry tourist that walks in here just gets to EAT me
+    without even having a proper conversation?
+  - "You poor thing, learn some manners ch\xE9rie, maybe then we can have some fun.
+    *she shakes her head in disaproval*"
+  - 'Oh {Name}, I can practically hear your stomach growling from here. *She laughs* '
+  - 'You must really want me.  '
+  - 'Tell me {Name}, why should I let you eat me? '
+  - 'You promise to savour every bite? *She locks eyes with you, while moving closer.* '
+  - '{Name}: I promise. '
+  - Alright {Name}, I'm all yours.
+  - 'Excuse me?? '
+  - 'Well, you wouldn''t be the first. Spare your teeth, do not dare to eat me. '
 --- !u!1 &330502196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1842,7 @@ GameObject:
   - component: {fileID: 341490298}
   - component: {fileID: 341490297}
   - component: {fileID: 341490296}
+  - component: {fileID: 341490299}
   m_Layer: 0
   m_Name: ConfirmNameButton
   m_TagString: Untagged
@@ -1328,6 +1964,407 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341490294}
   m_CullTransparentMesh: 1
+--- !u!114 &341490299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341490294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 382452568}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &382452566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382452567}
+  - component: {fileID: 382452568}
+  m_Layer: 5
+  m_Name: ButtonFeedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &382452567
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382452566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658369881}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &382452568
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382452566}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 50f2993f994ea16478375d809f9b34e0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &395958831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 395958832}
+  - component: {fileID: 395958833}
+  - component: {fileID: 395958834}
+  m_Layer: 5
+  m_Name: GirlSigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &395958832
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395958831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1615318249}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &395958833
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395958831}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 53714260bd4308a41bc4a6a010cba726, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &395958834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395958831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98cd832ffa5c754ebd797e06bee75f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  raspberryDialogueText: {fileID: 1632056502}
+  playerDialogueText: {fileID: 2027155241}
+  nextButton: {fileID: 1514928728}
+  goodEndButton: {fileID: 1513123937}
+  badEndButton: {fileID: 1410061695}
+  nameInputField: {fileID: 449804354}
+  currentIndex: 0
+  choicesPanel1: {fileID: 1803084399}
+  choicesPanel2: {fileID: 474701101}
+  choicesPanel3: {fileID: 1681577329}
+  choicesPanel4: {fileID: 610976254}
+  dialoguePanel: {fileID: 1017733491}
+  nameInputPanel: {fileID: 1813334056}
+  backgroundAfternoonPanel: {fileID: 234953963}
+  backgroundAfternoonImage: {fileID: 3497671040658348025, guid: 54a60b8720ad759458149acfffbe8846, type: 3}
+  backgroundNightPanel: {fileID: 234953963}
+  backgroundNightImage: {fileID: -8411839417314994153, guid: 326ed7a15a263b74eb306e6401e3c54e, type: 3}
+  dialogueBoxPanel: {fileID: 1017733493}
+  raspberryDialogueBoxImage: {fileID: 1759196390}
+  playerDialogueBoxImage: {fileID: 1065308345}
+  characterPanel: {fileID: 1063688658}
+  characterIdleImage: {fileID: 459354229}
+  characterHappyImage: {fileID: 1467433391}
+  characterSadImage: {fileID: 277989062}
+  characterAngryImage: {fileID: 641554953}
+  characterFlirtyImage: {fileID: 2015549231}
+  heartMeterPanel: {fileID: 1283009980}
+  heartMeterhalfImage: {fileID: 1283009978}
+  heartMeter25Image: {fileID: 133962221}
+  heartMeter75Image: {fileID: 846644469}
+  heartMeteremptyImage: {fileID: 193164150}
+  heartMeterfullImage: {fileID: 1811735021}
+  heart: 5
+  maxHeart: 10
+  slider: {fileID: 330502198}
+  GirlBGM: {fileID: 0}
+  GirlGiggle: {fileID: 970338657}
+  GirlDisgust: {fileID: 1747031267}
+  GirlGasp: {fileID: 292070842}
+  GirlSigh: {fileID: 395958833}
+  GirlAngry: {fileID: 25982959}
+  sentences:
+  - 'Player: What the...? '
+  - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
+  - 'Player: Why is my cupcake talking to me right now? '
+  - "You thought you could just eat me without getting to know me first? Ch\xE9rie,
+    It's just manners!"
+  - "I didn't get your name, how rude of me! So ch\xE9rie, what is your name?"
+  - Name...
+  - 'Ooooo, you must be tourist. You don''t see that name a lot around here. '
+  - 'I am Dame Framboje. Do you like? I came up with it myself. '
+  - 'Merci beaucoup! You''re as sweet as meringue!  '
+  - 'I guess names aren''t important when you''re hungry. '
+  - 'Ah, you''re right! Dame Framboje? *She laughs nervously* What was I thinking? '
+  - You picked me, you love cupcakes non? Tell me {Name} what's your favourite flavor?
+    *She looks at you hopeful that you pick the RIGHT one*
+  - "Strawberry? Oh no, ch\xE9rie. That's my relative. Serious bad blood."
+  - Vanilla? A bit common, don't you think?
+  - Je suis ravi! I knew you'd pick raspberry. I'm just so ravishing.
+  - "So ch\xE9rie, what do you want to talk about?  "
+  - 'Well as you can see {Name}, I''m an extravagant raspberry cupcake, with a lot
+    of confidence and a big heart! '
+  - 'It''s so horrid being on display all day, especially when you are next to Un
+    idiot. '
+  - '{Name}: An idiot? Who exactly is this idiot? '
+  - "Oh ch\xE9rie, such bad manners bringing up my ex on a date."
+  - He was all butter no brains, you know how croissants are, non?
+  - You dodged some serious food poisoning by not picking him!
+  - 'THAT PUTAIN STOLE MY CHOCOLAT PRINCE! MY OWN FAMILY BETRAYED ME IN THIS WAY! '
+  - Oh sorry {Name}, forgot to use my inside voice. I just need to get away from
+    all this drama.
+  - '{Name}: Zut! Sounds bad, when did this all happen Dame?'
+  - Yesterday...
+  - '{Name}: Oh... well I see why you''re so passionate amor. '
+  - 'Amor? (She blushes) Mmh, with one word you''ve brought me back to my senses. '
+  - 'I like the sound of that, I''ll call you amor too from now on. (she winks at
+    you) '
+  - 'Nothing? You don''t wish to speak to me? Your date? '
+  - 'If we aren''t speaking, how do you expect me to just let you EAT me!? '
+  - '{Name}: No, no! I just couldn''t think of anything to say.'
+  - 'I''m just hungry, you know? '
+  - Hungry? Oh so now every hungry tourist that walks in here just gets to EAT me
+    without even having a proper conversation?
+  - "You poor thing, learn some manners ch\xE9rie, maybe then we can have some fun.
+    *she shakes her head in disaproval*"
+  - 'Oh {Name}, I can practically hear your stomach growling from here. *She laughs* '
+  - 'You must really want me.  '
+  - 'Tell me {Name}, why should I let you eat me? '
+  - 'You promise to savour every bite? *She locks eyes with you, while moving closer.* '
+  - '{Name}: I promise. '
+  - Alright {Name}, I'm all yours.
+  - 'Excuse me?? '
+  - 'Well, you wouldn''t be the first. Spare your teeth, do not dare to eat me. '
 --- !u!1 &413748104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,6 +2456,139 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &435572617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 435572618}
+  - component: {fileID: 435572619}
+  m_Layer: 5
+  m_Name: HeartMeterDecrease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &435572618
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435572617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658369881}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &435572619
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435572617}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 951dac7adb3b8b74c98e43ce23b984a9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &444788487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,6 +2676,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1017733495}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: ShowNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 382452568}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2419,6 +3601,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052742488}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &531817819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2971,6 +4165,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052742488}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &754553964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3233,6 +4439,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 13
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 435572619}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3627,6 +4845,139 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &887335056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887335058}
+  - component: {fileID: 887335057}
+  m_Layer: 5
+  m_Name: Lose
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &887335057
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887335056}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: b52d842b9d6ab284a87ab7c1727f6de8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!224 &887335058
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887335056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658369881}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &917711717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3930,6 +5281,245 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1775396418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &970338655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970338656}
+  - component: {fileID: 970338657}
+  - component: {fileID: 970338658}
+  m_Layer: 5
+  m_Name: GirlGiggle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &970338656
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970338655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1615318249}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &970338657
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970338655}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 942f0816ad8db884f8f217384ccb88cf, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &970338658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970338655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98cd832ffa5c754ebd797e06bee75f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  raspberryDialogueText: {fileID: 1632056502}
+  playerDialogueText: {fileID: 2027155241}
+  nextButton: {fileID: 1514928728}
+  goodEndButton: {fileID: 1513123937}
+  badEndButton: {fileID: 1410061695}
+  nameInputField: {fileID: 449804354}
+  currentIndex: 0
+  choicesPanel1: {fileID: 1803084399}
+  choicesPanel2: {fileID: 474701101}
+  choicesPanel3: {fileID: 1681577329}
+  choicesPanel4: {fileID: 610976254}
+  dialoguePanel: {fileID: 1017733491}
+  nameInputPanel: {fileID: 1813334056}
+  backgroundAfternoonPanel: {fileID: 234953963}
+  backgroundAfternoonImage: {fileID: 3497671040658348025, guid: 54a60b8720ad759458149acfffbe8846, type: 3}
+  backgroundNightPanel: {fileID: 234953963}
+  backgroundNightImage: {fileID: -8411839417314994153, guid: 326ed7a15a263b74eb306e6401e3c54e, type: 3}
+  dialogueBoxPanel: {fileID: 1017733493}
+  raspberryDialogueBoxImage: {fileID: 1759196390}
+  playerDialogueBoxImage: {fileID: 1065308345}
+  characterPanel: {fileID: 1063688658}
+  characterIdleImage: {fileID: 459354229}
+  characterHappyImage: {fileID: 1467433391}
+  characterSadImage: {fileID: 277989062}
+  characterAngryImage: {fileID: 641554953}
+  characterFlirtyImage: {fileID: 2015549231}
+  heartMeterPanel: {fileID: 1283009980}
+  heartMeterhalfImage: {fileID: 1283009978}
+  heartMeter25Image: {fileID: 133962221}
+  heartMeter75Image: {fileID: 846644469}
+  heartMeteremptyImage: {fileID: 193164150}
+  heartMeterfullImage: {fileID: 1811735021}
+  heart: 5
+  maxHeart: 10
+  slider: {fileID: 330502198}
+  GirlBGM: {fileID: 0}
+  GirlGiggle: {fileID: 970338657}
+  GirlDisgust: {fileID: 1747031267}
+  GirlGasp: {fileID: 292070842}
+  GirlSigh: {fileID: 395958833}
+  GirlAngry: {fileID: 25982959}
+  sentences:
+  - 'Player: What the...? '
+  - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
+  - 'Player: Why is my cupcake talking to me right now? '
+  - "You thought you could just eat me without getting to know me first? Ch\xE9rie,
+    It's just manners!"
+  - "I didn't get your name, how rude of me! So ch\xE9rie, what is your name?"
+  - Name...
+  - 'Ooooo, you must be tourist. You don''t see that name a lot around here. '
+  - 'I am Dame Framboje. Do you like? I came up with it myself. '
+  - 'Merci beaucoup! You''re as sweet as meringue!  '
+  - 'I guess names aren''t important when you''re hungry. '
+  - 'Ah, you''re right! Dame Framboje? *She laughs nervously* What was I thinking? '
+  - You picked me, you love cupcakes non? Tell me {Name} what's your favourite flavor?
+    *She looks at you hopeful that you pick the RIGHT one*
+  - "Strawberry? Oh no, ch\xE9rie. That's my relative. Serious bad blood."
+  - Vanilla? A bit common, don't you think?
+  - Je suis ravi! I knew you'd pick raspberry. I'm just so ravishing.
+  - "So ch\xE9rie, what do you want to talk about?  "
+  - 'Well as you can see {Name}, I''m an extravagant raspberry cupcake, with a lot
+    of confidence and a big heart! '
+  - 'It''s so horrid being on display all day, especially when you are next to Un
+    idiot. '
+  - '{Name}: An idiot? Who exactly is this idiot? '
+  - "Oh ch\xE9rie, such bad manners bringing up my ex on a date."
+  - He was all butter no brains, you know how croissants are, non?
+  - You dodged some serious food poisoning by not picking him!
+  - 'THAT PUTAIN STOLE MY CHOCOLAT PRINCE! MY OWN FAMILY BETRAYED ME IN THIS WAY! '
+  - Oh sorry {Name}, forgot to use my inside voice. I just need to get away from
+    all this drama.
+  - '{Name}: Zut! Sounds bad, when did this all happen Dame?'
+  - Yesterday...
+  - '{Name}: Oh... well I see why you''re so passionate amor. '
+  - 'Amor? (She blushes) Mmh, with one word you''ve brought me back to my senses. '
+  - 'I like the sound of that, I''ll call you amor too from now on. (she winks at
+    you) '
+  - 'Nothing? You don''t wish to speak to me? Your date? '
+  - 'If we aren''t speaking, how do you expect me to just let you EAT me!? '
+  - '{Name}: No, no! I just couldn''t think of anything to say.'
+  - 'I''m just hungry, you know? '
+  - Hungry? Oh so now every hungry tourist that walks in here just gets to EAT me
+    without even having a proper conversation?
+  - "You poor thing, learn some manners ch\xE9rie, maybe then we can have some fun.
+    *she shakes her head in disaproval*"
+  - 'Oh {Name}, I can practically hear your stomach growling from here. *She laughs* '
+  - 'You must really want me.  '
+  - 'Tell me {Name}, why should I let you eat me? '
+  - 'You promise to savour every bite? *She locks eyes with you, while moving closer.* '
+  - '{Name}: I promise. '
+  - Alright {Name}, I'm all yours.
+  - 'Excuse me?? '
+  - 'Well, you wouldn''t be the first. Spare your teeth, do not dare to eat me. '
 --- !u!1 &978129693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,6 +5794,150 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994583773}
   m_CullTransparentMesh: 1
+--- !u!1 &997657956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997657957}
+  - component: {fileID: 997657958}
+  m_Layer: 5
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &997657957
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997657956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 282497777}
+  - {fileID: 1658369881}
+  - {fileID: 1615318249}
+  m_Father: {fileID: 1475212209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &997657958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997657956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98cd832ffa5c754ebd797e06bee75f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  raspberryDialogueText: {fileID: 1632056502}
+  playerDialogueText: {fileID: 2027155241}
+  nextButton: {fileID: 1514928728}
+  goodEndButton: {fileID: 1513123937}
+  badEndButton: {fileID: 1410061695}
+  nameInputField: {fileID: 449804354}
+  currentIndex: 0
+  choicesPanel1: {fileID: 1803084399}
+  choicesPanel2: {fileID: 474701101}
+  choicesPanel3: {fileID: 1681577329}
+  choicesPanel4: {fileID: 610976254}
+  dialoguePanel: {fileID: 1017733491}
+  nameInputPanel: {fileID: 1813334056}
+  backgroundAfternoonPanel: {fileID: 234953963}
+  backgroundAfternoonImage: {fileID: 3497671040658348025, guid: 54a60b8720ad759458149acfffbe8846, type: 3}
+  backgroundNightPanel: {fileID: 234953963}
+  backgroundNightImage: {fileID: -8411839417314994153, guid: 326ed7a15a263b74eb306e6401e3c54e, type: 3}
+  dialogueBoxPanel: {fileID: 1017733493}
+  raspberryDialogueBoxImage: {fileID: 1759196390}
+  playerDialogueBoxImage: {fileID: 1065308345}
+  characterPanel: {fileID: 1063688658}
+  characterIdleImage: {fileID: 459354229}
+  characterHappyImage: {fileID: 1467433391}
+  characterSadImage: {fileID: 277989062}
+  characterAngryImage: {fileID: 641554953}
+  characterFlirtyImage: {fileID: 2015549231}
+  heartMeterPanel: {fileID: 1283009980}
+  heartMeterhalfImage: {fileID: 1283009978}
+  heartMeter25Image: {fileID: 133962221}
+  heartMeter75Image: {fileID: 846644469}
+  heartMeteremptyImage: {fileID: 193164150}
+  heartMeterfullImage: {fileID: 1811735021}
+  heart: 0
+  maxHeart: 10
+  slider: {fileID: 330502198}
+  GirlBGM: {fileID: 0}
+  GirlGiggle: {fileID: 970338657}
+  GirlDisgust: {fileID: 1747031267}
+  GirlGasp: {fileID: 292070842}
+  GirlSigh: {fileID: 395958833}
+  GirlAngry: {fileID: 25982959}
+  sentences:
+  - 'Player: What the...? '
+  - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
+  - 'Player: Why is my cupcake talking to me right now? '
+  - "You thought you could just eat me without getting to know me first? Ch\xE9rie,
+    It's just manners!"
+  - "I didn't get your name, how rude of me! So ch\xE9rie, what is your name?"
+  - Name...
+  - 'Ooooo, you must be tourist. You don''t see that name a lot around here. '
+  - 'I am Dame Framboje. Do you like? I came up with it myself. '
+  - 'Merci beaucoup! You''re as sweet as meringue!  '
+  - 'I guess names aren''t important when you''re hungry. '
+  - 'Ah, you''re right! Dame Framboje? *She laughs nervously* What was I thinking? '
+  - You picked me, you love cupcakes non? Tell me {Name} what's your favourite flavor?
+    *She looks at you hopeful that you pick the RIGHT one*
+  - "Strawberry? Oh no, ch\xE9rie. That's my relative. Serious bad blood."
+  - Vanilla? A bit common, don't you think?
+  - Je suis ravi! I knew you'd pick raspberry. I'm just so ravishing.
+  - "So ch\xE9rie, what do you want to talk about?  "
+  - 'Well as you can see {Name}, I''m an extravagant raspberry cupcake, with a lot
+    of confidence and a big heart! '
+  - 'It''s so horrid being on display all day, especially when you are next to Un
+    idiot. '
+  - '{Name}: An idiot? Who exactly is this idiot? '
+  - "Oh ch\xE9rie, such bad manners bringing up my ex on a date."
+  - He was all butter no brains, you know how croissants are, non?
+  - You dodged some serious food poisoning by not picking him!
+  - 'THAT PUTAIN STOLE MY CHOCOLAT PRINCE! MY OWN FAMILY BETRAYED ME IN THIS WAY! '
+  - Oh sorry {Name}, forgot to use my inside voice. I just need to get away from
+    all this drama.
+  - '{Name}: Zut! Sounds bad, when did this all happen Dame?'
+  - Yesterday...
+  - '{Name}: Oh... well I see why you''re so passionate amor. '
+  - 'Amor? (She blushes) Mmh, with one word you''ve brought me back to my senses. '
+  - 'I like the sound of that, I''ll call you amor too from now on. (she winks at
+    you) '
+  - 'Nothing? You don''t wish to speak to me? Your date? '
+  - 'If we aren''t speaking, how do you expect me to just let you EAT me!? '
+  - '{Name}: No, no! I just couldn''t think of anything to say.'
+  - 'I''m just hungry, you know? '
+  - Hungry? Oh so now every hungry tourist that walks in here just gets to EAT me
+    without even having a proper conversation?
+  - "You poor thing, learn some manners ch\xE9rie, maybe then we can have some fun.
+    *she shakes her head in disaproval*"
+  - 'Oh {Name}, I can practically hear your stomach growling from here. *She laughs* '
+  - 'You must really want me.  '
+  - 'Tell me {Name}, why should I let you eat me? '
+  - 'You promise to savour every bite? *She locks eyes with you, while moving closer.* '
+  - '{Name}: I promise. '
+  - Alright {Name}, I'm all yours.
+  - 'Excuse me?? '
+  - 'Well, you wouldn''t be the first. Spare your teeth, do not dare to eat me. '
 --- !u!1 &1017733491
 GameObject:
   m_ObjectHideFlags: 0
@@ -4329,13 +6063,12 @@ MonoBehaviour:
   heart: 0
   maxHeart: 10
   slider: {fileID: 330502198}
-  ThemeSongCreepy: {fileID: 875709350}
-  ThemeSongBGM: {fileID: 591867284}
+  GirlBGM: {fileID: 0}
   GirlGiggle: {fileID: 1422407351}
   GirlDisgust: {fileID: 484105273}
-  ButtonFeedback: {fileID: 2001200044}
-  HeartMeterIncrease: {fileID: 2073590233}
-  HeartMeterDecrease: {fileID: 1193148079}
+  GirlGasp: {fileID: 0}
+  GirlSigh: {fileID: 0}
+  GirlAngry: {fileID: 0}
   sentences:
   - 'Player: What the...? '
   - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
@@ -4388,6 +6121,139 @@ MonoBehaviour:
   - Alright {Name}, I'm all yours.
   - 'Excuse me?? '
   - 'Well, you wouldn''t be the first. Spare your teeth, do not dare to eat me. '
+--- !u!1 &1052742486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1052742487}
+  - component: {fileID: 1052742488}
+  m_Layer: 5
+  m_Name: HeartMeterIncrease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1052742487
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052742486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658369881}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &1052742488
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052742486}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 6c43a1c0b929442418a91acf40793cf9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1062825355
 GameObject:
   m_ObjectHideFlags: 0
@@ -5752,6 +7618,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 435572619}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1259366093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6330,6 +8208,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052742488}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1353555105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6380,6 +8270,7 @@ GameObject:
   - component: {fileID: 1410061697}
   - component: {fileID: 1410061696}
   - component: {fileID: 1410061695}
+  - component: {fileID: 1410061698}
   m_Layer: 5
   m_Name: BadEndingBtn
   m_TagString: Untagged
@@ -6502,6 +8393,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410061693}
   m_CullTransparentMesh: 1
+--- !u!114 &1410061698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410061693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 887335057}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1418066174
 GameObject:
   m_ObjectHideFlags: 0
@@ -6969,6 +8889,7 @@ RectTransform:
   - {fileID: 1775396418}
   - {fileID: 1513123936}
   - {fileID: 1410061694}
+  - {fileID: 997657957}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7093,6 +9014,7 @@ GameObject:
   - component: {fileID: 1513123939}
   - component: {fileID: 1513123938}
   - component: {fileID: 1513123937}
+  - component: {fileID: 1513123940}
   m_Layer: 5
   m_Name: GoodEndingBtn
   m_TagString: Untagged
@@ -7215,6 +9137,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513123935}
   m_CullTransparentMesh: 1
+--- !u!114 &1513123940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513123935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1671804289}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1514928726
 GameObject:
   m_ObjectHideFlags: 0
@@ -7302,6 +9253,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1017733495}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: ShowNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 382452568}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7536,6 +9499,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565880110}
   m_CullTransparentMesh: 1
+--- !u!1 &1615318248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1615318249}
+  m_Layer: 5
+  m_Name: GirlSFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1615318249
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615318248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 970338656}
+  - {fileID: 1747031266}
+  - {fileID: 292070841}
+  - {fileID: 25982958}
+  - {fileID: 395958832}
+  m_Father: {fileID: 997657957}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1632056500
 GameObject:
   m_ObjectHideFlags: 0
@@ -7760,6 +9763,179 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645107879}
   m_CullTransparentMesh: 1
+--- !u!1 &1658369880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1658369881}
+  m_Layer: 5
+  m_Name: FeedbackSFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1658369881
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658369880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1052742487}
+  - {fileID: 435572618}
+  - {fileID: 382452567}
+  - {fileID: 1671804290}
+  - {fileID: 887335058}
+  m_Father: {fileID: 997657957}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1671804288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1671804290}
+  - component: {fileID: 1671804289}
+  m_Layer: 5
+  m_Name: Win
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1671804289
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671804288}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: b0d1684be8197774985b200b22d9f5ac, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!224 &1671804290
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671804288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1658369881}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1681577329
 GameObject:
   m_ObjectHideFlags: 0
@@ -8009,6 +10185,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052742488}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1716402952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8047,6 +10235,245 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716402949}
   m_CullTransparentMesh: 1
+--- !u!1 &1747031265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1747031266}
+  - component: {fileID: 1747031267}
+  - component: {fileID: 1747031268}
+  m_Layer: 5
+  m_Name: GirlDisgust
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1747031266
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747031265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1615318249}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &1747031267
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747031265}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: e5d25a3cf162e564c81649737e66218f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1747031268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747031265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98cd832ffa5c754ebd797e06bee75f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  raspberryDialogueText: {fileID: 1632056502}
+  playerDialogueText: {fileID: 2027155241}
+  nextButton: {fileID: 1514928728}
+  goodEndButton: {fileID: 1513123937}
+  badEndButton: {fileID: 1410061695}
+  nameInputField: {fileID: 449804354}
+  currentIndex: 0
+  choicesPanel1: {fileID: 1803084399}
+  choicesPanel2: {fileID: 474701101}
+  choicesPanel3: {fileID: 1681577329}
+  choicesPanel4: {fileID: 610976254}
+  dialoguePanel: {fileID: 1017733491}
+  nameInputPanel: {fileID: 1813334056}
+  backgroundAfternoonPanel: {fileID: 234953963}
+  backgroundAfternoonImage: {fileID: 3497671040658348025, guid: 54a60b8720ad759458149acfffbe8846, type: 3}
+  backgroundNightPanel: {fileID: 234953963}
+  backgroundNightImage: {fileID: -8411839417314994153, guid: 326ed7a15a263b74eb306e6401e3c54e, type: 3}
+  dialogueBoxPanel: {fileID: 1017733493}
+  raspberryDialogueBoxImage: {fileID: 1759196390}
+  playerDialogueBoxImage: {fileID: 1065308345}
+  characterPanel: {fileID: 1063688658}
+  characterIdleImage: {fileID: 459354229}
+  characterHappyImage: {fileID: 1467433391}
+  characterSadImage: {fileID: 277989062}
+  characterAngryImage: {fileID: 641554953}
+  characterFlirtyImage: {fileID: 2015549231}
+  heartMeterPanel: {fileID: 1283009980}
+  heartMeterhalfImage: {fileID: 1283009978}
+  heartMeter25Image: {fileID: 133962221}
+  heartMeter75Image: {fileID: 846644469}
+  heartMeteremptyImage: {fileID: 193164150}
+  heartMeterfullImage: {fileID: 1811735021}
+  heart: 5
+  maxHeart: 10
+  slider: {fileID: 330502198}
+  GirlBGM: {fileID: 0}
+  GirlGiggle: {fileID: 970338657}
+  GirlDisgust: {fileID: 1747031267}
+  GirlGasp: {fileID: 292070842}
+  GirlSigh: {fileID: 395958833}
+  GirlAngry: {fileID: 25982959}
+  sentences:
+  - 'Player: What the...? '
+  - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
+  - 'Player: Why is my cupcake talking to me right now? '
+  - "You thought you could just eat me without getting to know me first? Ch\xE9rie,
+    It's just manners!"
+  - "I didn't get your name, how rude of me! So ch\xE9rie, what is your name?"
+  - Name...
+  - 'Ooooo, you must be tourist. You don''t see that name a lot around here. '
+  - 'I am Dame Framboje. Do you like? I came up with it myself. '
+  - 'Merci beaucoup! You''re as sweet as meringue!  '
+  - 'I guess names aren''t important when you''re hungry. '
+  - 'Ah, you''re right! Dame Framboje? *She laughs nervously* What was I thinking? '
+  - You picked me, you love cupcakes non? Tell me {Name} what's your favourite flavor?
+    *She looks at you hopeful that you pick the RIGHT one*
+  - "Strawberry? Oh no, ch\xE9rie. That's my relative. Serious bad blood."
+  - Vanilla? A bit common, don't you think?
+  - Je suis ravi! I knew you'd pick raspberry. I'm just so ravishing.
+  - "So ch\xE9rie, what do you want to talk about?  "
+  - 'Well as you can see {Name}, I''m an extravagant raspberry cupcake, with a lot
+    of confidence and a big heart! '
+  - 'It''s so horrid being on display all day, especially when you are next to Un
+    idiot. '
+  - '{Name}: An idiot? Who exactly is this idiot? '
+  - "Oh ch\xE9rie, such bad manners bringing up my ex on a date."
+  - He was all butter no brains, you know how croissants are, non?
+  - You dodged some serious food poisoning by not picking him!
+  - 'THAT PUTAIN STOLE MY CHOCOLAT PRINCE! MY OWN FAMILY BETRAYED ME IN THIS WAY! '
+  - Oh sorry {Name}, forgot to use my inside voice. I just need to get away from
+    all this drama.
+  - '{Name}: Zut! Sounds bad, when did this all happen Dame?'
+  - Yesterday...
+  - '{Name}: Oh... well I see why you''re so passionate amor. '
+  - 'Amor? (She blushes) Mmh, with one word you''ve brought me back to my senses. '
+  - 'I like the sound of that, I''ll call you amor too from now on. (she winks at
+    you) '
+  - 'Nothing? You don''t wish to speak to me? Your date? '
+  - 'If we aren''t speaking, how do you expect me to just let you EAT me!? '
+  - '{Name}: No, no! I just couldn''t think of anything to say.'
+  - 'I''m just hungry, you know? '
+  - Hungry? Oh so now every hungry tourist that walks in here just gets to EAT me
+    without even having a proper conversation?
+  - "You poor thing, learn some manners ch\xE9rie, maybe then we can have some fun.
+    *she shakes her head in disaproval*"
+  - 'Oh {Name}, I can practically hear your stomach growling from here. *She laughs* '
+  - 'You must really want me.  '
+  - 'Tell me {Name}, why should I let you eat me? '
+  - 'You promise to savour every bite? *She locks eyes with you, while moving closer.* '
+  - '{Name}: I promise. '
+  - Alright {Name}, I'm all yours.
+  - 'Excuse me?? '
+  - 'Well, you wouldn''t be the first. Spare your teeth, do not dare to eat me. '
 --- !u!1 &1759196390
 GameObject:
   m_ObjectHideFlags: 0
@@ -8216,6 +10643,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 435572619}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1764728446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8266,6 +10705,7 @@ GameObject:
   - component: {fileID: 1775396421}
   - component: {fileID: 1775396420}
   - component: {fileID: 1775396419}
+  - component: {fileID: 1775396422}
   m_Layer: 5
   m_Name: ExitBtn
   m_TagString: Untagged
@@ -8388,6 +10828,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775396417}
   m_CullTransparentMesh: 1
+--- !u!114 &1775396422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775396417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 382452568}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1803084399
 GameObject:
   m_ObjectHideFlags: 0
@@ -9834,6 +12303,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 29
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 435572619}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

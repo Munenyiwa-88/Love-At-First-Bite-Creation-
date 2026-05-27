@@ -60,14 +60,23 @@ public class MCDialogueManager : MonoBehaviour
     public float maxHeart = 10;
     public Slider slider;
     //Adding the script for the games audios
-   /* [Header("Audio")]
-    [SerializeField] AudioSource ThemeSongCreepy;
-    [SerializeField] AudioSource ThemeSongBGM;
-    [SerializeField] AudioSource GirlGiggle;
-    [SerializeField] AudioSource GirlDisgust;
-    [SerializeField] AudioSource ButtonFeedback;
-    [SerializeField] AudioSource HeartMeterIncrease;
-    [SerializeField] AudioSource HeartMeterDecrease;*/
+
+    [Header("Audio")]
+    [SerializeField] AudioSource MaleBGM;
+    [SerializeField] AudioSource MaleGroan;
+    [SerializeField] AudioSource MaleGiggle;
+    [SerializeField] AudioSource MaleGasp;
+    [SerializeField] AudioSource MaleFlirt;
+    
+
+    /* [Header("Audio")]
+     [SerializeField] AudioSource ThemeSongCreepy;
+     [SerializeField] AudioSource ThemeSongBGM;
+     [SerializeField] AudioSource GirlGiggle;
+     [SerializeField] AudioSource GirlDisgust;
+     [SerializeField] AudioSource ButtonFeedback;
+     [SerializeField] AudioSource HeartMeterIncrease;
+     [SerializeField] AudioSource HeartMeterDecrease;*/
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
@@ -506,18 +515,123 @@ public class MCDialogueManager : MonoBehaviour
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
         }
+         //adding audio to charcter expresions
+        //SAD AUDIO  
+
+        if (currentIndex == 19)
+        {
+            MaleGroan.Play();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Stop();
+        }
+
+        if (currentIndex == 25)
+        {
+            MaleGroan.Play();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Stop();
+        }
+
+        if (currentIndex == 30)
+        {
+            MaleGroan.Play();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Stop();
+        }
+
+        if (currentIndex == 62)
+        {
+            MaleGroan.Play();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Stop();
+        }
+
+        //FLIRTY AUDIO
+
+        if (currentIndex == 43)
+        {
+            MaleGroan.Stop();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Play();
+        }
+
+        if (currentIndex == 56)
+        {
+            MaleGroan.Stop();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Play();
+        }
+
+        if (currentIndex == 60)
+        {
+            MaleGroan.Stop();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Play();
+        }
+
+        //HAPPY AUDIO
+
+        if (currentIndex == 27)
+        {
+            MaleGroan.Stop();
+            MaleGiggle.Play();
+            MaleGasp.Stop();
+            MaleFlirt.Stop();
+        }
+
+        if (currentIndex == 58)
+        {
+            MaleGroan.Stop();
+            MaleGiggle.Play();
+            MaleGasp.Stop();
+            MaleFlirt.Stop();
+        }
+
+        //ANGRY AUDIO
+
+        if (currentIndex == 15)
+        {
+            MaleGroan.Stop();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Play();
+        }
+
+        if (currentIndex == 39)
+        {
+            MaleGroan.Stop();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Play();
+        }
+
+        if (currentIndex == 61)
+        {
+            MaleGroan.Stop();
+            MaleGiggle.Stop();
+            MaleGasp.Stop();
+            MaleFlirt.Play();
+        }
+
 
 
         //SetActive the creepy song that appears at the end of the game
-       /* if (currentIndex == 16)
-        {
-            ThemeSongCreepy.Play();
-            GirlDisgust.Stop();
-            GirlGiggle.Stop();
-            ButtonFeedback.Stop();
-            HeartMeterIncrease.Stop();
-            HeartMeterDecrease.Stop();
-        }*/
+        /* if (currentIndex == 16)
+         {
+             ThemeSongCreepy.Play();
+             GirlDisgust.Stop();
+             GirlGiggle.Stop();
+             ButtonFeedback.Stop();
+             HeartMeterIncrease.Stop();
+             HeartMeterDecrease.Stop();
+         }*/
 
     }
 
