@@ -6146,7 +6146,7 @@ MonoBehaviour:
   heart: 0
   maxHeart: 10
   slider: {fileID: 330502198}
-  GirlBGM: {fileID: 0}
+  GirlBGM: {fileID: 282497778}
   GirlGiggle: {fileID: 970338657}
   GirlDisgust: {fileID: 1747031267}
   GirlGasp: {fileID: 292070842}
@@ -6329,12 +6329,12 @@ MonoBehaviour:
   heart: 0
   maxHeart: 10
   slider: {fileID: 330502198}
-  GirlBGM: {fileID: 0}
+  GirlBGM: {fileID: 282497778}
   GirlGiggle: {fileID: 1422407351}
   GirlDisgust: {fileID: 484105273}
-  GirlGasp: {fileID: 0}
-  GirlSigh: {fileID: 0}
-  GirlAngry: {fileID: 0}
+  GirlGasp: {fileID: 292070842}
+  GirlSigh: {fileID: 395958833}
+  GirlAngry: {fileID: 25982959}
   sentences:
   - 'Player: What the...? '
   - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
