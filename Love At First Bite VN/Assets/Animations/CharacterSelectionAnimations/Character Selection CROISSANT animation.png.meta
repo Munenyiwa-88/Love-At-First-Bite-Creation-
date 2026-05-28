@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 70f3e589287adc34db902648299e23a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6137191865015471945
+    second: Character Selection CROISSANT animation_0
+  - first:
+      213: 2204438059866982120
+    second: Character Selection CROISSANT animation_1
+  - first:
+      213: -7080222103743393107
+    second: Character Selection CROISSANT animation_2
+  - first:
+      213: -3563509227742720140
+    second: Character Selection CROISSANT animation_3
+  - first:
+      213: -3603626518183977729
+    second: Character Selection CROISSANT animation_4
+  - first:
+      213: 6498972134153237620
+    second: Character Selection CROISSANT animation_5
+  - first:
+      213: 1218010540575816464
+    second: Character Selection CROISSANT animation_6
+  - first:
+      213: -8252037739010643132
+    second: Character Selection CROISSANT animation_7
+  - first:
+      213: 7929053880069697024
+    second: Character Selection CROISSANT animation_8
+  - first:
+      213: -6072441863262180479
+    second: Character Selection CROISSANT animation_9
+  - first:
+      213: -5739381863168826590
+    second: Character Selection CROISSANT animation_10
+  - first:
+      213: -7158937617984724139
+    second: Character Selection CROISSANT animation_11
+  - first:
+      213: 7133283021963582748
+    second: Character Selection CROISSANT animation_12
+  - first:
+      213: -2794248866107463285
+    second: Character Selection CROISSANT animation_13
+  - first:
+      213: -2256056528687853998
+    second: Character Selection CROISSANT animation_14
+  - first:
+      213: -7894283782923386629
+    second: Character Selection CROISSANT animation_15
+  - first:
+      213: -6376527312717571243
+    second: Character Selection CROISSANT animation_16
+  - first:
+      213: -2264210869100613329
+    second: Character Selection CROISSANT animation_17
+  - first:
+      213: 1996776748662303320
+    second: Character Selection CROISSANT animation_18
+  - first:
+      213: -4441746222155669222
+    second: Character Selection CROISSANT animation_19
+  - first:
+      213: 2594755816091632760
+    second: Character Selection CROISSANT animation_20
+  - first:
+      213: 7736180615229944817
+    second: Character Selection CROISSANT animation_21
+  - first:
+      213: -7826120785474124388
+    second: Character Selection CROISSANT animation_22
+  - first:
+      213: -675637071477738365
+    second: Character Selection CROISSANT animation_23
+  - first:
+      213: -4707609683717869141
+    second: Character Selection CROISSANT animation_24
+  - first:
+      213: 6645724691971003977
+    second: Character Selection CROISSANT animation_25
+  - first:
+      213: 932681286154126030
+    second: Character Selection CROISSANT animation_26
+  - first:
+      213: 4336651241767197357
+    second: Character Selection CROISSANT animation_27
+  - first:
+      213: -2480282463826189840
+    second: Character Selection CROISSANT animation_28
+  - first:
+      213: -1149498684534156019
+    second: Character Selection CROISSANT animation_29
+  - first:
+      213: 8097254718539362425
+    second: Character Selection CROISSANT animation_30
+  - first:
+      213: -7928077687504719291
+    second: Character Selection CROISSANT animation_31
+  - first:
+      213: -5726830243464689571
+    second: Character Selection CROISSANT animation_32
+  - first:
+      213: 4456829974348953319
+    second: Character Selection CROISSANT animation_33
+  - first:
+      213: 8963975340183117429
+    second: Character Selection CROISSANT animation_34
+  - first:
+      213: -8211525807883610658
+    second: Character Selection CROISSANT animation_35
+  - first:
+      213: 8100147515714475850
+    second: Character Selection CROISSANT animation_36
+  - first:
+      213: 8152973484692895934
+    second: Character Selection CROISSANT animation_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character Selection CROISSANT animation_15
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 146
+        width: 718
+        height: 835
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf089b2a9bed17290800000000000000
+      internalID: -7894283782923386629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Selection CROISSANT animation_19
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 145
+        width: 721
+        height: 834
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a116af5285fbb52c0800000000000000
+      internalID: -4441746222155669222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Selection CROISSANT animation_27
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 146
+        width: 715
+        height: 831
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa5a4ce351ee2c30800000000000000
+      internalID: 4336651241767197357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Selection CROISSANT animation_28
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 143
+        width: 711
+        height: 830
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f162018d34449dd0800000000000000
+      internalID: -2480282463826189840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c15d2011f63dca34ab799bba87f061e1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Character Selection CROISSANT animation_0: 6137191865015471945
+      Character Selection CROISSANT animation_1: 2204438059866982120
+      Character Selection CROISSANT animation_10: -5739381863168826590
+      Character Selection CROISSANT animation_11: -7158937617984724139
+      Character Selection CROISSANT animation_12: 7133283021963582748
+      Character Selection CROISSANT animation_13: -2794248866107463285
+      Character Selection CROISSANT animation_14: -2256056528687853998
+      Character Selection CROISSANT animation_15: -7894283782923386629
+      Character Selection CROISSANT animation_16: -6376527312717571243
+      Character Selection CROISSANT animation_17: -2264210869100613329
+      Character Selection CROISSANT animation_18: 1996776748662303320
+      Character Selection CROISSANT animation_19: -4441746222155669222
+      Character Selection CROISSANT animation_2: -7080222103743393107
+      Character Selection CROISSANT animation_20: 2594755816091632760
+      Character Selection CROISSANT animation_21: 7736180615229944817
+      Character Selection CROISSANT animation_22: -7826120785474124388
+      Character Selection CROISSANT animation_23: -675637071477738365
+      Character Selection CROISSANT animation_24: -4707609683717869141
+      Character Selection CROISSANT animation_25: 6645724691971003977
+      Character Selection CROISSANT animation_26: 932681286154126030
+      Character Selection CROISSANT animation_27: 4336651241767197357
+      Character Selection CROISSANT animation_28: -2480282463826189840
+      Character Selection CROISSANT animation_29: -1149498684534156019
+      Character Selection CROISSANT animation_3: -3563509227742720140
+      Character Selection CROISSANT animation_30: 8097254718539362425
+      Character Selection CROISSANT animation_31: -7928077687504719291
+      Character Selection CROISSANT animation_32: -5726830243464689571
+      Character Selection CROISSANT animation_33: 4456829974348953319
+      Character Selection CROISSANT animation_34: 8963975340183117429
+      Character Selection CROISSANT animation_35: -8211525807883610658
+      Character Selection CROISSANT animation_36: 8100147515714475850
+      Character Selection CROISSANT animation_37: 8152973484692895934
+      Character Selection CROISSANT animation_4: -3603626518183977729
+      Character Selection CROISSANT animation_5: 6498972134153237620
+      Character Selection CROISSANT animation_6: 1218010540575816464
+      Character Selection CROISSANT animation_7: -8252037739010643132
+      Character Selection CROISSANT animation_8: 7929053880069697024
+      Character Selection CROISSANT animation_9: -6072441863262180479
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

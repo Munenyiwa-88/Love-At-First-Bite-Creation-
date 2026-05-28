@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: e4258a65af327474abe2fefb15e0ccc7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -729698150195132711
+    second: HeartbreakLovemeter FRAME7_0
+  - first:
+      213: 4842732738112132176
+    second: HeartbreakLovemeter FRAME7_1
+  - first:
+      213: 4742787467274647183
+    second: HeartbreakLovemeter FRAME7_2
+  - first:
+      213: 8136751786005578148
+    second: HeartbreakLovemeter FRAME7_3
+  - first:
+      213: 9162836992006432692
+    second: HeartbreakLovemeter FRAME7_4
+  - first:
+      213: 7526732715884302031
+    second: HeartbreakLovemeter FRAME7_5
+  - first:
+      213: -8020579425623242885
+    second: HeartbreakLovemeter FRAME7_6
+  - first:
+      213: -1575352189486639805
+    second: HeartbreakLovemeter FRAME7_7
+  - first:
+      213: -6479532918930720529
+    second: HeartbreakLovemeter FRAME7_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HeartbreakLovemeter FRAME7_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 219
+        width: 233
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d60c5406679fd5f0800000000000000
+      internalID: -729698150195132711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovemeter FRAME7_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 401
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054145574c7d43340800000000000000
+      internalID: 4842732738112132176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovemeter FRAME7_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 370
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f867418b214c1d140800000000000000
+      internalID: 4742787467274647183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovemeter FRAME7_3
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 373
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1436693ac8be070800000000000000
+      internalID: 8136751786005578148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovemeter FRAME7_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 367
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b72a5b82bfe82f70800000000000000
+      internalID: 9162836992006432692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovemeter FRAME7_5
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 373
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce4899d683547860800000000000000
+      internalID: 7526732715884302031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovemeter FRAME7_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 364
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b778bead18d21b090800000000000000
+      internalID: -8020579425623242885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovemeter FRAME7_7
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 286
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345d38db789332ae0800000000000000
+      internalID: -1575352189486639805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovemeter FRAME7_8
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 221
+        width: 190
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe83fa8e3231416a0800000000000000
+      internalID: -6479532918930720529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e1ff83bd0ad2c314fb6df9ec0024edd1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HeartbreakLovemeter FRAME7_0: -729698150195132711
+      HeartbreakLovemeter FRAME7_1: 4842732738112132176
+      HeartbreakLovemeter FRAME7_2: 4742787467274647183
+      HeartbreakLovemeter FRAME7_3: 8136751786005578148
+      HeartbreakLovemeter FRAME7_4: 9162836992006432692
+      HeartbreakLovemeter FRAME7_5: 7526732715884302031
+      HeartbreakLovemeter FRAME7_6: -8020579425623242885
+      HeartbreakLovemeter FRAME7_7: -1575352189486639805
+      HeartbreakLovemeter FRAME7_8: -6479532918930720529
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
