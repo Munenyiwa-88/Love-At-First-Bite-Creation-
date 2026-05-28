@@ -418,9 +418,10 @@ public class DialogueManager : MonoBehaviour
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
         }
-         //adding audio to character expressions
-         //Sad
-
+        
+        //adding audio to character expressions
+        
+        //SAD
         if (currentIndex == 10)
         {
             GirlDisgust.Stop();
@@ -439,7 +440,7 @@ public class DialogueManager : MonoBehaviour
             GirlAngry.Stop();
         }
 
-        //angry
+        //ANGRY
 
         if (currentIndex == 12)
         {
@@ -477,7 +478,7 @@ public class DialogueManager : MonoBehaviour
             GirlAngry.Play();
         }
 
-        //Happy
+        //HAPPY
 
         if (currentIndex == 8)
         {
@@ -497,7 +498,7 @@ public class DialogueManager : MonoBehaviour
             GirlAngry.Stop();
         }
 
-        //flirty
+        //FLIRTY
 
         if (currentIndex == 14)
         {
