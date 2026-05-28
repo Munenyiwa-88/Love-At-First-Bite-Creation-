@@ -10,10 +10,12 @@ public class CupcakeChoiceConfirmation : MonoBehaviour
    
     public Button yesButton;
     public Button noButton;
+    public AudioSource MainBGM;
 
     public void OnYesButton()
     {
         SceneManager.LoadScene("DameFramboje");
+        MainBGM.Pause();
     }
 
     public void OnNoButton()
