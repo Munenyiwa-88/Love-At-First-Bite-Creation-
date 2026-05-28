@@ -1,0 +1,375 @@
+fileFormatVersion: 2
+guid: eebf445819fa11543b700e24dbe7edef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7880117323081652541
+    second: HeartbreakLovermeter sprite sheet_0
+  - first:
+      213: -5119990160313347666
+    second: HeartbreakLovermeter sprite sheet_1
+  - first:
+      213: 7383389138918006757
+    second: HeartbreakLovermeter sprite sheet_2
+  - first:
+      213: -841867418988799752
+    second: HeartbreakLovermeter sprite sheet_3
+  - first:
+      213: 5174967698375184922
+    second: HeartbreakLovermeter sprite sheet_4
+  - first:
+      213: 1459005308997601759
+    second: HeartbreakLovermeter sprite sheet_5
+  - first:
+      213: -3252608869413724117
+    second: HeartbreakLovermeter sprite sheet_6
+  - first:
+      213: -3654585653910254915
+    second: HeartbreakLovermeter sprite sheet_7
+  - first:
+      213: -3843613428876336195
+    second: HeartbreakLovermeter sprite sheet_8
+  - first:
+      213: 6576215448283823575
+    second: HeartbreakLovermeter sprite sheet_9
+  - first:
+      213: 5726388574983669786
+    second: HeartbreakLovermeter sprite sheet_10
+  - first:
+      213: -2419357212591608662
+    second: HeartbreakLovermeter sprite sheet_11
+  - first:
+      213: 8167279969893893688
+    second: HeartbreakLovermeter sprite sheet_12
+  - first:
+      213: -9163712475467918771
+    second: HeartbreakLovermeter sprite sheet_13
+  - first:
+      213: 2102299750168791781
+    second: HeartbreakLovermeter sprite sheet_14
+  - first:
+      213: -2229390769710780962
+    second: HeartbreakLovermeter sprite sheet_15
+  - first:
+      213: -5076572931799439542
+    second: HeartbreakLovermeter sprite sheet_16
+  - first:
+      213: 1739743060567156823
+    second: HeartbreakLovermeter sprite sheet_17
+  - first:
+      213: 8019035781517836204
+    second: HeartbreakLovermeter sprite sheet_18
+  - first:
+      213: -8731930030842043128
+    second: HeartbreakLovermeter sprite sheet_19
+  - first:
+      213: -5506653342814816930
+    second: HeartbreakLovermeter sprite sheet_20
+  - first:
+      213: -1515075806460470898
+    second: HeartbreakLovermeter sprite sheet_21
+  - first:
+      213: 5786577531040727539
+    second: HeartbreakLovermeter sprite sheet_22
+  - first:
+      213: 2817959910456387769
+    second: HeartbreakLovermeter sprite sheet_23
+  - first:
+      213: 6260188900963731305
+    second: HeartbreakLovermeter sprite sheet_24
+  - first:
+      213: -6201288508726787527
+    second: HeartbreakLovermeter sprite sheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HeartbreakLovermeter sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 38
+        width: 168
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea043cfb7edc2d10800000000000000
+      internalID: 2102299750168791781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovermeter sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 36
+        width: 168
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddaad128ec9f01e0800000000000000
+      internalID: -2229390769710780962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovermeter sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 25
+        width: 168
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a472bbbb0d36c89b0800000000000000
+      internalID: -5076572931799439542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovermeter sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 36
+        width: 191
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7586e85981fc42810800000000000000
+      internalID: 1739743060567156823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovermeter sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 26
+        width: 180
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89922cc49e59fae0800000000000000
+      internalID: -1515075806460470898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovermeter sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 34
+        width: 199
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f180fa1b9d0e4050800000000000000
+      internalID: 5786577531040727539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartbreakLovermeter sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 34
+        width: 224
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96749c433a8a0e650800000000000000
+      internalID: 6260188900963731305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c73cf9ca641b40444b48db1783357f26
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HeartbreakLovermeter sprite sheet_0: -7880117323081652541
+      HeartbreakLovermeter sprite sheet_1: -5119990160313347666
+      HeartbreakLovermeter sprite sheet_10: 5726388574983669786
+      HeartbreakLovermeter sprite sheet_11: -2419357212591608662
+      HeartbreakLovermeter sprite sheet_12: 8167279969893893688
+      HeartbreakLovermeter sprite sheet_13: -9163712475467918771
+      HeartbreakLovermeter sprite sheet_14: 2102299750168791781
+      HeartbreakLovermeter sprite sheet_15: -2229390769710780962
+      HeartbreakLovermeter sprite sheet_16: -5076572931799439542
+      HeartbreakLovermeter sprite sheet_17: 1739743060567156823
+      HeartbreakLovermeter sprite sheet_18: 8019035781517836204
+      HeartbreakLovermeter sprite sheet_19: -8731930030842043128
+      HeartbreakLovermeter sprite sheet_2: 7383389138918006757
+      HeartbreakLovermeter sprite sheet_20: -5506653342814816930
+      HeartbreakLovermeter sprite sheet_21: -1515075806460470898
+      HeartbreakLovermeter sprite sheet_22: 5786577531040727539
+      HeartbreakLovermeter sprite sheet_23: 2817959910456387769
+      HeartbreakLovermeter sprite sheet_24: 6260188900963731305
+      HeartbreakLovermeter sprite sheet_25: -6201288508726787527
+      HeartbreakLovermeter sprite sheet_3: -841867418988799752
+      HeartbreakLovermeter sprite sheet_4: 5174967698375184922
+      HeartbreakLovermeter sprite sheet_5: 1459005308997601759
+      HeartbreakLovermeter sprite sheet_6: -3252608869413724117
+      HeartbreakLovermeter sprite sheet_7: -3654585653910254915
+      HeartbreakLovermeter sprite sheet_8: -3843613428876336195
+      HeartbreakLovermeter sprite sheet_9: 6576215448283823575
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

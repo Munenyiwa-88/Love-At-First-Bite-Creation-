@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: 8ffb8d4593379204db9f6ffdec333fd2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2848645864391508152
+    second: HeartPulse Sprite Sheet_0
+  - first:
+      213: -8159811486455726668
+    second: HeartPulse Sprite Sheet_1
+  - first:
+      213: -4506360489371028710
+    second: HeartPulse Sprite Sheet_2
+  - first:
+      213: -3056719559257452144
+    second: HeartPulse Sprite Sheet_3
+  - first:
+      213: 451950424893950433
+    second: HeartPulse Sprite Sheet_4
+  - first:
+      213: -2047368302972995818
+    second: HeartPulse Sprite Sheet_5
+  - first:
+      213: -4530683062606437866
+    second: HeartPulse Sprite Sheet_6
+  - first:
+      213: 5123047991474482269
+    second: HeartPulse Sprite Sheet_7
+  - first:
+      213: -3853817646776932637
+    second: HeartPulse Sprite Sheet_8
+  - first:
+      213: 4483744420768353974
+    second: HeartPulse Sprite Sheet_9
+  - first:
+      213: 7728950051413308325
+    second: HeartPulse Sprite Sheet_10
+  - first:
+      213: 3431070182685234981
+    second: HeartPulse Sprite Sheet_11
+  - first:
+      213: -5363547609888634170
+    second: HeartPulse Sprite Sheet_12
+  - first:
+      213: 543760745706726554
+    second: HeartPulse Sprite Sheet_13
+  - first:
+      213: -3689817284303788962
+    second: HeartPulse Sprite Sheet_14
+  - first:
+      213: 745514799964906132
+    second: HeartPulse Sprite Sheet_15
+  - first:
+      213: 8935116889744672101
+    second: HeartPulse Sprite Sheet_16
+  - first:
+      213: 3572361021612883434
+    second: HeartPulse Sprite Sheet_17
+  - first:
+      213: -990401114358065528
+    second: HeartPulse Sprite Sheet_18
+  - first:
+      213: 1517333979179648525
+    second: HeartPulse Sprite Sheet_19
+  - first:
+      213: 3429096685911748332
+    second: HeartPulse Sprite Sheet_20
+  - first:
+      213: 1526842807774966108
+    second: HeartPulse Sprite Sheet_21
+  - first:
+      213: 5565661612798656276
+    second: HeartPulse Sprite Sheet_22
+  - first:
+      213: -7252284834358576418
+    second: HeartPulse Sprite Sheet_23
+  - first:
+      213: 5631828388020585840
+    second: HeartPulse Sprite Sheet_24
+  - first:
+      213: -1568365440741729592
+    second: HeartPulse Sprite Sheet_25
+  - first:
+      213: 7079572146537520900
+    second: HeartPulse Sprite Sheet_26
+  - first:
+      213: -2269679661051601866
+    second: HeartPulse Sprite Sheet_27
+  - first:
+      213: -6027241132555174047
+    second: HeartPulse Sprite Sheet_28
+  - first:
+      213: 7182937925924083081
+    second: HeartPulse Sprite Sheet_29
+  - first:
+      213: 6101349451874729993
+    second: HeartPulse Sprite Sheet_30
+  - first:
+      213: -2746037672423650285
+    second: HeartPulse Sprite Sheet_31
+  - first:
+      213: -3620631783071850020
+    second: HeartPulse Sprite Sheet_32
+  - first:
+      213: 7601687670829712392
+    second: HeartPulse Sprite Sheet_33
+  - first:
+      213: 1761167197261266876
+    second: HeartPulse Sprite Sheet_34
+  - first:
+      213: -2462980871633627441
+    second: HeartPulse Sprite Sheet_35
+  - first:
+      213: 6087700740056121231
+    second: HeartPulse Sprite Sheet_36
+  - first:
+      213: 413309084987921576
+    second: HeartPulse Sprite Sheet_37
+  - first:
+      213: -1660660550850520107
+    second: HeartPulse Sprite Sheet_38
+  - first:
+      213: 4039276841913241475
+    second: HeartPulse Sprite Sheet_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HeartPulse Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 81
+        width: 167
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ffe0adda39778d0800000000000000
+      internalID: -2848645864391508152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartPulse Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 78
+        width: 254
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd77a38fa682ce80800000000000000
+      internalID: -8159811486455726668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartPulse Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 73
+        width: 269
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6aab6c44d748ac0800000000000000
+      internalID: -3853817646776932637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartPulse Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 82
+        width: 249
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54e9fabab22bccc0800000000000000
+      internalID: -3689817284303788962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartPulse Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 85
+        width: 227
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88659811f636142f0800000000000000
+      internalID: -990401114358065528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartPulse Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 85
+        width: 237
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f34eaafb33d3d40800000000000000
+      internalID: 5565661612798656276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartPulse Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 88
+        width: 213
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca1792f0fb0c3ae0800000000000000
+      internalID: -1568365440741729592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartPulse Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 82
+        width: 167
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c1711af5a7080e0800000000000000
+      internalID: -2269679661051601866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2a835ae08b0f4d841b70c8fe4554a34c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HeartPulse Sprite Sheet_0: -2848645864391508152
+      HeartPulse Sprite Sheet_1: -8159811486455726668
+      HeartPulse Sprite Sheet_10: 7728950051413308325
+      HeartPulse Sprite Sheet_11: 3431070182685234981
+      HeartPulse Sprite Sheet_12: -5363547609888634170
+      HeartPulse Sprite Sheet_13: 543760745706726554
+      HeartPulse Sprite Sheet_14: -3689817284303788962
+      HeartPulse Sprite Sheet_15: 745514799964906132
+      HeartPulse Sprite Sheet_16: 8935116889744672101
+      HeartPulse Sprite Sheet_17: 3572361021612883434
+      HeartPulse Sprite Sheet_18: -990401114358065528
+      HeartPulse Sprite Sheet_19: 1517333979179648525
+      HeartPulse Sprite Sheet_2: -4506360489371028710
+      HeartPulse Sprite Sheet_20: 3429096685911748332
+      HeartPulse Sprite Sheet_21: 1526842807774966108
+      HeartPulse Sprite Sheet_22: 5565661612798656276
+      HeartPulse Sprite Sheet_23: -7252284834358576418
+      HeartPulse Sprite Sheet_24: 5631828388020585840
+      HeartPulse Sprite Sheet_25: -1568365440741729592
+      HeartPulse Sprite Sheet_26: 7079572146537520900
+      HeartPulse Sprite Sheet_27: -2269679661051601866
+      HeartPulse Sprite Sheet_28: -6027241132555174047
+      HeartPulse Sprite Sheet_29: 7182937925924083081
+      HeartPulse Sprite Sheet_3: -3056719559257452144
+      HeartPulse Sprite Sheet_30: 6101349451874729993
+      HeartPulse Sprite Sheet_31: -2746037672423650285
+      HeartPulse Sprite Sheet_32: -3620631783071850020
+      HeartPulse Sprite Sheet_33: 7601687670829712392
+      HeartPulse Sprite Sheet_34: 1761167197261266876
+      HeartPulse Sprite Sheet_35: -2462980871633627441
+      HeartPulse Sprite Sheet_36: 6087700740056121231
+      HeartPulse Sprite Sheet_37: 413309084987921576
+      HeartPulse Sprite Sheet_38: -1660660550850520107
+      HeartPulse Sprite Sheet_39: 4039276841913241475
+      HeartPulse Sprite Sheet_4: 451950424893950433
+      HeartPulse Sprite Sheet_5: -2047368302972995818
+      HeartPulse Sprite Sheet_6: -4530683062606437866
+      HeartPulse Sprite Sheet_7: 5123047991474482269
+      HeartPulse Sprite Sheet_8: -3853817646776932637
+      HeartPulse Sprite Sheet_9: 4483744420768353974
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
