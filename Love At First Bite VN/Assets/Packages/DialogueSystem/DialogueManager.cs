@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI raspberryDialogueText;
     public TextMeshProUGUI playerDialogueText;
     public Button nextButton;
+    public Button nextPlayerButton;
     public Button goodEndButton;
     public Button badEndButton;
     //public Button endButton;
@@ -47,25 +48,30 @@ public class DialogueManager : MonoBehaviour
     public GameObject characterSadImage;
     public GameObject characterAngryImage;
     public GameObject characterFlirtyImage;
-    [Header("HeartMeter")]
-    public Image heartMeterPanel;
-    public GameObject heartMeterhalfImage;
-    public GameObject heartMeter25Image;
-    public GameObject heartMeter75Image;
-    public GameObject heartMeteremptyImage;
-    public GameObject heartMeterfullImage;
     //Inputting a slider 
     [Header("Slider")]
     public float heart;
     public float maxHeart = 10;
     public Slider slider;
+    //inputting a heart reaction
+    [Header("HeartReaction")]
+    public GameObject heartIncreaseReaction;
+    public GameObject heartDecreaseReaction;
+
+    /* [Header("HeartMeter")]
+   public Image heartMeterPanel;
+   public GameObject heartMeterhalfImage;
+   public GameObject heartMeter25Image;
+   public GameObject heartMeter75Image;
+   public GameObject heartMeteremptyImage;
+   public GameObject heartMeterfullImage;*/
     //Adding the script for the games audios
     //[Header("Audio")]
     //[SerializeField] AudioSource ThemeSongCreepy;
     //[SerializeField] AudioSource ButtonFeedback;
     //[SerializeField] AudioSource HeartMeterIncrease;
     //[SerializeField] AudioSource HeartMeterDecrease; 
-     
+
     [Header("Audio")]
     [SerializeField] AudioSource GirlBGM;
     [SerializeField] AudioSource GirlGiggle;
@@ -719,6 +725,7 @@ public class DialogueManager : MonoBehaviour
         choicesPanel3.SetActive(false);
         choicesPanel4.SetActive(false);
         nextButton.gameObject.SetActive(true);
+        nextPlayerButton.gameObject.SetActive(true);
         //endButton.gameObject.SetActive(false);
 
 
@@ -728,6 +735,7 @@ public class DialogueManager : MonoBehaviour
         {
             nextButton.gameObject.SetActive(false);
             nameInputPanel.SetActive(true);
+            nextPlayerButton.gameObject.SetActive(false);
         }
 
         //First branching at index 5

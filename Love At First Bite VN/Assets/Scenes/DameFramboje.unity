@@ -268,6 +268,7 @@ MonoBehaviour:
   raspberryDialogueText: {fileID: 1632056502}
   playerDialogueText: {fileID: 2027155241}
   nextButton: {fileID: 1514928728}
+  nextPlayerButton: {fileID: 0}
   goodEndButton: {fileID: 1513123937}
   badEndButton: {fileID: 1410061695}
   nameInputField: {fileID: 449804354}
@@ -291,15 +292,11 @@ MonoBehaviour:
   characterSadImage: {fileID: 277989062}
   characterAngryImage: {fileID: 641554953}
   characterFlirtyImage: {fileID: 2015549231}
-  heartMeterPanel: {fileID: 1283009980}
-  heartMeterhalfImage: {fileID: 1283009978}
-  heartMeter25Image: {fileID: 133962221}
-  heartMeter75Image: {fileID: 846644469}
-  heartMeteremptyImage: {fileID: 193164150}
-  heartMeterfullImage: {fileID: 1811735021}
   heart: 5
   maxHeart: 10
   slider: {fileID: 330502198}
+  heartIncreaseReaction: {fileID: 0}
+  heartDecreaseReaction: {fileID: 0}
   GirlBGM: {fileID: 0}
   GirlGiggle: {fileID: 970338657}
   GirlDisgust: {fileID: 1747031267}
@@ -1040,6 +1037,7 @@ RectTransform:
   - {fileID: 610976255}
   - {fileID: 1283009979}
   - {fileID: 460363055}
+  - {fileID: 434091800}
   m_Father: {fileID: 1475212209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1514,6 +1512,7 @@ MonoBehaviour:
   raspberryDialogueText: {fileID: 1632056502}
   playerDialogueText: {fileID: 2027155241}
   nextButton: {fileID: 1514928728}
+  nextPlayerButton: {fileID: 0}
   goodEndButton: {fileID: 1513123937}
   badEndButton: {fileID: 1410061695}
   nameInputField: {fileID: 449804354}
@@ -1537,15 +1536,11 @@ MonoBehaviour:
   characterSadImage: {fileID: 277989062}
   characterAngryImage: {fileID: 641554953}
   characterFlirtyImage: {fileID: 2015549231}
-  heartMeterPanel: {fileID: 1283009980}
-  heartMeterhalfImage: {fileID: 1283009978}
-  heartMeter25Image: {fileID: 133962221}
-  heartMeter75Image: {fileID: 846644469}
-  heartMeteremptyImage: {fileID: 193164150}
-  heartMeterfullImage: {fileID: 1811735021}
   heart: 5
   maxHeart: 10
   slider: {fileID: 330502198}
+  heartIncreaseReaction: {fileID: 0}
+  heartDecreaseReaction: {fileID: 0}
   GirlBGM: {fileID: 0}
   GirlGiggle: {fileID: 970338657}
   GirlDisgust: {fileID: 1747031267}
@@ -2275,6 +2270,7 @@ MonoBehaviour:
   raspberryDialogueText: {fileID: 1632056502}
   playerDialogueText: {fileID: 2027155241}
   nextButton: {fileID: 1514928728}
+  nextPlayerButton: {fileID: 0}
   goodEndButton: {fileID: 1513123937}
   badEndButton: {fileID: 1410061695}
   nameInputField: {fileID: 449804354}
@@ -2298,15 +2294,11 @@ MonoBehaviour:
   characterSadImage: {fileID: 277989062}
   characterAngryImage: {fileID: 641554953}
   characterFlirtyImage: {fileID: 2015549231}
-  heartMeterPanel: {fileID: 1283009980}
-  heartMeterhalfImage: {fileID: 1283009978}
-  heartMeter25Image: {fileID: 133962221}
-  heartMeter75Image: {fileID: 846644469}
-  heartMeteremptyImage: {fileID: 193164150}
-  heartMeterfullImage: {fileID: 1811735021}
   heart: 5
   maxHeart: 10
   slider: {fileID: 330502198}
+  heartIncreaseReaction: {fileID: 0}
+  heartDecreaseReaction: {fileID: 0}
   GirlBGM: {fileID: 0}
   GirlGiggle: {fileID: 970338657}
   GirlDisgust: {fileID: 1747031267}
@@ -2479,20 +2471,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434091799}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 461087923}
   - {fileID: 1064710680}
-  - {fileID: 734369562}
-  m_Father: {fileID: 1475212209}
+  m_Father: {fileID: 234953962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -115, y: -186}
+  m_SizeDelta: {x: 141.51, y: 121.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &435572617
 GameObject:
@@ -3089,8 +3080,8 @@ Transform:
   m_GameObject: {fileID: 461087922}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 327, y: 363, z: -6075}
-  m_LocalScale: {x: 47.925, y: 45.9, z: 67.5}
+  m_LocalPosition: {x: 219, y: 522, z: -6075}
+  m_LocalScale: {x: 108.18034, y: 109.02165, z: 67.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 434091800}
@@ -4222,120 +4213,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680641992}
   m_CullTransparentMesh: 1
---- !u!1 &734369561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 734369562}
-  - component: {fileID: 734369564}
-  - component: {fileID: 734369563}
-  m_Layer: 0
-  m_Name: HeartbreakLovermeter draft anim
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &734369562
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734369561}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 312, y: 362, z: -6075}
-  m_LocalScale: {x: 67.5, y: 67.5, z: 67.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 434091800}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &734369563
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734369561}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b0917a08f224af148bc029cd6514e3e7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!212 &734369564
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734369561}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 2102299750168791781, guid: eebf445819fa11543b700e24dbe7edef, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.68, y: 1.47}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
 --- !u!1 &754553961
 GameObject:
   m_ObjectHideFlags: 0
@@ -5696,6 +5573,7 @@ MonoBehaviour:
   raspberryDialogueText: {fileID: 1632056502}
   playerDialogueText: {fileID: 2027155241}
   nextButton: {fileID: 1514928728}
+  nextPlayerButton: {fileID: 0}
   goodEndButton: {fileID: 1513123937}
   badEndButton: {fileID: 1410061695}
   nameInputField: {fileID: 449804354}
@@ -5719,15 +5597,11 @@ MonoBehaviour:
   characterSadImage: {fileID: 277989062}
   characterAngryImage: {fileID: 641554953}
   characterFlirtyImage: {fileID: 2015549231}
-  heartMeterPanel: {fileID: 1283009980}
-  heartMeterhalfImage: {fileID: 1283009978}
-  heartMeter25Image: {fileID: 133962221}
-  heartMeter75Image: {fileID: 846644469}
-  heartMeteremptyImage: {fileID: 193164150}
-  heartMeterfullImage: {fileID: 1811735021}
   heart: 5
   maxHeart: 10
   slider: {fileID: 330502198}
+  heartIncreaseReaction: {fileID: 0}
+  heartDecreaseReaction: {fileID: 0}
   GirlBGM: {fileID: 0}
   GirlGiggle: {fileID: 970338657}
   GirlDisgust: {fileID: 1747031267}
@@ -6069,14 +5943,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 997657957}
-  - component: {fileID: 997657958}
   m_Layer: 5
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &997657957
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6084,7 +5957,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997657956}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6092,118 +5965,13 @@ RectTransform:
   - {fileID: 282497777}
   - {fileID: 1658369881}
   - {fileID: 1615318249}
-  m_Father: {fileID: 1475212209}
+  m_Father: {fileID: 1017733492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &997657958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997657956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d98cd832ffa5c754ebd797e06bee75f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
-  raspberryDialogueText: {fileID: 1632056502}
-  playerDialogueText: {fileID: 2027155241}
-  nextButton: {fileID: 1514928728}
-  goodEndButton: {fileID: 1513123937}
-  badEndButton: {fileID: 1410061695}
-  nameInputField: {fileID: 449804354}
-  currentIndex: 0
-  choicesPanel1: {fileID: 1803084399}
-  choicesPanel2: {fileID: 474701101}
-  choicesPanel3: {fileID: 1681577329}
-  choicesPanel4: {fileID: 610976254}
-  dialoguePanel: {fileID: 1017733491}
-  nameInputPanel: {fileID: 1813334056}
-  backgroundAfternoonPanel: {fileID: 234953963}
-  backgroundAfternoonImage: {fileID: 3497671040658348025, guid: 54a60b8720ad759458149acfffbe8846, type: 3}
-  backgroundNightPanel: {fileID: 234953963}
-  backgroundNightImage: {fileID: -8411839417314994153, guid: 326ed7a15a263b74eb306e6401e3c54e, type: 3}
-  dialogueBoxPanel: {fileID: 1017733493}
-  raspberryDialogueBoxImage: {fileID: 1759196390}
-  playerDialogueBoxImage: {fileID: 1065308345}
-  characterPanel: {fileID: 1063688658}
-  characterIdleImage: {fileID: 459354229}
-  characterHappyImage: {fileID: 1467433391}
-  characterSadImage: {fileID: 277989062}
-  characterAngryImage: {fileID: 641554953}
-  characterFlirtyImage: {fileID: 2015549231}
-  heartMeterPanel: {fileID: 1283009980}
-  heartMeterhalfImage: {fileID: 1283009978}
-  heartMeter25Image: {fileID: 133962221}
-  heartMeter75Image: {fileID: 846644469}
-  heartMeteremptyImage: {fileID: 193164150}
-  heartMeterfullImage: {fileID: 1811735021}
-  heart: 0
-  maxHeart: 10
-  slider: {fileID: 330502198}
-  GirlBGM: {fileID: 282497778}
-  GirlGiggle: {fileID: 970338657}
-  GirlDisgust: {fileID: 1747031267}
-  GirlGasp: {fileID: 292070842}
-  GirlSigh: {fileID: 395958833}
-  GirlAngry: {fileID: 25982959}
-  sentences:
-  - 'Player: What the...? '
-  - 'Oh bonjour! You must be the lucky person who wishes to eat me! '
-  - 'Player: Why is my cupcake talking to me right now? '
-  - "You thought you could just eat me without getting to know me first? Ch\xE9rie,
-    It's just manners!"
-  - "I didn't get your name, how rude of me! So ch\xE9rie, what is your name?"
-  - Name...
-  - 'Ooooo, you must be tourist. You don''t see that name a lot around here. '
-  - 'I am Dame Framboje. Do you like? I came up with it myself. '
-  - 'Merci beaucoup! You''re as sweet as meringue!  '
-  - 'I guess names aren''t important when you''re hungry. '
-  - 'Ah, you''re right! Dame Framboje? *She laughs nervously* What was I thinking? '
-  - You picked me, you love cupcakes non? Tell me {Name} what's your favourite flavor?
-    *She looks at you hopeful that you pick the RIGHT one*
-  - "Strawberry? Oh no, ch\xE9rie. That's my relative. Serious bad blood."
-  - Vanilla? A bit common, don't you think?
-  - Je suis ravi! I knew you'd pick raspberry. I'm just so ravishing.
-  - "So ch\xE9rie, what do you want to talk about?  "
-  - 'Well as you can see {Name}, I''m an extravagant raspberry cupcake, with a lot
-    of confidence and a big heart! '
-  - 'It''s so horrid being on display all day, especially when you are next to Un
-    idiot. '
-  - '{Name}: An idiot? Who exactly is this idiot? '
-  - "Oh ch\xE9rie, such bad manners bringing up my ex on a date."
-  - He was all butter no brains, you know how croissants are, non?
-  - You dodged some serious food poisoning by not picking him!
-  - 'THAT PUTAIN STOLE MY CHOCOLAT PRINCE! MY OWN FAMILY BETRAYED ME IN THIS WAY! '
-  - Oh sorry {Name}, forgot to use my inside voice. I just need to get away from
-    all this drama.
-  - '{Name}: Zut! Sounds bad, when did this all happen Dame?'
-  - Yesterday...
-  - '{Name}: Oh... well I see why you''re so passionate amor. '
-  - 'Amor? (She blushes) Mmh, with one word you''ve brought me back to my senses. '
-  - 'I like the sound of that, I''ll call you amor too from now on. (she winks at
-    you) '
-  - 'Nothing? You don''t wish to speak to me? Your date? '
-  - 'If we aren''t speaking, how do you expect me to just let you EAT me!? '
-  - '{Name}: No, no! I just couldn''t think of anything to say.'
-  - 'I''m just hungry, you know? '
-  - Hungry? Oh so now every hungry tourist that walks in here just gets to EAT me
-    without even having a proper conversation?
-  - "You poor thing, learn some manners ch\xE9rie, maybe then we can have some fun.
-    *she shakes her head in disaproval*"
-  - 'Oh {Name}, I can practically hear your stomach growling from here. *She laughs* '
-  - 'You must really want me.  '
-  - 'Tell me {Name}, why should I let you eat me? '
-  - 'You promise to savour every bite? *She locks eyes with you, while moving closer.* '
-  - '{Name}: I promise. '
-  - Alright {Name}, I'm all yours.
-  - 'Excuse me?? '
-  - 'Well, you wouldn''t be the first. Spare your teeth, do not dare to eat me. '
 --- !u!1 &1017733491
 GameObject:
   m_ObjectHideFlags: 0
@@ -6237,6 +6005,7 @@ RectTransform:
   m_Children:
   - {fileID: 1759196391}
   - {fileID: 1065308346}
+  - {fileID: 997657957}
   m_Father: {fileID: 234953962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6297,6 +6066,7 @@ MonoBehaviour:
   raspberryDialogueText: {fileID: 1632056502}
   playerDialogueText: {fileID: 2027155241}
   nextButton: {fileID: 1514928728}
+  nextPlayerButton: {fileID: 444788489}
   goodEndButton: {fileID: 1513123937}
   badEndButton: {fileID: 1410061695}
   nameInputField: {fileID: 449804354}
@@ -6320,15 +6090,11 @@ MonoBehaviour:
   characterSadImage: {fileID: 277989062}
   characterAngryImage: {fileID: 641554953}
   characterFlirtyImage: {fileID: 2015549231}
-  heartMeterPanel: {fileID: 1283009980}
-  heartMeterhalfImage: {fileID: 1283009978}
-  heartMeter25Image: {fileID: 133962221}
-  heartMeter75Image: {fileID: 846644469}
-  heartMeteremptyImage: {fileID: 193164150}
-  heartMeterfullImage: {fileID: 1811735021}
   heart: 0
   maxHeart: 10
   slider: {fileID: 330502198}
+  heartIncreaseReaction: {fileID: 1064710679}
+  heartDecreaseReaction: {fileID: 461087922}
   GirlBGM: {fileID: 282497778}
   GirlGiggle: {fileID: 1422407351}
   GirlDisgust: {fileID: 484105273}
@@ -6718,8 +6484,8 @@ Transform:
   m_GameObject: {fileID: 1064710679}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 326.14, y: 363.64, z: -6075}
-  m_LocalScale: {x: 45.198, y: 44.3475, z: 67.5}
+  m_LocalPosition: {x: 210, y: 525, z: -6075}
+  m_LocalScale: {x: 111.18709, y: 104.21662, z: 67.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 434091800}
@@ -9269,8 +9035,6 @@ RectTransform:
   - {fileID: 1775396418}
   - {fileID: 1513123936}
   - {fileID: 1410061694}
-  - {fileID: 997657957}
-  - {fileID: 434091800}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10765,6 +10529,7 @@ MonoBehaviour:
   raspberryDialogueText: {fileID: 1632056502}
   playerDialogueText: {fileID: 2027155241}
   nextButton: {fileID: 1514928728}
+  nextPlayerButton: {fileID: 0}
   goodEndButton: {fileID: 1513123937}
   badEndButton: {fileID: 1410061695}
   nameInputField: {fileID: 449804354}
@@ -10788,15 +10553,11 @@ MonoBehaviour:
   characterSadImage: {fileID: 277989062}
   characterAngryImage: {fileID: 641554953}
   characterFlirtyImage: {fileID: 2015549231}
-  heartMeterPanel: {fileID: 1283009980}
-  heartMeterhalfImage: {fileID: 1283009978}
-  heartMeter25Image: {fileID: 133962221}
-  heartMeter75Image: {fileID: 846644469}
-  heartMeteremptyImage: {fileID: 193164150}
-  heartMeterfullImage: {fileID: 1811735021}
   heart: 5
   maxHeart: 10
   slider: {fileID: 330502198}
+  heartIncreaseReaction: {fileID: 0}
+  heartDecreaseReaction: {fileID: 0}
   GirlBGM: {fileID: 0}
   GirlGiggle: {fileID: 970338657}
   GirlDisgust: {fileID: 1747031267}
