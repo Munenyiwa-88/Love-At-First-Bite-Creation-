@@ -106,12 +106,12 @@ TextureImporter:
       name: Dialogue Raspberry (1)_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 6
-        width: 1381
-        height: 285
+        x: 0
+        y: 0
+        width: 1406
+        height: 291
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Dialogue Raspberry (1)_1
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 6
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6246ade501b40320800000000000000
-      internalID: 2523336330254369389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4eabfc5133ed2d54f953668dd6b60e1b
     internalID: 0
     vertices: []
     indices: 
