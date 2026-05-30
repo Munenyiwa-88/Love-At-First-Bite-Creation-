@@ -550,7 +550,7 @@ public class DialogueManager : MonoBehaviour
         //adding audio to character expressions
 
         //SAD
-        if (currentIndex == 10)
+        if (currentIndex == 9)
         {
             GirlDisgust.Stop();
             GirlGiggle.Stop();
@@ -579,6 +579,15 @@ public class DialogueManager : MonoBehaviour
             GirlAngry.Stop();
         }
 
+            if (currentIndex == 13)
+        {
+            GirlDisgust.Play();
+            GirlGiggle.Stop();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Stop();
+        }
+
         if (currentIndex == 22)
         {
             GirlDisgust.Stop();
@@ -588,7 +597,7 @@ public class DialogueManager : MonoBehaviour
             GirlAngry.Play();
         }
 
-        if (currentIndex == 29)
+        if (currentIndex == 33)
         {
             GirlDisgust.Stop();
             GirlGiggle.Stop();
@@ -609,6 +618,14 @@ public class DialogueManager : MonoBehaviour
         //HAPPY
 
         if (currentIndex == 8)
+        {
+            GirlDisgust.Stop();
+            GirlGiggle.Play();
+            GirlGasp.Stop();
+            GirlSigh.Stop();
+            GirlAngry.Stop();
+        }
+        if (currentIndex == 27)
         {
             GirlDisgust.Stop();
             GirlGiggle.Play();

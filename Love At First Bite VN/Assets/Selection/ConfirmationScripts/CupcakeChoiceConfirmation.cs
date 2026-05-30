@@ -15,7 +15,7 @@ public class CupcakeChoiceConfirmation : MonoBehaviour
     public void OnYesButton()
     {
         SceneManager.LoadScene("DameFramboje");
-        MainBGM.Pause();
+        BGM.instance.GetComponent<AudioSource>().Pause();
     }
 
     public void OnNoButton()

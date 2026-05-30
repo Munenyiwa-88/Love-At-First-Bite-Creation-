@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class CroissantChoiceConfirmation : MonoBehaviour
 {
@@ -16,10 +17,10 @@ public class CroissantChoiceConfirmation : MonoBehaviour
     public void OnYesButton()
     {
        SceneManager.LoadScene("MonsieurChocolat");
-       MainBGM.Pause();
+        BGM.instance.GetComponent<AudioSource>().Pause();
     }
-
-    public void OnNoButton()
+   
+      public void OnNoButton()
     {
        SceneManager.LoadScene("CharacterSelection");
     }
