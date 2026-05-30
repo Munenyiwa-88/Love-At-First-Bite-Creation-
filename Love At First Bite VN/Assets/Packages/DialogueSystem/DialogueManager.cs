@@ -142,9 +142,11 @@ public class DialogueManager : MonoBehaviour
         heart = maxHeart;
         slider.maxValue = maxHeart;
         slider.value = heart;
-
-
         SetHeart(5);
+
+        //heart reaction animation
+        heartIncreaseReaction.SetActive(false);
+        heartDecreaseReaction.SetActive(false);
 
         //dialogue box's SetActive fasle or true
         raspberryDialogueBoxImage.SetActive(true);
@@ -425,8 +427,128 @@ public class DialogueManager : MonoBehaviour
             characterAngryImage.SetActive(false);
         }
         
+        //adding the heart animation
+
+        //Increase
+        if (currentIndex == 8)
+        {
+            heartIncreaseReaction.SetActive(true);
+            heartDecreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 9)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 14)
+        {
+            heartIncreaseReaction.SetActive(true);
+            heartDecreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 15)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 16)
+        {
+            heartIncreaseReaction.SetActive(true);
+            heartDecreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 17)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 32)
+        {
+            heartIncreaseReaction.SetActive(true);
+            heartDecreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 33)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 38)
+        {
+            heartIncreaseReaction.SetActive(true);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+
+
+        //Decrease
+        if (currentIndex == 10)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 11)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 12)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 13)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 22)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 23)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 29)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 30)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 41)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
         //adding audio to character expressions
-        
+
         //SAD
         if (currentIndex == 10)
         {
@@ -682,7 +804,7 @@ public class DialogueManager : MonoBehaviour
     {
 
         List<float> goodChoices = new List<float>() { 8, 14, 16, 38 };
-        List<float>badChoice = new List<float>() { 10, 12, 22, 13, 29, 41};
+        List<float>badChoice = new List<float>() { 10, 12, 13, 22, 29, 41};
 
         //10,12,13
         //what good index choice was pressed

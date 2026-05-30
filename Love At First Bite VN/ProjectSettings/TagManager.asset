@@ -9,7 +9,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - TextRaspberry
   - Water
   - UI
   - 'Animations '
@@ -41,6 +41,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: RaspberryText
+    uniqueID: 689738399
+    locked: 0
+  - name: PlayerText
+    uniqueID: 538241995
     locked: 0
   m_RenderingLayers:
   - Default

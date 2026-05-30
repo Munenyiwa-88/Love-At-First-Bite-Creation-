@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 44770680fa4290a4fbc4a6d0d5444cfe
+guid: 29b13f96baea22941ad8d075513e21af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9132467146177569954
-    second: Monsieur Chocolat Dialogue Box_0
-  - first:
-      213: -160368371091564099
-    second: Monsieur Chocolat Dialogue Box_1
-  - first:
-      213: -8990520419187472313
-    second: Monsieur Chocolat Dialogue Box_2
-  - first:
-      213: -3914704370500608605
-    second: Monsieur Chocolat Dialogue Box_3
-  - first:
-      213: -2282182576251371816
-    second: Monsieur Chocolat Dialogue Box_4
-  - first:
-      213: 518092900360372669
-    second: Monsieur Chocolat Dialogue Box_5
+      213: -9154537282285874706
+    second: Background AFTERNOON (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Monsieur Chocolat Dialogue Box_0
+      name: Background AFTERNOON (1)_0
       rect:
         serializedVersion: 2
-        x: 24
+        x: 0
         y: 0
-        width: 1381
-        height: 330
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5b19253485f24180800000000000000
-      internalID: -9132467146177569954
+      spriteID: ee1d74638dc84f080800000000000000
+      internalID: -9154537282285874706
       vertices: []
       indices: 
       edges: []
@@ -140,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a7cee269a12c4eb4cbba7fcc88886456
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -150,12 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Monsieur Chocolat Dialogue Box_0: -9132467146177569954
-      Monsieur Chocolat Dialogue Box_1: -160368371091564099
-      Monsieur Chocolat Dialogue Box_2: -8990520419187472313
-      Monsieur Chocolat Dialogue Box_3: -3914704370500608605
-      Monsieur Chocolat Dialogue Box_4: -2282182576251371816
-      Monsieur Chocolat Dialogue Box_5: 518092900360372669
+      Background AFTERNOON (1)_0: -9154537282285874706
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
