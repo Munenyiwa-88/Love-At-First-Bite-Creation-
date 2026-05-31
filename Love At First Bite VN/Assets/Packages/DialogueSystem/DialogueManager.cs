@@ -57,21 +57,7 @@ public class DialogueManager : MonoBehaviour
     [Header("HeartReaction")]
     public GameObject heartIncreaseReaction;
     public GameObject heartDecreaseReaction;
-
-    /* [Header("HeartMeter")]
-   public Image heartMeterPanel;
-   public GameObject heartMeterhalfImage;
-   public GameObject heartMeter25Image;
-   public GameObject heartMeter75Image;
-   public GameObject heartMeteremptyImage;
-   public GameObject heartMeterfullImage;*/
-    //Adding the script for the games audios
-    //[Header("Audio")]
-    //[SerializeField] AudioSource ThemeSongCreepy;
-    //[SerializeField] AudioSource ButtonFeedback;
-    //[SerializeField] AudioSource HeartMeterIncrease;
-    //[SerializeField] AudioSource HeartMeterDecrease; 
-
+    //adding audio to manager
     [Header("Audio")]
     [SerializeField] AudioSource GirlBGM;
     [SerializeField] AudioSource GirlGiggle;
@@ -79,50 +65,29 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] AudioSource GirlGasp;
     [SerializeField] AudioSource GirlSigh;
     [SerializeField] AudioSource GirlAngry;
-
+   /* [Header("TextDrizzle")]
+    [SerializeField] private DialogueController dialogueController;*/
+    //where player can input name
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
-   /* [Header("Player Dialogue Box Name")]
-    public TextMeshProUGUI nameText;*/
+   [Header("Player Dialogue Box Name")]
+    public TextMeshProUGUI nameText;
     //List of strings (List of all of my dialogue lines) - [] - this is what creates the list
     [Header("Sentences List")]
+    [TextArea(3,5)]
     public string[] sentences;
+    //For drizzle text
+    public TextManager TextManager;
+    //public string[] playerNameText;
 
-   /* [Header("Text Settings")]
-    [SerializeField] [TextArea] private string itemInfo;
-    [SerializeField] private float textSpeed = 0.03f;
-
-    [Header("UI Elements")]
-    [SerializeField] private TextMeshProUGUI itemInfoText;
-    private int currenDisplayingText = 0;
-
-    public void ActivateText()
-    {
-        //start coroutine
-        StartCoroutine(AnimateText()); 
-        
-    }
-
-    IEnumerator AnimateText()
-    {
-        for (int i = 0; i < itemInfo[currentIndex].Length + 1; i++)
-        {
-            itemInfoText.text = itemInfo[currenDisplayingText].Substring(0, i);
-            yield return new WaitForSeconds(textSpeed);
-        }
-    }*/
-
-   /* public void SetName(string name)
+    public void SetName(string name)
     {
         playerName = name; 
         nameText.text = name;
         nameText.text.Replace("{Name}", playerName);
         return;
-    }*/
-
-
-
+    }
 
     public void Start()
     {
@@ -131,12 +96,6 @@ public class DialogueManager : MonoBehaviour
         characterFlirtyImage.SetActive(false);
         characterSadImage.SetActive(false);
         //dialoguePlayerBoxImage.SetActive(false);
-
-        /*heartMeterfullImage.SetActive(false);
-        heartMeter25Image.SetActive(false);
-        heartMeter75Image.SetActive(false);
-        heartMeterhalfImage.SetActive(true);
-        heartMeteremptyImage.SetActive(false);*/
 
         //slider 
         heart = maxHeart;
@@ -151,16 +110,6 @@ public class DialogueManager : MonoBehaviour
         //dialogue box's SetActive fasle or true
         raspberryDialogueBoxImage.SetActive(true);
         playerDialogueBoxImage.SetActive(false);
-
-        //declaring the songs 
-        //ThemeSongCreepy.Stop();
-        //ThemeSongBGM.Play();
-        //GirlDisgust.Stop();
-        //GirlGiggle.Play();
-        //ButtonFeedback.Stop();
-        //HeartMeterIncrease.Stop();  
-        //HeartMeterDecrease.Stop();
-
       
         currentIndex = 0;
         raspberryDialogueText.text = sentences[currentIndex];
@@ -177,7 +126,16 @@ public class DialogueManager : MonoBehaviour
         {
             UpdateUI();
         }
+
+        //DL1();
     }
+
+    /*void DL1()
+    {
+        TextManager.TextRequest(4, "What The...",2);
+        TextManager.TextRequest(1, "Oh bonjour! You must be the lucky person who wishes to eat me!", 3);
+        TextManager.TextRequest(1, "Player: Why is my cupcake talking to me right now?", 3);
+    }*/
     public void Update()
     {
         //the line of code that actually changes the image, it checks if the index is right then changes the image
@@ -481,7 +439,6 @@ public class DialogueManager : MonoBehaviour
         }
 
 
-
         //Decrease
         if (currentIndex == 10)
         {
@@ -534,19 +491,6 @@ public class DialogueManager : MonoBehaviour
             heartIncreaseReaction.SetActive(false);
         }
       
-
-
-
-
-
-
-
-
-
-
-
-
-
         //adding audio to character expressions
 
         //SAD
@@ -671,38 +615,9 @@ public class DialogueManager : MonoBehaviour
             GirlSigh.Stop();
             GirlAngry.Stop();
         }
-
-        
-        //SetActive the creepy song that appears at the end of the game
-        /*if (currentIndex == 16)
-        {
-            ThemeSongCreepy.Play();
-            GirlDisgust.Stop();
-            GirlGiggle.Stop();
-            ButtonFeedback.Stop();
-            HeartMeterIncrease.Stop();
-            HeartMeterDecrease.Stop();
-        }
-
-       /* //for the textlength 
-        textLength = TextCreator.charCount;*/
     }
 
-    /* IEnumerator EventStarter()
-     {
-         mainTextObject.SetActive(true);
-         textToSpeak = "This is a dialogue line...";
-         raspberryDialogueText.GetComponent<TMPro.TMPro_Text>().text = textToSpeak;
-         currentTextLength = textToSpeak.Length;
-         TextCreator.runTextPrint = true;
-         yield return new WaitForSeconds(0.05f);
-         yield return new WaitForSeconds(1);
-         yield return new WaitUntil(() => textLength == currentTextLength);
-         yield return new WaitForSeconds(0.5f);
-
-
-     }
- */
+   
     //class for the sllider
     public void HeartMeter(float amount)
     {
@@ -753,6 +668,7 @@ public class DialogueManager : MonoBehaviour
     //class for showing the next sentences after button is pressed
     public void ShowNextSentence()
     {
+        
         //If player chooses Vanilla start at 6 or Strawberry at 7 then send both to 9
         // the two lines - || mean or
         // == means asking/checking = means setting the value 
@@ -845,18 +761,19 @@ public class DialogueManager : MonoBehaviour
             DecreaseHeart(5);
         }
     }
-
+   
 
     private void UpdateUI()
     {
         //so we have a new variable =currentText, current text takes the original sentence - searches for {Name} and if its there it replaces it with the player name variable
         string currentText = sentences[currentIndex].Replace("{Name}", playerName);
         //For name of the player dilaogue box
-       /* string processed = sentences[currentIndex].Replace("{Name}", playerName);
-        nameText.text = processed;*/
+        string processed = nameText.text = playerName;
+        Debug.Log("My name is" + playerName);
+        //snameText.text = processed;
         //This is how we convert the sentence itnto the speak text box.
         raspberryDialogueText.text = currentText;
-        playerDialogueText.text = currentText;
+        //playerDialogueText.text = currentText;
         //reset all the panels so that they do not overlap
         nameInputPanel.SetActive(false);
         choicesPanel1.SetActive(false);
@@ -963,7 +880,8 @@ public class DialogueManager : MonoBehaviour
 
 
     /*The things that did not work, with Prototype 1: 
-     1. Beginning commeands for animation 
+     
+    1. Beginning commeands for animation 
     using UnityEngine.Video;
     using JetBrains.Annotations;
     
@@ -1191,10 +1109,88 @@ public class DialogueManager : MonoBehaviour
      */
 
 
+    /* [Header("HeartMeter")]
+   public Image heartMeterPanel;
+   public GameObject heartMeterhalfImage;
+   public GameObject heartMeter25Image;
+   public GameObject heartMeter75Image;
+   public GameObject heartMeteremptyImage;
+   public GameObject heartMeterfullImage;*/
+    //Adding the script for the games audios
+    //[Header("Audio")]
+    //[SerializeField] AudioSource ThemeSongCreepy;
+    //[SerializeField] AudioSource ButtonFeedback;
+    //[SerializeField] AudioSource HeartMeterIncrease;
+    //[SerializeField] AudioSource HeartMeterDecrease; 
+
+    /* [Header("Text Settings")]
+   [SerializeField] [TextArea] private string itemInfo;
+   [SerializeField] private float textSpeed = 0.03f;
+
+   [Header("UI Elements")]
+   [SerializeField] private TextMeshProUGUI itemInfoText;
+   private int currenDisplayingText = 0;
+
+   public void ActivateText()
+   {
+       //start coroutine
+       StartCoroutine(AnimateText()); 
+
+   }
+
+   IEnumerator AnimateText()
+   {
+       for (int i = 0; i < itemInfo[currentIndex].Length + 1; i++)
+       {
+           itemInfoText.text = itemInfo[currenDisplayingText].Substring(0, i);
+           yield return new WaitForSeconds(textSpeed);
+       }
+   }*/
+
+    /*heartMeterfullImage.SetActive(false);
+      heartMeter25Image.SetActive(false);
+      heartMeter75Image.SetActive(false);
+      heartMeterhalfImage.SetActive(true);
+      heartMeteremptyImage.SetActive(false);*/
+
+    //declaring the songs 
+    //ThemeSongCreepy.Stop();
+    //ThemeSongBGM.Play();
+    //GirlDisgust.Stop();
+    //GirlGiggle.Play();
+    //ButtonFeedback.Stop();
+    //HeartMeterIncrease.Stop();  
+    //HeartMeterDecrease.Stop();
+
+    //SetActive the creepy song that appears at the end of the game
+    /*if (currentIndex == 16)
+    {
+        ThemeSongCreepy.Play();
+        GirlDisgust.Stop();
+        GirlGiggle.Stop();
+        ButtonFeedback.Stop();
+        HeartMeterIncrease.Stop();
+        HeartMeterDecrease.Stop();
+    }
+
+     /* IEnumerator EventStarter()
+     {
+         mainTextObject.SetActive(true);
+         textToSpeak = "This is a dialogue line...";
+         raspberryDialogueText.GetComponent<TMPro.TMPro_Text>().text = textToSpeak;
+         currentTextLength = textToSpeak.Length;
+         TextCreator.runTextPrint = true;
+         yield return new WaitForSeconds(0.05f);
+         yield return new WaitForSeconds(1);
+         yield return new WaitUntil(() => textLength == currentTextLength);
+         yield return new WaitForSeconds(0.5f);
 
 
+     }
+ */
 
-
+    /* //for the textlength 
+     textLength = TextCreator.charCount;*/
 
     ////Creating dialogue manager instance, to access class from any point of the game
     //public static DialogueManager Instance;

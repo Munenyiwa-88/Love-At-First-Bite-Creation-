@@ -1,10 +1,31 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TextCreator : MonoBehaviour
+*//*public class TextCreator : DialogueManager, ITalkable
 {
-    public static TMPro.TMP_Text viewText;
+    [SerializeField] private DialogueManager dialogueManager;
+    [SerializeField] private DialogueController dialogueController;
+
+    public void Interact()
+    {
+        Talk(dialogueManager);
+    }
+
+    public void Talk(DialogueManager dialoguemanager)
+    {
+       //start conversation
+       dialogueController.ShowNextSentence(dialogueManager);
+    }
+
+
+
+*/
+
+
+
+
+    /* public static TMPro.TMP_Text viewText;
     public static bool runTextPrint;
     public static int charCount;
     [SerializeField] string transferText;
@@ -37,6 +58,7 @@ public class TextCreator : MonoBehaviour
         }
     }
 
+*//*
 
 
 
@@ -48,5 +70,4 @@ public class TextCreator : MonoBehaviour
 
 
 
-
-}
+}*/
