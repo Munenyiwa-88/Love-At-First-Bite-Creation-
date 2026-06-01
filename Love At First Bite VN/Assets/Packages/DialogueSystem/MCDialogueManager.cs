@@ -47,46 +47,31 @@ public class MCDialogueManager : MonoBehaviour
     public GameObject characterSadImage;
     public GameObject characterAngryImage;
     public GameObject characterFlirtyImage;
-    /*[Header("HeartMeter")]
-    public Image heartMeterPanel;
-    public GameObject heartMeterhalfImage;
-    public GameObject heartMeter25Image;
-    public GameObject heartMeter75Image;
-    public GameObject heartMeteremptyImage;
-    public GameObject heartMeterfullImage;*/
-    //Inputting a slider 
     [Header("Slider")]
     public float heart;
     public float maxHeart = 10;
     public Slider slider;
+    [Header("HeartReaction")]
+    public GameObject heartIncreaseReaction;
+    public GameObject heartDecreaseReaction;
     //Adding the script for the games audios
-
     [Header("Audio")]
     [SerializeField] AudioSource MaleBGM;
     [SerializeField] AudioSource MaleGroan;
     [SerializeField] AudioSource MaleGiggle;
     [SerializeField] AudioSource MaleGasp;
     [SerializeField] AudioSource MaleFlirt;
-    
-
-    /* [Header("Audio")]
-     [SerializeField] AudioSource ThemeSongCreepy;
-     [SerializeField] AudioSource ThemeSongBGM;
-     [SerializeField] AudioSource GirlGiggle;
-     [SerializeField] AudioSource GirlDisgust;
-     [SerializeField] AudioSource ButtonFeedback;
-     [SerializeField] AudioSource HeartMeterIncrease;
-     [SerializeField] AudioSource HeartMeterDecrease;*/
     [Header("Player Name")]
     //Input player name typing method
     private string playerName;
-    /* [Header("Player Dialogue Box Name")]
-     public TextMeshProUGUI nameText;*/
+    [Header("Player Dialogue Box Name")]
+     public TextMeshProUGUI nameText;
     //List of strings (List of all of my dialogue lines) - [] - this is what creates the list
     [Header("Sentences List")]
+    [TextArea(3,5)]
     public string[] sentences;
 
-   /* public void SetName(string name)
+    public void SetName(string name)
     {
         playerName = name;
         nameText.text = name;
@@ -94,7 +79,6 @@ public class MCDialogueManager : MonoBehaviour
         return;
     }
 
-*/
 
 
     public void Start()
@@ -105,30 +89,19 @@ public class MCDialogueManager : MonoBehaviour
         characterSadImage.SetActive(false);
         //dialoguePlayerBoxImage.SetActive(false);
 
-        /*heartMeterfullImage.SetActive(false);
-        heartMeter25Image.SetActive(false);
-        heartMeter75Image.SetActive(false);
-        heartMeterhalfImage.SetActive(true);
-        heartMeteremptyImage.SetActive(false);*/
-
         //slider 
         heart = maxHeart;
         slider.maxValue = maxHeart;
         slider.value = heart;
         SetHeart(5);
 
+        //heart reaction animation
+        heartIncreaseReaction.SetActive(false);
+        heartDecreaseReaction.SetActive(false);
+
         //dialogue box's SetActive fasle or true
         croissantDialogueBoxImage.SetActive(true);
         playerDialogueBoxImage.SetActive(false);
-
-        //declaring the songs 
-        /*ThemeSongCreepy.Stop();
-        ThemeSongBGM.Play();
-        GirlDisgust.Stop();
-        GirlGiggle.Play();
-        ButtonFeedback.Stop();
-        HeartMeterIncrease.Stop();
-        HeartMeterDecrease.Stop();*/
 
         currentIndex = 0;
         croissantDialogueText.text = sentences[currentIndex];
@@ -172,10 +145,16 @@ public class MCDialogueManager : MonoBehaviour
             playerDialogueBoxImage.SetActive(false);
         }
 
-        if (currentIndex == 3)
+        if (currentIndex == 2)
         {
             croissantDialogueBoxImage.SetActive(false);
             playerDialogueBoxImage.SetActive(true);
+        }
+
+        if (currentIndex == 3)
+        {
+            croissantDialogueBoxImage.SetActive(true);
+            playerDialogueBoxImage.SetActive(false);
         }
 
         if (currentIndex == 8)
@@ -515,9 +494,104 @@ public class MCDialogueManager : MonoBehaviour
             characterHappyImage.SetActive(false);
             characterAngryImage.SetActive(false);
         }
-         //adding audio to charcter expresions
-        //SAD AUDIO  
 
+        //adding heart animation
+        //Increase
+        if (currentIndex == 11)
+        {
+            heartIncreaseReaction.SetActive(true);
+            heartDecreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 12)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 27)
+        {
+            heartIncreaseReaction.SetActive(true);
+            heartDecreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 28)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 43)
+        {
+            heartIncreaseReaction.SetActive(true);
+            heartDecreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 44)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 58)
+        {
+            heartIncreaseReaction.SetActive(true);
+            heartDecreaseReaction.SetActive(false);
+        }
+       
+
+
+        //Decrease
+        if (currentIndex == 15)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 16)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 24)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 25)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 30)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 31)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 39)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+        if (currentIndex == 40)
+        {
+            heartIncreaseReaction.SetActive(false);
+            heartDecreaseReaction.SetActive(false);
+        }
+
+        if (currentIndex == 61)
+        {
+            heartDecreaseReaction.SetActive(true);
+            heartIncreaseReaction.SetActive(false);
+        }
+
+        //adding audio to charcter expresions
+        //SAD AUDIO  
         if (currentIndex == 19)
         {
             MaleGroan.Play();
@@ -620,19 +694,6 @@ public class MCDialogueManager : MonoBehaviour
             MaleFlirt.Play();
         }
 
-
-
-        //SetActive the creepy song that appears at the end of the game
-        /* if (currentIndex == 16)
-         {
-             ThemeSongCreepy.Play();
-             GirlDisgust.Stop();
-             GirlGiggle.Stop();
-             ButtonFeedback.Stop();
-             HeartMeterIncrease.Stop();
-             HeartMeterDecrease.Stop();
-         }*/
-
     }
 
     //class for the sllider
@@ -650,8 +711,6 @@ public class MCDialogueManager : MonoBehaviour
     {
         heart += amount;
 
-        Debug.Log("Called");
-
         if (heart > maxHeart)
         {
             heart = maxHeart;
@@ -663,8 +722,6 @@ public class MCDialogueManager : MonoBehaviour
 
     public void DecreaseHeart(float amount)
     {
-
-        Debug.Log("Called");
 
         heart -= amount;
 
@@ -690,22 +747,78 @@ public class MCDialogueManager : MonoBehaviour
         // == means asking/checking = means setting the value 
 
         //choice 1
-        if (currentIndex == 11 || currentIndex == 13 || currentIndex == 19)
+        if (currentIndex == 11) 
         {
-            currentIndex = 22;
+            currentIndex = 12;
             UpdateUI();
             //return means to cut the method here. So will not continue to 10 onwards. 
             return;
         }
+        if (currentIndex == 15)
+        {
+            currentIndex = 16;
+            UpdateUI();
+            return;
+        }
+        if (currentIndex == 19)
+        {
+            currentIndex = 20;
+            UpdateUI();
+            return;
+        }
+
+        if (currentIndex == 14 || currentIndex == 18)
+        {
+            currentIndex = 21;
+            UpdateUI();
+            return;
+        }
         //If the player chooses any of three options the next button should take them to 15
-        if (currentIndex == 24 || currentIndex == 27 || currentIndex == 30)//(currentIndex == 8)
+        if (currentIndex == 24) 
+        {
+            currentIndex = 25;
+            UpdateUI();
+            return;
+        }
+        if (currentIndex == 27)
+        {
+            currentIndex = 28;
+            UpdateUI();
+            return;
+        }
+        if (currentIndex == 30)
+        {
+            currentIndex = 31;
+            UpdateUI();
+            return;
+        }
+
+        if (currentIndex == 26 || currentIndex == 29)
         {
             currentIndex = 38;
             UpdateUI();
             return;
         }
         //If the player chooses any of three options the next button should take them to 15
-        if (currentIndex == 39 || currentIndex == 43 || currentIndex == 47)
+        if (currentIndex == 39) //|| currentIndex == 43 || currentIndex == 47)
+        {
+            currentIndex = 40;
+            UpdateUI();
+            return;
+        }
+        if (currentIndex == 43)
+        {
+            currentIndex = 44;
+            UpdateUI();
+            return;
+        }
+        if (currentIndex == 47)
+        {
+            currentIndex = 48;
+            UpdateUI();
+            return;
+        }
+        if (currentIndex == 42 || currentIndex == 46)
         {
             currentIndex = 55;
             UpdateUI();
@@ -791,8 +904,7 @@ public class MCDialogueManager : MonoBehaviour
         //so we have a new variable =currentText, current text takes the original sentence - searches for {Name} and if its there it replaces it with the player name variable
         string currentText = sentences[currentIndex].Replace("{Name}", playerName);
         //For name of the player dilaogue box
-        /* string processed = sentences[currentIndex].Replace("{Name}", playerName);
-         nameText.text = processed;*/
+        string processed = nameText.text = playerName;
         //This is how we convert the sentence itnto the speak text box.
         croissantDialogueText.text = currentText;
         playerDialogueText.text = currentText;

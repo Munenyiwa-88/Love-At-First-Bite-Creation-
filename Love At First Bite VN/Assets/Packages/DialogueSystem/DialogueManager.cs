@@ -65,8 +65,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] AudioSource GirlGasp;
     [SerializeField] AudioSource GirlSigh;
     [SerializeField] AudioSource GirlAngry;
-   /* [Header("TextDrizzle")]
-    [SerializeField] private DialogueController dialogueController;*/
     //where player can input name
     [Header("Player Name")]
     //Input player name typing method
@@ -77,10 +75,6 @@ public class DialogueManager : MonoBehaviour
     [Header("Sentences List")]
     [TextArea(3,5)]
     public string[] sentences;
-    
-
-    //For drizzle text
-    
 
     public void SetName(string name)
     {
@@ -134,7 +128,7 @@ public class DialogueManager : MonoBehaviour
     public void Update()
     {
         //the line of code that actually changes the image, it checks if the index is right then changes the image
-        if (currentIndex == 12 /*|| currentIndex == 7 || currentIndex == 8*/)
+        if (currentIndex == 12)
         {
             backgroundAfternoonPanel.sprite = backgroundAfternoonImage;
         }
@@ -400,7 +394,6 @@ public class DialogueManager : MonoBehaviour
         }
         
         //adding the heart animation
-
         //Increase
         if (currentIndex == 8)
         {
@@ -506,7 +499,6 @@ public class DialogueManager : MonoBehaviour
         }
       
         //adding audio to character expressions
-
         //SAD
         if (currentIndex == 9)
         {
@@ -647,8 +639,6 @@ public class DialogueManager : MonoBehaviour
     {
         heart += amount;
 
-        Debug.Log("Called");
-
         if(heart > maxHeart)
         {
             heart = maxHeart;
@@ -660,8 +650,6 @@ public class DialogueManager : MonoBehaviour
 
     public void DecreaseHeart(float amount)
     {
-
-        Debug.Log("Called");
 
         heart -= amount;
 
@@ -696,7 +684,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         //If the player chooses any of three options the next button should take them to 15
-        if (currentIndex == 12 || currentIndex == 13 || currentIndex == 14)//(currentIndex == 8)
+        if (currentIndex == 12 || currentIndex == 13 || currentIndex == 14)
         {
             currentIndex = 15;
             UpdateUI();
@@ -783,8 +771,6 @@ public class DialogueManager : MonoBehaviour
         string currentText = sentences[currentIndex].Replace("{Name}", playerName);
         //For name of the player dilaogue box
         string processed = nameText.text = playerName;
-        Debug.Log("My name is" + playerName);
-        //snameText.text = processed;
         //This is how we convert the sentence itnto the speak text box.
         raspberryDialogueText.text = currentText;
         playerDialogueText.text = currentText;
