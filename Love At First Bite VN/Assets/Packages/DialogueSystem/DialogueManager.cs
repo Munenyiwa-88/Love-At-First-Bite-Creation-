@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,6 +17,9 @@ public class DialogueManager : MonoBehaviour
     //Calling the main objects for the dialogue
     public TextMeshProUGUI raspberryDialogueText;
     public TextMeshProUGUI playerDialogueText;
+    public float typingSpeed = 0.05f;
+    private Coroutine typingCoroutine;
+    private TextMeshProUGUI currentTextBox;
     public Button nextButton;
     public Button nextPlayerButton;
     public Button goodEndButton;
@@ -77,9 +81,10 @@ public class DialogueManager : MonoBehaviour
     [Header("Sentences List")]
     [TextArea(3,5)]
     public string[] sentences;
+    private bool isTyping;
+
     //For drizzle text
-    public TextManager TextManager;
-    //public string[] playerNameText;
+    
 
     public void SetName(string name)
     {
@@ -127,15 +132,9 @@ public class DialogueManager : MonoBehaviour
             UpdateUI();
         }
 
-        //DL1();
     }
 
-    /*void DL1()
-    {
-        TextManager.TextRequest(4, "What The...",2);
-        TextManager.TextRequest(1, "Oh bonjour! You must be the lucky person who wishes to eat me!", 3);
-        TextManager.TextRequest(1, "Player: Why is my cupcake talking to me right now?", 3);
-    }*/
+   
     public void Update()
     {
         //the line of code that actually changes the image, it checks if the index is right then changes the image
@@ -154,84 +153,143 @@ public class DialogueManager : MonoBehaviour
         {
             raspberryDialogueBoxImage.SetActive(false);
             playerDialogueBoxImage.SetActive(true);
+
+            currentTextBox = playerDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], playerDialogueText));
+
         }
+
+        //typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], raspberryDialogueText));
+    
+         //typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], playerDialogueText));
         
-        if (currentIndex == 2)
+        if (currentIndex == 1)
         {
             raspberryDialogueBoxImage.SetActive(true);
             playerDialogueBoxImage.SetActive(false);
+
+            currentTextBox = raspberryDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], raspberryDialogueText));
+        }
+
+        if (currentIndex == 2)
+        {
+            raspberryDialogueBoxImage.SetActive(false);
+            playerDialogueBoxImage.SetActive(true);
+
+            currentTextBox = playerDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], playerDialogueText));
         }
 
         if (currentIndex == 3)
         {
-            raspberryDialogueBoxImage.SetActive(false);
-            playerDialogueBoxImage.SetActive(true);
-        }
-
-        if (currentIndex == 4)
-        {
             raspberryDialogueBoxImage.SetActive(true);
             playerDialogueBoxImage.SetActive(false);
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], raspberryDialogueText));
         }
 
         if (currentIndex == 18)
         {
             raspberryDialogueBoxImage.SetActive(false);
             playerDialogueBoxImage.SetActive(true);
+
+            currentTextBox = playerDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], playerDialogueText));
         }
 
         if (currentIndex == 19)
         {
             raspberryDialogueBoxImage.SetActive(true);
             playerDialogueBoxImage.SetActive(false);
+
+            currentTextBox = raspberryDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], raspberryDialogueText));
         }
 
         if (currentIndex == 24)
         {
             raspberryDialogueBoxImage.SetActive(false);
             playerDialogueBoxImage.SetActive(true);
+
+            currentTextBox = playerDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], playerDialogueText));
         }
 
         if (currentIndex == 25)
         {
             raspberryDialogueBoxImage.SetActive(true);
             playerDialogueBoxImage.SetActive(false);
+
+            currentTextBox = raspberryDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], raspberryDialogueText));
         }
 
         if (currentIndex == 26)
         {
             raspberryDialogueBoxImage.SetActive(false);
             playerDialogueBoxImage.SetActive(true);
+
+            currentTextBox = playerDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], playerDialogueText));
         }
 
         if (currentIndex == 27)
         {
             raspberryDialogueBoxImage.SetActive(true);
             playerDialogueBoxImage.SetActive(false);
+
+            currentTextBox = raspberryDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], raspberryDialogueText));
         }
 
         if (currentIndex == 31)
         {
             raspberryDialogueBoxImage.SetActive(false);
             playerDialogueBoxImage.SetActive(true);
+
+            currentTextBox = playerDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], playerDialogueText));
         }
 
         if (currentIndex == 33)
         {
             raspberryDialogueBoxImage.SetActive(true);
             playerDialogueBoxImage.SetActive(false);
+
+            currentTextBox = raspberryDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], raspberryDialogueText));
         }
 
         if (currentIndex == 39)
         {
             raspberryDialogueBoxImage.SetActive(false);
             playerDialogueBoxImage.SetActive(true);
+
+            currentTextBox = playerDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], playerDialogueText));
         }
 
         if (currentIndex == 40)
         {
             raspberryDialogueBoxImage.SetActive(true);
             playerDialogueBoxImage.SetActive(false);
+
+            currentTextBox = raspberryDialogueText;
+
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], raspberryDialogueText));
         }
 
         //the line of code that will change the chaarcters expression. So what is said for the characters visual to change
@@ -339,6 +397,16 @@ public class DialogueManager : MonoBehaviour
         }
 
         //FLIRTY
+
+        if (currentIndex == 6)
+        {
+            characterFlirtyImage.SetActive(true);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+            characterSadImage.SetActive(false);
+        }
+
         if (currentIndex == 14)
         {
             characterFlirtyImage.SetActive(true);
@@ -368,6 +436,15 @@ public class DialogueManager : MonoBehaviour
 
         //SAD
         if (currentIndex == 10)
+        {
+            characterSadImage.SetActive(true);
+            characterFlirtyImage.SetActive(false);
+            characterIdleImage.SetActive(false);
+            characterHappyImage.SetActive(false);
+            characterAngryImage.SetActive(false);
+        }
+
+        if (currentIndex == 13)
         {
             characterSadImage.SetActive(true);
             characterFlirtyImage.SetActive(false);
@@ -668,7 +745,44 @@ public class DialogueManager : MonoBehaviour
     //class for showing the next sentences after button is pressed
     public void ShowNextSentence()
     {
-        
+        /*if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+        }*/
+
+        /*if (raspberryDialogueBoxImage)
+        {
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], raspberryDialogueText));
+        }
+        else
+        {
+            typingCoroutine = StartCoroutine(TypeSentence(sentences[currentIndex], playerDialogueText));
+
+        }*/
+
+        if (isTyping)
+        {
+            StopCoroutine(typingCoroutine);
+
+            currentTextBox.text = sentences[currentIndex];
+
+            isTyping = false;
+            return;
+        }
+
+        if (currentIndex >= sentences.Length)
+        {
+            EndDialogue();
+            return;
+        }
+
+        UpdateUI();
+
+        currentIndex++;
+       
+
+
+
         //If player chooses Vanilla start at 6 or Strawberry at 7 then send both to 9
         // the two lines - || mean or
         // == means asking/checking = means setting the value 
@@ -723,6 +837,28 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    private void EndDialogue()
+    {
+        throw new NotImplementedException();
+    }
+
+    IEnumerator TypeSentence(string sentence, TextMeshProUGUI targetText)
+    {
+        isTyping = true;
+
+        targetText.text = "";
+
+        foreach (char letter in sentence)
+        {
+            targetText.text += letter;
+       
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        isTyping = false;
+
+    }
+
     //Method for different branching dialogues. Connecting choice to responses
     //Adding parameters, to help jump to different responses in dialogue
     public void MakeChoice(int jumpToIndex)
@@ -773,7 +909,7 @@ public class DialogueManager : MonoBehaviour
         //snameText.text = processed;
         //This is how we convert the sentence itnto the speak text box.
         raspberryDialogueText.text = currentText;
-        //playerDialogueText.text = currentText;
+        playerDialogueText.text = currentText;
         //reset all the panels so that they do not overlap
         nameInputPanel.SetActive(false);
         choicesPanel1.SetActive(false);
