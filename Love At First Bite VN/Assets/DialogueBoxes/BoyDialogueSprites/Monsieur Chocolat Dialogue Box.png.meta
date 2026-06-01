@@ -118,9 +118,8 @@ TextureImporter:
       name: Monsieur Chocolat Dialogue Box_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 0
-        width: 1381
+        x: 53
+        y: 16
         width: 1359
         height: 316
       alignment: 0
